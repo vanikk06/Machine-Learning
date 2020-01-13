@@ -5,6 +5,7 @@
   
 主流的定義機器學習
   > 由機器學習教父Tom Mitchell提出
+  >> 透過從過往的資料和經驗中學習並找到其運行規則
   
   "A computer program is said to learn from **experience E** with respect to some class of **tasks T** and **performance measure P**, if its performance at tasks in T, as measured by P, improves with experience E. "
   
@@ -13,12 +14,17 @@
   
 #### Machine Learning v.s. Algorithms
 
-- Algorithms：演算法是一個明確的規則，透過coding將這種規則具現化
+- Algorithms：訂立一個明確的規則，透過coding將這種規則具現化
   > 寫死的
   
-- Machine Learning：
+- Machine Learning：透過樣本訓練機器辨識出運作模式，而不是用特定的規則來coding，換句話說，machine learning是從資料中得到複雜的函式（或樣本）來**學習**以創造algorithms（或一組規則），並利用它來做**預測**
+
+machine learning的厲害之處在於它可以**自主學習**，同樣的ML系統仍然可以使用在未來的物件，並不需要重寫程式碼，這是相當方便起強大的
+> e.g.識別物件
 
 
 
 #### Source
 [〔資料分析&機器學習〕 第3.1講：Python 機器學習以及Scikit-learn介紹](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC3-1%E8%AC%9B-python-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E4%BB%A5%E5%8F%8Ascikit-learn%E4%BB%8B%E7%B4%B9-fdb052463911)
+
+[人工智慧、機器學習、深度學習是什麼? – Machine Learning 教學系列 (一)](https://blog.gcp.expert/ml-1-ai-ml-deep-learning-intro/)
