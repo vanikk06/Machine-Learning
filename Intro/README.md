@@ -9,6 +9,14 @@
   "A computer program is said to learn from **experience E** with respect to some class of **tasks T** and **performance measure P**, if its performance at tasks in T, as measured by P, improves with experience E. "
   
   簡單的說就是一個程式可以根據過去的經驗（Data）去做某些任務（Task），然後會有一些效能評估（performance measure）來評估這些Task做得好不好，如果這些效能評估可以透過「利用過往的資料來提升」的話，就叫作機器學習
+  
+  
+#### Machine Learning v.s. Algorithms
+
+- Algorithms：演算法是一個明確的規則，透過coding將這種規則具現化
+  > 寫死的
+  
+- Machine Learning：
 
 
 
