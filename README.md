@@ -1,3 +1,13 @@
+# Machine-Learning
+  class notes
+  
+  teacher：李佳蓉 老師
+
+
+
+
+
+
 
 #### Source
 [[Python] Pandas 基礎教學](https://oranwind.org/python-pandas-ji-chu-jiao-xue/)
