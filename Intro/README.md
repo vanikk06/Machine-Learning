@@ -35,6 +35,8 @@ machine learning的厲害之處在於它可以**自主學習**，同樣的ML系�
 
 [機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
 
+[史上最完整機器學習自學攻略！我不相信有人看完這份不會把它加進我的最愛](https://buzzorange.com/techorange/2017/08/21/the-best-ai-lesson/)
+
 # Overview
 
 #### Source
