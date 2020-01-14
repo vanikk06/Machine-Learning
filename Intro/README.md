@@ -13,7 +13,7 @@
   簡單的說就是一個程式可以根據過去的經驗（Data）去做某些任務（Task），然後會有一些效能評估（performance measure）來評估這些Task做得好不好，如果這些效能評估可以透過「利用過往的資料來提升」的話，就叫作機器學習
   
   
-#### Machine Learning v.s. Algorithms v.s. Deep Learning
+#### Machine Learning v.s. Algorithms
   > 機器學習 v.s. 演算法
 
 - Algorithms：訂立一個明確的規則，透過coding將這種規則具現化
@@ -40,14 +40,14 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
   
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-14_17-35-34.png)
 
-machine learning的種類，可以分為四種：
-> [learning more](https://ai4dt.wordpress.com/2018/05/25/%E4%B8%89%E5%A4%A7%E9%A1%9E%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%EF%BC%9A%E7%9B%A3%E7%9D%A3%E5%BC%8F%E3%80%81%E5%BC%B7%E5%8C%96%E5%BC%8F%E3%80%81%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F/)
-  1. 監督式學習（supervised learning）
-      > 一比一對照資料
-  2. 非監督式學習（unsupervised learning）
-      > 機器自行摸索出資料規則
-  3. 增強式學習（reinforcement learning）
-      > 在未知探索與遵從既有知識間取得平衡
+- machine learning的種類，可以分為四種：\
+  [learning more](https://ai4dt.wordpress.com/2018/05/25/%E4%B8%89%E5%A4%A7%E9%A1%9E%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%EF%BC%9A%E7%9B%A3%E7%9D%A3%E5%BC%8F%E3%80%81%E5%BC%B7%E5%8C%96%E5%BC%8F%E3%80%81%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F/)
+    1. 監督式學習（supervised learning）
+        > 一比一對照資料
+    2. 非監督式學習（unsupervised learning）
+        > 機器自行摸索出資料規則
+    3. 增強式學習（reinforcement learning）
+        > 在未知探索與遵從既有知識間取得平衡
           
 - Deep Learning（DL）
 
