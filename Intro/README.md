@@ -13,7 +13,7 @@
   簡單的說就是一個程式可以根據過去的經驗（Data）去做某些任務（Task），然後會有一些效能評估（performance measure）來評估這些Task做得好不好，如果這些效能評估可以透過「利用過往的資料來提升」的話，就叫作機器學習
   
   
-#### Machine Learning v.s. Algorithms
+#### Machine Learning v.s. Algorithms v.s. Deep Learning
   > 機器學習 v.s. 演算法
 
 - Algorithms：訂立一個明確的規則，透過coding將這種規則具現化
@@ -27,12 +27,12 @@
 
 machine learning的厲害之處在於它可以**自主學習**，同樣的ML系統仍然可以使用在未來的物件，並不需要重寫程式碼，這是相當方便起強大的 e.g.識別物件
 
-#### Machine Learning v.s. Artificial Intelligence
+#### Machine Learning v.s. Artificial Intelligence v.s. Deep Learning
   > 機器學習 v.s. 人工智慧
   
 machine learning是人工智慧的一個分支，人工智慧是一個較廣泛的名詞
 
-- Artificial Intelligence：
+- Artificial Intelligence（AI）：
 
   “Intelligent Agents“ refers to the ability of the computer to **simulate/model human thinking** processes to **imitate human ability or behavior**"
   
@@ -40,6 +40,16 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
   
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-14_17-35-34.png)
 
+machine learning的種類，可以分為四種：
+> [learning more](https://ai4dt.wordpress.com/2018/05/25/%E4%B8%89%E5%A4%A7%E9%A1%9E%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%EF%BC%9A%E7%9B%A3%E7%9D%A3%E5%BC%8F%E3%80%81%E5%BC%B7%E5%8C%96%E5%BC%8F%E3%80%81%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F/)
+  1. 監督式學習（supervised learning）
+      > 一比一對照資料
+  2. 非監督式學習（unsupervised learning）
+      > 機器自行摸索出資料規則
+  3. 增強式學習（reinforcement learning）
+      > 在未知探索與遵從既有知識間取得平衡
+          
+- Deep Learning（DL）
 
 #### Source
 [〔資料分析&機器學習〕 第3.1講：Python 機器學習以及Scikit-learn介紹](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC3-1%E8%AC%9B-python-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E4%BB%A5%E5%8F%8Ascikit-learn%E4%BB%8B%E7%B4%B9-fdb052463911)
@@ -49,6 +59,8 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 [機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
 
 [史上最完整機器學習自學攻略！我不相信有人看完這份不會把它加進我的最愛](https://buzzorange.com/techorange/2017/08/21/the-best-ai-lesson/)
+
+[三大類機器學習：監督式、強化式、非監督式](https://ai4dt.wordpress.com/2018/05/25/%E4%B8%89%E5%A4%A7%E9%A1%9E%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%EF%BC%9A%E7%9B%A3%E7%9D%A3%E5%BC%8F%E3%80%81%E5%BC%B7%E5%8C%96%E5%BC%8F%E3%80%81%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F/)
 
 # Overview
 
