@@ -21,6 +21,7 @@
   
 - Machine Learning：透過樣本訓練機器辨識出運作模式，而不是用特定的規則來coding，換句話說，machine learning是從資料中得到複雜的函式（或樣本）來**學習**以創造algorithms（或一組規則），並利用它來做**預測**
   > 建立模型（model）
+  >> 模型的好壞必須針對特定問題的種類
   
   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-14_03-41-03.png)
 
@@ -29,8 +30,18 @@ machine learning的厲害之處在於它可以**自主學習**，同樣的ML系�
 #### Machine Learning v.s. Artificial Intelligence
   > 機器學習 v.s. 人工智慧
   
+machine learning是人工智慧的一個分支，人工智慧是一個較廣泛的名詞
+
+- Artificial Intelligence：
+
+  “Intelligent Agents“ refers to the ability of the computer to **simulate/model human thinking** processes to **imitate human ability or behavior**"
+  
+  現在所執行的系統是一種「弱人工智慧」的形式，人工智慧系統可以做一件或是多件事情，而做的程度與人類相當，甚至超越人類
+  
+  ![]()
   
 
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-14_17-35-34.png)
 
 
 #### Source
