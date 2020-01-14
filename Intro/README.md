@@ -76,6 +76,17 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 [🎈](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 
+# Python
+
+在此課堂上會使用的套件：
+- Numpy：矩陣（n-dimensional array）運算
+- Pandas：資料處理
+- Matplotlib：繪圖
+- Scikit-learn：包含機器學習常用的演算法
+
+
+
+
 # Overview
 
 #### Source
