@@ -77,6 +77,7 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
 
 # Python
+  > 基本語法介紹
 
 在此課堂上會使用的套件：
 - Numpy：矩陣（n-dimensional array）運算
@@ -87,14 +88,41 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 ## Identifier
    > 識別字
    
-   寫程式時需要自行定義的名稱，可使用底線、英文字母、數字和中文，但不可與保留字相同
-   > 自行定義名稱：變數（variable）、函數（function）、類別（class）
+寫程式時需要自行定義的名稱，可使用底線、英文字母、數字和中文，但不可與保留字相同
+> 自行定義名稱：變數（variable）、函數（function）、類別（class）
     
-   - 保留字：具有語法功能
-   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-15_02-24-53.png)
-   [[learning more]](https://www.itread01.com/articles/1506142629.html)
+- 保留字：具有語法功能
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-15_02-24-53.png)
+[[learning more]](https://www.itread01.com/articles/1506142629.html)
+
+[🕐](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+## Math Operator
+   > 數學運算符
+   
+- `+`：加法
+- `-`：減法
+- `*`：乘法
+- `/`：除法
+- `%`：除法，取餘數
+- `//`：除法，取商數
+- `**`：次方
 
 [🕑](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+## String
+   > 字串
+ 
+- `'xxx'` 或 `"xxx"`：以此包起的東西為字串
+  > 引號必須兩兩成對出現
+ 
+- `"""xxx"""`：連續使用三個雙引號可建立**多行**字串
+
+[🕒](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+## List
+   > 列表
+
 
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
