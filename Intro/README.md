@@ -22,8 +22,7 @@
   
   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-14_03-41-03.png)
 
-machine learning的厲害之處在於它可以**自主學習**，同樣的ML系統仍然可以使用在未來的物件，並不需要重寫程式碼，這是相當方便起強大的
-> e.g.識別物件
+machine learning的厲害之處在於它可以**自主學習**，同樣的ML系統仍然可以使用在未來的物件，並不需要重寫程式碼，這是相當方便起強大的 e.g.識別物件
 
 #### 
 
