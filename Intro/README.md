@@ -1,6 +1,7 @@
 
 # introduction
   > 簡單介紹一下，什麼是機器學習
+  >> 要先明白，機器學習並非100%精確的，大多數情況下只是一個很好的猜測，並且需要大量的調整疊代（時間和資源耗費在訓練模型上）
   
   
 主流的定義機器學習
@@ -13,6 +14,7 @@
   
   
 #### Machine Learning v.s. Algorithms
+  > 機器學習 v.s. 演算法
 
 - Algorithms：訂立一個明確的規則，透過coding將這種規則具現化
   > 寫死的
@@ -24,7 +26,11 @@
 
 machine learning的厲害之處在於它可以**自主學習**，同樣的ML系統仍然可以使用在未來的物件，並不需要重寫程式碼，這是相當方便起強大的 e.g.識別物件
 
-#### 
+#### Machine Learning v.s. Artificial Intelligence
+  > 機器學習 v.s. 人工智慧
+  
+  
+
 
 
 #### Source
