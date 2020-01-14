@@ -1,7 +1,12 @@
 
-# introduction
+# Content
+
+# Introduction
   > 簡單介紹一下，什麼是機器學習
   >> 要先明白，機器學習並非100%精確的，大多數情況下只是一個很好的猜測，並且需要大量的調整疊代（時間和資源耗費在訓練模型上）
+  
+- [Machine Learning v.s. Algorithms](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#machine-learning-vs-algorithms)
+- [Machine Learning v.s. Artificial Intelligence v.s. Deep Learning](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#machine-learning-vs-artificial-intelligence-vs-deep-learning)
   
   
 主流的定義機器學習
@@ -60,11 +65,14 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
 [人工智慧、機器學習、深度學習是什麼? – Machine Learning 教學系列 (一)](https://blog.gcp.expert/ml-1-ai-ml-deep-learning-intro/)
 
-[機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
 
 [史上最完整機器學習自學攻略！我不相信有人看完這份不會把它加進我的最愛](https://buzzorange.com/techorange/2017/08/21/the-best-ai-lesson/)
 
 [三大類機器學習：監督式、強化式、非監督式](https://ai4dt.wordpress.com/2018/05/25/%E4%B8%89%E5%A4%A7%E9%A1%9E%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%EF%BC%9A%E7%9B%A3%E7%9D%A3%E5%BC%8F%E3%80%81%E5%BC%B7%E5%8C%96%E5%BC%8F%E3%80%81%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F/)
+
+#### 深入學習
+[機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
+
 
 # Overview
 
