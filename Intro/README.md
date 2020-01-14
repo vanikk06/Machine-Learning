@@ -73,6 +73,8 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 #### 深入學習
 [機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
 
+[🎈](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
 
 # Overview
 
