@@ -36,7 +36,7 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
   “Intelligent Agents“ refers to the ability of the computer to **simulate/model human thinking** processes to **imitate human ability or behavior**"
   
-  現在所執行的系統是一種「弱人工智慧」的形式，人工智慧系統可以做一件或是多件事情，而做的程度與人類相當，甚至超越人類
+  現在所執行的人工智慧系統是一種「弱人工智慧」的形式，人工智慧系統可以做一件或是多件事情，而做的程度與人類相當，甚至超越人類
   
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-14_17-35-34.png)
 
@@ -49,7 +49,11 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
     3. 增強式學習（reinforcement learning）
         > 在未知探索與遵從既有知識間取得平衡
           
-- Deep Learning（DL）
+- Deep Learning（DL）：
+
+   "learning data representations with use a cascade of **multiple layers of nonlinear processing unit**"
+   
+   深度學習是機器學習的一個分支，可以被定義為「一種實現機器學習的技術」，此技術被稱為深度神經網路（deep neural networks – DNNs），被安排在模仿人類大腦的圖層，學習模式中的模式（learning patterns of patterns）
 
 #### Source
 [〔資料分析&機器學習〕 第3.1講：Python 機器學習以及Scikit-learn介紹](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC3-1%E8%AC%9B-python-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E4%BB%A5%E5%8F%8Ascikit-learn%E4%BB%8B%E7%B4%B9-fdb052463911)
