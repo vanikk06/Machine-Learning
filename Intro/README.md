@@ -73,7 +73,7 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 #### Learning more
 [機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
 
-[🎈](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+[👁‍🗨](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 
 # Python
@@ -88,13 +88,13 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
    > 識別字
    
    寫程式時需要自行定義的名稱，可使用底線、英文字母、數字和中文，但不可與保留字相同
-    > 自行定義名稱：變數（variable）、函數（function）、類別（class）
+   > 自行定義名稱：變數（variable）、函數（function）、類別（class）
     
    - 保留字：具有語法功能
    ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-15_02-24-53.png)
    [[learning more]](https://www.itread01.com/articles/1506142629.html)
 
-
+[🕑](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
