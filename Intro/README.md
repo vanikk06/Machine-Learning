@@ -91,8 +91,13 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
     > 自行定義名稱：變數（variable）、函數（function）、類別（class）
     
    - 保留字：具有語法功能
+   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-15_02-24-53.png)
+   [[learning more]](https://www.itread01.com/articles/1506142629.html)
 
 
+
+#### Source
+[【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
 
 # Overview
 
