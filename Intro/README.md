@@ -70,7 +70,7 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
 [三大類機器學習：監督式、強化式、非監督式](https://ai4dt.wordpress.com/2018/05/25/%E4%B8%89%E5%A4%A7%E9%A1%9E%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%EF%BC%9A%E7%9B%A3%E7%9D%A3%E5%BC%8F%E3%80%81%E5%BC%B7%E5%8C%96%E5%BC%8F%E3%80%81%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F/)
 
-#### 深入學習
+#### Learning more
 [機器學習跟統計學差在哪？哈佛博士：機器學習重視預測結果，統計學在乎因果推理](https://buzzorange.com/techorange/2019/05/02/difference-between-statistics-and-machine-learning/)
 
 [🎈](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
@@ -84,6 +84,13 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 - Matplotlib：繪圖
 - Scikit-learn：包含機器學習常用的演算法
 
+## Identifier
+   > 識別字
+   
+   寫程式時需要自行定義的名稱，可使用底線、英文字母、數字和中文，但不可與保留字相同
+    > 自行定義名稱：變數（variable）、函數（function）、類別（class）
+    
+   - 保留字：具有語法功能
 
 
 
