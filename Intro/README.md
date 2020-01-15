@@ -325,11 +325,30 @@ b = np.array([4,5,6]
 - `%matplotlib inline`：魔法函式，內嵌繪圖，可以省略`plt.show()`
   > 新版的不一定需要
   
-- `plt.plot()`
+- `plt.plot()`：折線圖
+- `plt.title()`：標題
+- `plt.xlabel`：x軸標籤
+- `plt.ylabel`：y軸標籤
   
   
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
+
+[〔資料分析&機器學習〕 第2.5講：資料視覺化(Matplotlib, Seaborn, Plotly)](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-5%E8%AC%9B-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-matplotlib-seaborn-plotly-75cd353d6d3f)
+
+# zip()
+  > 壓縮
+
+將多個list中對應的元素打包成一個個tuple，返回這些tuples組成的list
+> 若參數長度不等，取短的
+
+
+#### Source
+[Python zip() 函數](https://www.runoob.com/python/python-func-zip.html)
+
+[python zip()函數用法](https://www.itread01.com/content/1516473617.html)
+
+[💬](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 # Overview
 
@@ -337,3 +356,7 @@ b = np.array([4,5,6]
 [8種常見機器學習演算法比較](https://www.itread01.com/content/1541334303.html)
 
 [【機器學習懶人包】從數據分析到模型整合，各種好用的演算法全都整理給你啦！](https://buzzorange.com/techorange/2019/08/13/machine-learning-algorithm-collection/)
+
+[🗨](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+
