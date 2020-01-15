@@ -250,13 +250,17 @@ input → function → output
 > 使用`def`定義函式
 
 - `lambda`：短版的function，不像`def`需要額外命名函數識別字
-```python
-lambda x: x+4
-```
-> x：input\
-x+4：output
+  ```python
+  lambda x: x+4
+  ```
+  > x：input\
+  x+4：output
 
 [🕙](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+## Numpy
+   > 矩陣套件
+   
 
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
