@@ -260,8 +260,44 @@ input → function → output
 
 ## Numpy
    > 矩陣套件
+   >> 操作多維度陣列
    
+```python
+import numpy as np
 
+a = np.array([1,2,3])
+b = np.array([4,5,6]
+```
+- `*`：對應位置相乘
+  > a*b
+  >> array([ 4, 10, 18])
+  
+- `np.dot(x, y)`：x、y之內積
+  > np.dot(a, b)
+  >> 32 = 1x4+2x5+3x6
+  
+- `np.sum()`：總合
+- `np.max()`：最大值
+- `np.min()`：最小值
+- `.size`：個數
+  > a.size
+  >> 3
+- `np.append(x, y)`：在x最後面增加y
+   > np.append(a, b)
+   >> array([1, 2, 3, 4, 5, 6])
+- `np.linspace(x, y, n)`：生成一個x到y，個數為n的等差級數
+   
+[🕚](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+## Matplotlib
+   > 繪圖套件
+   
+- `%matplotlib inline`：魔法函式，內嵌繪圖，可以省略`plt.show()`
+  > 新版的不一定需要
+  
+- `plt.plot()`
+  
+  
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
 
