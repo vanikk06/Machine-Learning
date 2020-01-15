@@ -207,7 +207,42 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
 - 迴圈
   - `for`：指定執行次數
+     ```python
+     sum = 0
+     for x in range(1, 10, 1):
+        sum += x
+     ```
+     > `range(1, count+1, 1)`
+     >> 產生1, 2, ..., count
+     
   - `while`：指定條件
+      
+[🕗](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+## List Comprehensions
+   > 解析式列表
+   
+將某個list轉換成另一個list
+  > e.g.挑選其中某個元素、對某些元素進行轉換
+  
+```python
+even_numbers = [x for x in range(0,5,1) if x%2 == 0]
+square_dict = {x : x*x for x in range(0,5,1)}
+square_set = {x*x for x in [2,-1]}
+
+print('even_numbers:', even_numbers)
+print('square_dict:', square_dict)
+print('square_set:', square_set)    
+```
+輸出：
+```python
+even_numbers: [0, 2, 4]
+square_dict: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+square_set: {1, 4}
+```
+
+[🕘](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
 
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
