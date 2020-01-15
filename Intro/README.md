@@ -1,6 +1,22 @@
 
 # Content
 
+- [Introduction](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#introduction)
+- [Python](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#python)
+    - [Identifier](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#identifier)
+    - [Math Operator](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#math-operator)
+    - [String](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#string)
+    - [List](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#list)
+    - [Tuple](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#tuple)
+    - [Dictionary](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#dictionary)
+    - [Set](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#set)
+    - [Flow Control](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#flow-control)
+    - [List Comprehensions](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#list-comprehensions)
+    - [Function](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#function)
+    - [Numpy](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#numpy)
+    - [Matplotlib](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#matplotlib)
+- [Overview](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#overview)
+
 # Introduction
   > 簡單介紹一下，什麼是機器學習
   >> 要先明白，機器學習並非100%精確的，大多數情況下只是一個很好的猜測，並且需要大量的調整疊代（時間和資源耗費在訓練模型上）
@@ -78,6 +94,20 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
 # Python
   > 基本語法介紹
+  
+- [Identifier](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#identifier)
+- [Math Operator](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#math-operator)
+- [String](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#string)
+- [List](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#list)
+- [Tuple](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#tuple)
+- [Dictionary](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#dictionary)
+- [Set](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#set)
+- [Flow Control](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#flow-control)
+- [List Comprehensions](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#list-comprehensions)
+- [Function](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#function)
+- [Numpy](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#numpy)
+- [Matplotlib](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#matplotlib)
+
 
 在此課堂上會使用的套件：
 - Numpy：矩陣（n-dimensional array）運算
