@@ -315,6 +315,7 @@ b = np.array([4,5,6]
 - `.size`：個數
   > a.size
   >> 3
+- `np.array()`：建立array
 - `np.append(x, y)`：在x最後面增加y
    > np.append(a, b)
    >> array([1, 2, 3, 4, 5, 6])
@@ -331,21 +332,26 @@ b = np.array([4,5,6]
 - `plt.plot()`：折線圖
    > [[learning more]](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html)
     - color
-        - 'g'：green
-        - 'r'：red
-        - 'b'：blue
-        - `c`：cyan（青色）
-        - 'm'：magenta（品紅色）
-        - 'y'：yellow
-        - 'k'：black
-        - 'w'：white
+        - ' g '：green
+        - ' r '：red
+        - ' b '：blue
+        - ' c '：cyan（青色）
+        - ' m '：magenta（品紅色）
+        - ' y '：yellow
+        - ' k '：black
+        - ' w '：white
     - line styles
-        - '-'：solid line（粗線）
-        - '--'：dashed line（虛線）
-        - '-.'：dash-dot line（虛點線）
-        - ':'：dotted line（點線）
+        - ' - '：solid line（粗線）
+        - ' -- '：dashed line（虛線）
+        - ' -. '：dash-dot line（虛點線）
+        - ' : '：dotted line（點線）
     - label：參數，標籤
 - `plt.bar()`：長條圖
+- `plt.hist()`：直方圖
+    - bins：間隔、組界
+    - edgecolor：邊界顏色
+- `plt.scatter`：散佈圖
+  > plt.scatter(x, y, s=大小(20), c=顏色(blue))
 - `plt.title()`：標題
 - `plt.xlabel()`：x軸標籤
 - `plt.ylabel()`：y軸標籤
@@ -354,13 +360,26 @@ b = np.array([4,5,6]
 - `plt.legend()`：圖例
    > plt.legend(loc=9)
    >> loc=9：位置，中間偏上
-
+- `plt.annotate`：註解
+   > plt.annotate(s, xy, xytext, textcoords)
+   >> [[learning more]](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.annotate.html)
+      - s：註解文字內容
+      - xy：被註釋的座標點，二維元组形(x,y)
+        > 把標籤放在對應的點上
+      - xytext：註釋文字的座標點
+      - textcoords：註釋文字的整個座標系屬性
+        > offset points：相對於被註釋點xy的偏移量(單位：點)
+- `plt.axis()`：數字座標軸
+      
+      
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
 
 [〔資料分析&機器學習〕 第2.5講：資料視覺化(Matplotlib, Seaborn, Plotly)](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-5%E8%AC%9B-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-matplotlib-seaborn-plotly-75cd353d6d3f)
 
 [matplotlib.pyplot.plot](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html)
+
+[matplotlib.pyplot.annotate](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.annotate.html)
 
 # zip()
   > 壓縮
