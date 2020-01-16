@@ -345,40 +345,38 @@ b = np.array([4,5,6]
 
 > 若參數長度不等，取短的
 
-   在python3中為了減少內存無法直接顯示zip()
+   在python3中為了減少內存無法直接顯示zip()    
+   ```python
+   a = [1,2,3]
+   b = [4,5,6]
+   c = [7,8,9,10,11]
+   
+   zip(a, b)
+   # 輸出
+   <zip at 0x1b8d8fdde48>   
+   ```
     
-    ```python
-    a = [1,2,3]
-    b = [4,5,6]
-    c = [7,8,9,10,11]
-    
-    zip(a, b)
-    # 輸出
-    <zip at 0x1b8d8fdde48>   
-    ```
-
    可以放到迴圈中顯示
-
-    ```python
-    for i in zip(a,b):
-        print(i)
+   ```python
+   for i in zip(a,b):
+       print(i)
     
-    #輸出
-    (1, 4)
-    (2, 5)
-    (3, 6)
+   #輸出
+   (1, 4)
+   (2, 5)
+   (3, 6)
     ```
    長度不等取短的
    
    ```python
-    for i in zip(a,c):
-        print(i)
+   for i in zip(a,c):
+       print(i)
         
-    #輸出
-    (1, 7)
-    (2, 8)
-    (3, 9)
-    ```
+   #輸出
+   (1, 7)
+   (2, 8)
+   (3, 9)
+   ```
 
 - `zip(*list/tuple)`：表示將參數（list/tuple）分開，按照位置參數傳遞給對應函數
   > 會得到**行列互換**的效果
