@@ -1,5 +1,9 @@
 
 # Content
+- [intro.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/intro.pdf)
+- [Lecture 1.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/Lecture%201.pdf)
+- [Class_01.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/Class_01.ipynb)
+    - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Intro/Class_01.ipynb)
 
 - [Introduction](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#introduction)
 - [Python](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#python)
