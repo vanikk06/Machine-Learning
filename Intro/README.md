@@ -328,15 +328,38 @@ b = np.array([4,5,6]
   > 新版的不一定需要
   
 - `plt.plot()`：折線圖
+   > [[learning more]](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html)
+    - color
+        - 'g'：green
+        - 'r'：red
+        - 'b'：blue
+        - `c`：cyan（青色）
+        - 'm'：magenta（品紅色）
+        - 'y'：yellow
+        - 'k'：black
+        - 'w'：white
+    - line styles
+        - '-'：solid line（粗線）
+        - '--'：dashed line（虛線）
+        - '-.'：dash-dot line（虛點線）
+        - ':'：dotted line（點線）
+    - label：參數，標籤
+- `plt.bar()`：長條圖
 - `plt.title()`：標題
-- `plt.xlabel`：x軸標籤
-- `plt.ylabel`：y軸標籤
-  
-  
+- `plt.xlabel()`：x軸標籤
+- `plt.ylabel()`：y軸標籤
+- `plt.xticks()`：x軸刻度
+   > plt.xticks(刻度, 對應標籤)
+- `plt.legend()`：圖例
+   > plt.legend(loc=9)
+   >> loc=9：位置，中間偏上
+
 #### Source
 [【Python學習筆記之一】Python關鍵字及其總結](https://www.itread01.com/articles/1506142629.html)
 
 [〔資料分析&機器學習〕 第2.5講：資料視覺化(Matplotlib, Seaborn, Plotly)](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-5%E8%AC%9B-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-matplotlib-seaborn-plotly-75cd353d6d3f)
+
+[matplotlib.pyplot.plot](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html)
 
 # zip()
   > 壓縮
@@ -491,6 +514,67 @@ b = np.array([4,5,6]
 [Python 基礎系列 map() 用法解說](https://e8859487.pixnet.net/blog/post/392947555-python-%E5%9F%BA%E7%A4%8E%E7%B3%BB%E5%88%97--map%28%29-%E7%94%A8%E6%B3%95%E8%A7%A3%E8%AA%AA)
 
 [🗯](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+# enumerate()
+  > 枚舉、列舉(字典上)
+  >> 既遍歷索引又遍歷元素
+  
+- enumerate(sequence, start=0)：產生許多索引序列（key, value）的tuple
+  > 組成一個索引序列，可以同時獲索引跟值
+    - sequence：數列
+    - start：index起始，預設從0開始
+
+    無法直接顯示
+    ```python
+    seasons = ['Spring', 'Summer', 'Fall', 'Winter'] 
+    enumerate(seasons)
+
+    #輸出
+    <enumerate at 0x1b8db7c8c60>
+    ```
+    可以使用`list()`協助
+    ```python
+    seasons = ['Spring', 'Summer', 'Fall', 'Winter'] 
+    list(enumerate(seasons))
+    
+    #輸出
+    [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+    ```
+    索引應用
+    ```python
+    list = [1,2,3,4,5,6]
+    for index, value in enumerate(list,1):
+        print("%s,%s" %(index, value))
+
+    #輸出
+    1,1
+    2,2
+    3,3
+    4,4
+    5,5
+    6,6
+    ```
+    > `%s`：一個字串
+
+#### 補充
+若要統計文件行數，可以這樣寫：
+```python
+count = len(open(filepath, 'r').readlines())
+```
+這種方法簡單，但是會比較慢，當文件較大時甚至不能作業
+
+此時可以利用`enumerate()`
+```python
+count = 0
+for index, line in enumerate(open(filepath,'r'))： 
+    count += 1
+```
+#### Source
+[Python enumerate()函數](https://www.runoob.com/python/python-func-enumerate.html)
+
+[python enumerate用法總結](https://blog.csdn.net/churximi/article/details/51648388)
+
+[💭](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 # Overview
 
