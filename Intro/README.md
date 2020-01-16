@@ -15,6 +15,7 @@
     - [Function](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#function)
     - [Numpy](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#numpy)
     - [Matplotlib](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#matplotlib)
+- [zip()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#zip)
 - [Overview](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#overview)
 
 # Introduction
@@ -344,7 +345,8 @@ b = np.array([4,5,6]
 
 > 若參數長度不等，取短的
 
-在python3中為了減少內存無法直接顯示zip()，可放到迴圈中顯示
+   在python3中為了減少內存無法直接顯示zip()
+    
     ```python
     a = [1,2,3]
     b = [4,5,6]
@@ -354,7 +356,9 @@ b = np.array([4,5,6]
     # 輸出
     <zip at 0x1b8d8fdde48>   
     ```
-    
+
+   可以放到迴圈中顯示
+
     ```python
     for i in zip(a,b):
         print(i)
@@ -364,8 +368,9 @@ b = np.array([4,5,6]
     (2, 5)
     (3, 6)
     ```
-    長度不等取短的
-    ```python
+   長度不等取短的
+   
+   ```python
     for i in zip(a,c):
         print(i)
         
