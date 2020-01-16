@@ -340,8 +340,78 @@ b = np.array([4,5,6]
   > 壓縮
 
 將多個list中對應的元素打包成一個個tuple，返回這些tuples組成的list
+> 可同時操作多個list
+
 > 若參數長度不等，取短的
 
+在python3中為了減少內存無法直接顯示zip()，可放到迴圈中顯示
+    ```python
+    a = [1,2,3]
+    b = [4,5,6]
+    c = [7,8,9,10,11]
+    
+    zip(a, b)
+    # 輸出
+    <zip at 0x1b8d8fdde48>   
+    ```
+    
+    ```python
+    for i in zip(a,b):
+        print(i)
+    
+    #輸出
+    (1, 4)
+    (2, 5)
+    (3, 6)
+    ```
+    長度不等取短的
+    ```python
+    for i in zip(a,c):
+        print(i)
+        
+    #輸出
+    (1, 7)
+    (2, 8)
+    (3, 9)
+    ```
+
+- `zip(*list/tuple)`：表示將參數（list/tuple）分開，按照位置參數傳遞給對應函數
+  > 會得到**行列互換**的效果
+  
+  ```python
+  a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+  
+  for i in zip(*a):
+    print(i)
+  
+  #輸出
+  (1, 4, 7)
+  (2, 5, 8)
+  (3, 6, 9)
+  ```
+  可再通過`map()`將tuple轉換為list
+  ```python
+  for i in map(list,zip(*a)):
+    print(i)
+    
+  #輸出
+  [1, 4, 7]
+  [2, 5, 8]
+  [3, 6, 9]
+  ```
+  
+其他應用
+    
+    ```python
+    x = [1,2,3]
+    for i in zip(*[x]*3):
+        print(i)
+    
+    #輸出
+    (1, 1, 1)
+    (2, 2, 2)
+    (3, 3, 3)
+    ```
 
 #### Source
 [Python zip() 函數](https://www.runoob.com/python/python-func-zip.html)
