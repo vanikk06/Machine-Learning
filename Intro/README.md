@@ -339,10 +339,9 @@ b = np.array([4,5,6]
 
 # zip()
   > 壓縮
+  >> 可同時操作多個list
 
 將多個list中對應的元素打包成一個個tuple，返回這些tuples組成的list
-> 可同時操作多個list
-
 > 若參數長度不等，取短的
 
    在python3中為了減少內存無法直接顯示zip()    
@@ -424,8 +423,12 @@ b = np.array([4,5,6]
 [💬](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 # map()
-  > 對物件內每個元素做處理
+  > 映射
+  >> 對物件內每個元素做處理
   
+- map(function, iterable,...)：對iterable內每個元素調用function，返回一個新list
+
+
 #### Source
 [Python map() 函数](https://www.runoob.com/python/python-func-map.html)
 
