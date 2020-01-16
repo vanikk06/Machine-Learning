@@ -16,6 +16,7 @@
     - [Numpy](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#numpy)
     - [Matplotlib](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#matplotlib)
 - [zip()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#zip)
+- [map()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#map)
 - [Overview](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#overview)
 
 # Introduction
@@ -428,6 +429,61 @@ b = np.array([4,5,6]
   
 - map(function, iterable,...)：對iterable內每個元素調用function，返回一個新list
 
+   與`zip()`相同無法直接顯示
+   ```python
+   a = ['1', '2', '3']
+   map(int, a)
+   
+   #輸出
+   <map at 0x1b8db4f7400>
+   ```
+   放到迴圈中顯示
+   ```python
+   a = ['1', '2', '3']
+   for i in map(int, a):
+       print(i, type(i))
+       
+   #輸出
+   1 <class 'int'>
+   2 <class 'int'>
+   3 <class 'int'>
+   ```
+   
+   也可以自行定義函式
+   ```python
+   def square(x):
+       return x**2
+       
+   for i in map(square, [1,2,3,4,5]):
+       print(i)
+       
+   #輸出
+   1
+   4
+   9
+   16
+   25
+   ```
+   或使用`lambda function`來定義簡易的函式
+   ```python
+   for i in map(lambda x: x**2, [1,2,3,4,5]):
+       print(i)
+       
+   #輸出
+   1
+   4
+   9
+   16
+   25
+   ```
+   或使用解析式列表的方式
+   ```python
+   b = [x**2 for x in [1,2,3,4,5]]
+   b
+   
+   #輸出
+   [1, 4, 9, 16, 25]
+   ```
 
 #### Source
 [Python map() 函数](https://www.runoob.com/python/python-func-map.html)
