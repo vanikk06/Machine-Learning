@@ -423,6 +423,16 @@ b = np.array([4,5,6]
 
 [💬](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
+# map()
+  > 對物件內每個元素做處理
+  
+#### Source
+[Python map() 函数](https://www.runoob.com/python/python-func-map.html)
+
+[Python 基礎系列 map() 用法解說](https://e8859487.pixnet.net/blog/post/392947555-python-%E5%9F%BA%E7%A4%8E%E7%B3%BB%E5%88%97--map%28%29-%E7%94%A8%E6%B3%95%E8%A7%A3%E8%AA%AA)
+
+[🗯](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
 # Overview
 
 #### Source
