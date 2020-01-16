@@ -373,7 +373,13 @@ b = np.array([4,5,6]
    - textcoords：註釋文字的整個座標系屬性
      > offset points：相對於被註釋點xy的偏移量(單位：點)
 - `plt.axis()`：數字座標軸
-      
+    
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-17_02-45-09.png)
+
+-  Figure vs. Axes vs. Axis
+   - Figure：含Axes(被畫出來的東西)和canvas(畫布)
+   - Axes：是figure上面一個區塊呈現資料的地方(畫出來的東西)
+   - Axis：數字座標軸，產生座標上面的ticks，也能決定tick的位置與格式
       
 #### Source
 [〔資料分析&機器學習〕 第2.5講：資料視覺化(Matplotlib, Seaborn, Plotly)](https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-5%E8%AC%9B-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96-matplotlib-seaborn-plotly-75cd353d6d3f)
