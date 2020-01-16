@@ -405,16 +405,16 @@ b = np.array([4,5,6]
   
 其他應用
     
-    ```python
-    x = [1,2,3]
-    for i in zip(*[x]*3):
-        print(i)
-    
-    #輸出
-    (1, 1, 1)
-    (2, 2, 2)
-    (3, 3, 3)
-    ```
+   ```python
+   x = [1,2,3]
+   for i in zip(*[x]*3):
+       print(i)
+   
+   #輸出
+   (1, 1, 1)
+   (2, 2, 2)
+   (3, 3, 3)
+   ```
 
 #### Source
 [Python zip() 函數](https://www.runoob.com/python/python-func-zip.html)
