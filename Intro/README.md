@@ -609,6 +609,7 @@ for index, line in enumerate(open(filepath,'r'))：
 [💭](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
 # Overview
+  > 機器學習：電腦利用數據自主學習並優化性能
 
 #### Source
 [8種常見機器學習演算法比較](https://www.itread01.com/content/1541334303.html)
