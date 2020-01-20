@@ -76,3 +76,19 @@
 [numpy.random.randn()用法](https://blog.csdn.net/u012149181/article/details/78913167)
 
 [👣👣](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## Markdown
+  > 筆記
+  
+- 數學函式：LaTex語法
+  > [Learning more](http://mohu.org/info/symbols/symbols.htm)
+   - 隨文模式：在前後各加上一個"$"
+   - 置中強調：在前後各加上兩個"$$"
+   
+#### Source
+[常用数学符号的 LaTeX 表示方法](http://mohu.org/info/symbols/symbols.htm)
+
+[使用Markdown輸出LaTex數學公式](https://www.jishuwen.com/d/2BU6/zh-tw)
+
+[🧠](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
