@@ -9,7 +9,7 @@
   
   
 # week 1
-  > tips：Shift ＋ Tab可以查看函式的說明文件
+  > tips：Shift + Tab可以查看函式的說明文件
 
 
 在終端機的Unix指令
