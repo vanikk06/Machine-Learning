@@ -67,4 +67,11 @@
 [👣](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
    
    
+### numpy.random
+    > numpy的隨機函數
    
+   
+#### Source
+[numpy.random.randn()用法](https://blog.csdn.net/u012149181/article/details/78913167)
+
+[👣👣](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
