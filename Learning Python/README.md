@@ -68,7 +68,7 @@
    
    
 ### numpy.random
-    > numpy的隨機函數
+ > numpy的隨機函數
    
    
 #### Source
