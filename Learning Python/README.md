@@ -87,9 +87,14 @@
    - 隨文模式：在前後各加上一個"$"
    - 置中強調：在前後各加上兩個"$$"
    
+   
+  也可使用`SymPy`符號型計算套件，讓數學式子變漂亮
+   
 #### Source
 [常用数学符号的 LaTeX 表示方法](http://mohu.org/info/symbols/symbols.htm)
 
 [使用Markdown輸出LaTex數學公式](https://www.jishuwen.com/d/2BU6/zh-tw)
+
+[IPython 的 Notebook 界面](https://yenlungblog.wordpress.com/2013/11/21/python-ipython-%E7%9A%84-notebook-%E7%95%8C%E9%9D%A2/)
 
 [🧠](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
