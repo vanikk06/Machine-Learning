@@ -89,6 +89,13 @@
    
    
   也可使用`SymPy`符號型計算套件，讓數學式子變漂亮
+  ```python
+  from sympy import *
+
+  x = symbols('x')
+  init_printing()
+  (sin(x)*(1+x)**2)/(2*x**2+3)
+  ```
    
 #### Source
 [常用数学符号的 LaTeX 表示方法](http://mohu.org/info/symbols/symbols.htm)
