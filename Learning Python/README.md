@@ -7,6 +7,7 @@
     - [Magic Commend](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#magic-commend)
        - [numpy.random](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpyrandom)
     - [Markdown](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#markdown)
+    - [Interactive](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#interactive)
   
   
   
