@@ -123,6 +123,7 @@ machine learning是人工智慧的一個分支，人工智慧是一個較廣泛�
 
 ## Identifier
    > 識別字
+   >> Python3 Unicode
    
 寫程式時需要自行定義的名稱，可使用底線、英文字母、數字和中文，但不可與保留字相同
 > 自行定義名稱：變數（variable）、函數（function）、類別（class）
