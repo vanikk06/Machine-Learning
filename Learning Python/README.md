@@ -91,6 +91,8 @@
      - np.random.randn(a)：一維array含a個元素
      - np.random.randn(a,b)：axb的二維array含axb個元素
      - np.random.randn(a,b,c)：a個bxc的二維array含ax(bxc)個元素
+     
+   [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrandn)
     
 
 #### np.random.rand()
@@ -134,7 +136,7 @@ array([[[0.6313557 , 0.89408194, 0.15488604, 0.06782768],
 三個參數（a,b,c）時，會返回a個bxc的二維array含ax(bxc)個元素
 
 #### np.random.randn()
-生成具**常態分配**的隨機數據
+生成具**常態分配**的隨機數據，用法與`rand()`相似
 
 ```python
 import numpy as np
