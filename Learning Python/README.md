@@ -71,8 +71,27 @@
    
 ### numpy.random
  > numpy的隨機函數
-   
-   
+ 
+```python
+import numpy as np
+```
+
+先匯入`numpy`套件，因隨機函式的（random）功能較多，下面個別整理介紹
+
+- `np.random.rand()`：`rand`根據給定的維度，生成\[0, 1)之間的隨機數據
+   > 包含
+
+
+####
+
+####
+
+####
+
+####
+
+####
+
 #### Source
 [numpy.random.randn()用法](https://blog.csdn.net/u012149181/article/details/78913167)
 
