@@ -359,3 +359,12 @@ array([0.79172504, 0.52889492, 0.56804456, 0.92559664, 0.07103606])
 [IPython 的 Notebook 界面](https://yenlungblog.wordpress.com/2013/11/21/python-ipython-%E7%9A%84-notebook-%E7%95%8C%E9%9D%A2/)
 
 [🧠](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## Interactive
+   > 與python互動
+
+- `input()`：可在()內打入預期使用者輸入的提示
+  > 輸入內容會被認為是**字串**
+  
+[👄](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
