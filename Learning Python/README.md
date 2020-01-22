@@ -93,7 +93,18 @@
      - np.random.randn(a,b,c)：a個bxc的二維array含ax(bxc)個元素
      
    [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrandn)
+   
+- `np.random.randint(low, high=None, size=None, dtype='l')`：根據給定的維度，生成隨機**整數**
+   > 範圍：\[low,high），包含low，不包含high
+   - 參數
+     - low：最小值
+     - high：最大值
+       > 無此參數時，預設生成隨機數範圍為[0，low)
+       >> 包含0，不包含low
+     - size：維度大小
+     - dtype：數據類型，預設為np.int
     
+   []()
 
 #### np.random.rand()
 生成\[0, 1)之間的隨機數據，包含0，不包含1
@@ -178,7 +189,46 @@ array([[[ 0.65364026, -0.08915495,  0.90087165,  1.40248666],
 ```
 三個參數（a,b,c）時，會返回a個bxc的二維array含ax(bxc)個元素
 
-####
+#### np.random.randint()
+生成隨機**整數**
+
+```python
+import numpy as np
+
+np.random.randint()
+#輸出
+TypeError: randint() takes at least 1 positional argument (0 given)
+```
+不可無參數，至少要有一個參數low
+
+```python
+np.random.randint(3) #int
+#輸出
+2
+```
+產生一個\[0, 3)之間的隨機整數
+
+```python
+np.random.randint(1, 5)
+#輸出
+3
+```
+產生一個\[1,5)之間的隨機整數
+
+```python
+np.random.randint(2, size=5)
+#輸出
+array([1, 0, 1, 1, 0])
+```
+產生一維array含5個元素，元素為\[0,2)之間的隨機整數
+
+```python
+np.random.randint(1, 5, size=(2,2))
+#輸出
+array([[3, 2],
+       [2, 4]])
+```
+產生二為array含2x2個元素，元素為\[1,5)之間的隨機整數
 
 ####
 
