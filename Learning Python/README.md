@@ -4,6 +4,7 @@
   >> [github](https://github.com/yenlung/Python-3-Data-Analysis-Basics)
   
 - [week 1](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-1)
+  [👉🏻CODE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_1.ipynb)
     - [Magic Commend](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#magic-commend)
        - [numpy.random](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpyrandom)
     - [Markdown](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#markdown)
@@ -12,14 +13,14 @@
   
   
 # week 1
-  > tips：Shift + Tab可以查看函式的說明文件
-
+ 
+ [👉🏻CODE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_1.ipynb)
 
 在終端機的Unix指令
   - pwd：顯示當前路徑
   - dir：列出當前目錄所有的檔案
 
-p.s. python函式介紹
+python函式說明文件
    - shift + tab：簡短提示
    - ?：完整提示
    
