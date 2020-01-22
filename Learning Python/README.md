@@ -83,7 +83,15 @@
      - np.random.rand(a,b,c)：a個bxc的二維array含ax(bxc)個元素
    
    [✍](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrand)
-
+    
+- `np.random.randn()`：`randn`根據給定的維度，生成具**常態分配**的隨機數據，返回指定維度的array
+    > 常態分配（standard normal distribution）：平均值為0，標準差為1，可記為N(0,1)
+    >> [Learning more](https://blog.csdn.net/zenghaitao0128/article/details/78556535#1nprandomrandn%E5%87%BD%E6%95%B0)
+   - 參數
+     - np.random.randn(a)：一維array含a個元素
+     - np.random.randn(a,b)：axb的二維array含axb個元素
+     - np.random.randn(a,b,c)：a個bxc的二維array含ax(bxc)個元素
+    
 
 #### np.random.rand()
 生成\[0, 1)之間的隨機數據，包含0，不包含1
@@ -125,7 +133,48 @@ array([[[0.6313557 , 0.89408194, 0.15488604, 0.06782768],
 ```
 三個參數（a,b,c）時，會返回a個bxc的二維array含ax(bxc)個元素
 
-####
+#### np.random.randn()
+生成具**常態分配**的隨機數據
+
+```python
+import numpy as np
+
+np.random.randn() #返回float
+#輸出
+0.3912826547253317
+```
+沒有參數時，會返回一個float
+
+```python
+np.random.randn(5)
+#輸出
+array([-1.24274572,  1.59948307,  2.47441941, -0.33232485,  0.77714652])
+```
+一個參數（a）時，會返回一維的array含a個元素
+
+```python
+np.random.randn(5, 2)
+#輸出
+array([[ 0.09035118, -0.18659747],
+       [ 0.74325857, -0.41917807],
+       [ 0.00496046, -0.83355727],
+       [-0.37935889, -0.54362249],
+       [ 1.08361763,  0.12180609]])
+```
+兩個參數（a,b）時，會返回axb的二維array含axb個元素
+
+```python
+np.random.randn(2, 3, 4)
+#輸出
+array([[[ 0.65364026, -0.08915495,  0.90087165,  1.40248666],
+        [ 0.21768255, -0.08359946, -1.83797562, -0.20606241],
+        [ 0.04215544, -1.40456061,  1.97969053, -0.59401942]],
+
+       [[ 0.98821644,  0.18310407,  0.92399299,  0.53317198],
+        [-0.58513304, -0.56053692,  0.14077318,  1.76760095],
+        [-0.78777374, -0.06172207,  0.23842679,  0.07477245]]])
+```
+三個參數（a,b,c）時，會返回a個bxc的二維array含ax(bxc)個元素
 
 ####
 
