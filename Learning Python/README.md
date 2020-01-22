@@ -79,10 +79,10 @@
    >> 返回指定維度array
    - 參數
      - np.random.rand(a)：一維array含a個元素
-     - np.random.rand(a,b)：$axb$的二維array含$axb$個元素
-     - np.random.rand(a,b,c)：a個$bxc$的二維array含$ax(bxc)$個元素
+     - np.random.rand(a,b)：axb的二維array含axb個元素
+     - np.random.rand(a,b,c)：a個bxc的二維array含ax(bxc)個元素
    
-   []()
+   [✍](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrand)
 
 
 #### np.random.rand()
@@ -110,7 +110,7 @@ np.random.rand(2, 3)
 array([[0.6852195 , 0.20445225, 0.87811744],
        [0.02738759, 0.67046751, 0.4173048 ]])
 ```
-兩個參數（a,b）時，會返回$axb$的二維array含$axb$個元素
+兩個參數（a,b）時，會返回axb的二維array含axb個元素
 
 ```python
 np.random.rand(2, 3, 4)
@@ -123,7 +123,7 @@ array([[[0.6313557 , 0.89408194, 0.15488604, 0.06782768],
         [0.66737157, 0.99489922, 0.56893378, 0.31914287],
         [0.75160793, 0.35091326, 0.52836748, 0.29405289]]])
 ```
-三個參數（a,b,c）時，會返回a個$bxc$的二維array含$ax(bxc)$個元素
+三個參數（a,b,c）時，會返回a個bxc的二維array含ax(bxc)個元素
 
 ####
 
