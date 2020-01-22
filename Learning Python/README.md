@@ -104,7 +104,17 @@
      - size：維度大小
      - dtype：數據類型，預設為np.int
     
-   []()
+   [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrandint)
+   
+- `np.random.choice(a, size=None, replace=True, p=None)`：從**給定的一維數組中**產生隨機數
+   - 參數
+      - a：一組數組
+        > 若a為整數，則數組為對應的np.arange(a)
+      - size：維度大小
+      - replace：是否有重複值
+      - p：數組內元素的比重
+        > 長度需與a相同\
+        > 元素為機率：介於0-1之間，總和需為1
 
 #### np.random.rand()
 生成\[0, 1)之間的隨機數據，包含0，不包含1
@@ -230,7 +240,67 @@ array([[3, 2],
 ```
 產生二為array含2x2個元素，元素為\[1,5)之間的隨機整數
 
-####
+#### np.random.choice()
+從**給定的一維數組**中生成隨機數
+
+```python
+import numpy as np
+
+np.random.choice()
+#輸出
+TypeError: choice() takes at least 1 positional argument (0 given)
+```
+至少要有一個參數
+
+```python
+np.random.choice(5)
+#輸出
+4
+
+np.arange(5)
+#輸出
+array([0, 1, 2, 3, 4])
+```
+當一個整數參數（a）時，會產生一個0到a-1之間的隨機數
+
+```python
+np.random.choice(5,3)
+#輸出
+array([0, 3, 3])
+```
+產生一維array3個0到5-1之間的隨機數
+
+```python
+np.random.choice(5,3,replace=False) #不生成重複值
+#輸出
+array([1, 3, 0])
+```
+產生一維array含3個0到5-1之間互不相同的隨機數
+
+```python
+np.random.choice(5, size=(2,2))
+#輸出
+array([[4, 1],
+       [2, 1]])
+```
+產生二維array含2x2個0到5-1之間的隨機數
+
+```python
+demo_list = ['lenovo', 'sansumg','moto','xiaomi', 'iphone']
+np.random.choice(demo_list,size=(3,3))
+#輸出
+array([['xiaomi', 'moto'],
+       ['iphone', 'moto']], dtype='<U7')
+```
+產生二為array含2x2個demo_list中隨機挑選的元素
+
+```python
+demo_list = ['lenovo', 'sansumg','moto','xiaomi', 'iphone']
+np.random.choice(demo_list,size=(2,2), p=[0.1,0.6,0.1,0.1,0.1])
+#輸出
+array([['moto', 'sansumg'],
+       ['sansumg', 'sansumg']], dtype='<U7')
+```
 
 ####
 
