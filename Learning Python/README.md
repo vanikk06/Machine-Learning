@@ -8,6 +8,8 @@
        - [numpy.random](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpyrandom)
     - [Markdown](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#markdown)
     - [Interactive](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#interactive)
+    
+- [week 2](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-2)
   
   
   
@@ -376,3 +378,4 @@ array([0.79172504, 0.52889492, 0.56804456, 0.92559664, 0.07103606])
 
 
 # week 2
+python基本操作
