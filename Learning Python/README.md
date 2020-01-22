@@ -122,6 +122,7 @@
      - 當設置相同的`seed()`時，每次生成的隨機數相同
      - 當不設置`seed()`時，每次生成不同的隨機數
       
+     [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomseed)
 #### np.random.rand()
 生成\[0, 1)之間的隨機數據，包含0，不包含1
 
