@@ -444,4 +444,37 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 
 [🗣](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
+## list()
+   > 快速稱成list
+   
+- `list()`：產生一個list
 
+    可搭配`range()`函式，產生一組有順序的數列
+    > range()無法直接顯示
+     ```python
+     range(10)
+     #輸出
+     range(0, 10)
+     ```
+     
+     ```python
+     list(range(10))
+     #輸出
+     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+     
+     list(range(3,15)) #取頭不取尾
+     #輸出
+     [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+     ```
+     
+     也可放入字串
+     ```python
+     list('ABCDEF')
+     #輸出
+     ['A', 'B', 'C', 'D', 'E', 'F']
+     ```
+     
+[🧞‍♂️](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+     
+     
+     
