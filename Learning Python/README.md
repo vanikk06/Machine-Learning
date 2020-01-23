@@ -11,6 +11,7 @@
 
 - [week 2](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-2)
   - [Format](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#format)
+  - [Function](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#function)
   
   
   
