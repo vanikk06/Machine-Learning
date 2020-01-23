@@ -381,6 +381,9 @@ array([0.79172504, 0.52889492, 0.56804456, 0.92559664, 0.07103606])
 
 
 # week 2
+
+[👉🏼HERE👈🏼](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_2.ipynb)
+
 python基本操作
 
 ## Format
