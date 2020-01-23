@@ -434,6 +434,13 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 
 [👤](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
+## Cutting String
+   > 與list相同
+   
+切割方式與list相同（中文字串也可處理）
+- index從零開始
+- 使用`:`時，取頭不取尾
 
+[🗣](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
 
