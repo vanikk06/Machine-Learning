@@ -4,13 +4,13 @@
   >> [github](https://github.com/yenlung/Python-3-Data-Analysis-Basics)
   
 - [week 1](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-1)
-    - [Magic Commend](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#magic-commend)
-       - [numpy.random](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpyrandom)
-    - [Markdown](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#markdown)
-    - [Interactive](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#interactive)
-    
+  - [Magic Commend](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#magic-commend)
+     - [numpy.random](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpyrandom)
+  - [Markdown](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#markdown)
+  - [Interactive](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#interactive)
+
 - [week 2](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-2)
-    - [Format](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#format)
+  - [Format](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#format)
   
   
   
