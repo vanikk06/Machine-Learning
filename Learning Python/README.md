@@ -424,7 +424,13 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 
 [👥](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
+## Function
+   > 函式
+   
+- `return`：函式內，設定回傳值
+- `print()`：打印，無回傳值
 
+[👤](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
 
 
