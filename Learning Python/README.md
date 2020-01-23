@@ -13,7 +13,7 @@
   - [Format](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#format)
   - [Function](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#function)
   - [Cutting String](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#cutting-string)
-  - [list](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#list)
+  - [list()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#list)
   
   
 # week 1
