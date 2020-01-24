@@ -480,4 +480,15 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 [🧞‍♂️](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
      
      
-     
+# week 3
+  > numpy、向量化...
+
+
+## numpy package
+- numpy套件：應用於科學計算、數據分析
+  > 主要型態：array
+  
+  - **array oriented**：陣列導向的程式設計方式（數據分析中的重要概念）
+     > 少用迴圈，多用array
+
+## 
