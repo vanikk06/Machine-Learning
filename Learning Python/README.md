@@ -16,7 +16,9 @@
   - [list()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#list)
   
 - [week 3](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-3)
-  - [Git & Linux & SQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#git--linux--sql)
+  - [Git](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#git)
+  - [Linux](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linux)
+  - [MySQL vs. NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#mysql-vs-nosql)
   - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
   
   
