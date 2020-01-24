@@ -16,6 +16,7 @@
   - [list()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#list)
   
 - [week 3](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-3)
+  - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
   
   
 # week 1
