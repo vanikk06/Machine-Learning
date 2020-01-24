@@ -487,26 +487,41 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 # week 3
   > numpy、向量化...
 
-## Git & Linux & SQL
-
-
-#### Git
+## Git
   > [Learning more_video](https://www.youtube.com/watch?v=4eOOZeL2WJ4&list=PLRxMjOjh7Y5d_eRLWr-DaujfI2YHgCqIf&index=1)
   
   > [Learning more_book](https://gitbook.tw/)
   
-#### Linux
 
-#### MySQL vs. NoSQL
   
 #### Source
-[]()
+[你知道 Git 是怎麼一回事嗎](https://www.youtube.com/watch?v=LgTf7m5B0xA)
 
 [Git和Github小白入门教程1，什么是Git，Github？](https://www.youtube.com/watch?v=4eOOZeL2WJ4&list=PLRxMjOjh7Y5d_eRLWr-DaujfI2YHgCqIf&index=1)
 
 [為你自己學 Git](https://gitbook.tw/)
 
+[🎰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## Linux
+
+#### Source
+[第一章、Linux是什麼與如何學習](http://linux.vbird.org/linux_basic/0110whatislinux.php)
+
+[Linux是什麼？從網站開發到物聯網無所不在的OS作業系統介紹。](https://progressbar.tw/posts/113)
+
+[Linux系統介紹](http://neuron.csie.ntust.edu.tw/homework/94/os/homework/homework1/A9415061_2/linux.htm)
+
 [🕹](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## MySQL vs. NoSQL
+
+#### Source
+
+[📢](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
 
 ## numpy package
 - numpy套件：應用於科學計算、數據分析
