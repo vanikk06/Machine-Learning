@@ -494,7 +494,27 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
   
   > [Learning more_book](https://gitbook.tw/)
   
+Git是一種**分散式版本的版本控制系統**，是為了更好管理Linux內核而開發的
+> 將檔案狀態作為更新歷史紀錄保存
 
+- 版本控制系統（Version Control System）
+    - 版本：在一個目錄下，不管是新增、刪除檔案，或是修改檔案內容，只要是對目錄下的檔案做出更動，都稱為一個版本
+    - 版本控制系統：是指會記錄這些所有的狀態變化，並且可以隨時切換到過去某個「版本」時候的狀態
+
+
+Git優點：
+  1. 免費、開源：
+     Git是由Linux核心的作者Linus Torvalds在2005年為了管理Linux核心程式碼，僅花了10天所開發出來的，除了可免費使用外，整個Git的原始程式碼也可在網路上取得。
+  2. 速度快、檔案體積小：
+     Git特別之處在於它並不是記錄版本的差異（大部分版本控制系統為此），而是記錄檔案內容的「快照」（snapshot），它讓Git可以非常快速的切換版本。
+  3. 分散式系統：
+  
+
+#### Git vs. GitHub
+
+兩者並不相同，很多新手容易誤解，以為Git就是GitHub（或是以為GitHub就是Git）
+- Git：一種工具，一款版本控制軟體
+- GitHub：一個商業網站，其本體是一個Git伺服器，在GitHub上的應用程式可以透過Web介面來操作一些原本需要複雜的Git指令才能做到的事
   
 #### Source
 [你知道 Git 是怎麼一回事嗎](https://www.youtube.com/watch?v=LgTf7m5B0xA)
@@ -502,6 +522,10 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 [Git和Github小白入门教程1，什么是Git，Github？](https://www.youtube.com/watch?v=4eOOZeL2WJ4&list=PLRxMjOjh7Y5d_eRLWr-DaujfI2YHgCqIf&index=1)
 
 [為你自己學 Git](https://gitbook.tw/)
+
+[什麼是 Git？為什麼要學習它？](https://gitbook.tw/chapters/introduction/what-is-git.html)
+
+[連猴子都能懂的Git入門指南](https://backlog.com/git-tutorial/tw/intro/intro1_1.html)
 
 [🎰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
