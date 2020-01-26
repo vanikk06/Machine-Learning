@@ -577,6 +577,16 @@ Linux特色：
 ## MySQL vs. NoSQL
 
 #### Source
+[在 NoSQL 和傳統關聯式資料庫之間做出決定](https://navicat.com/cht/company/aboutus/blog/1002-deciding-between-nosql-and-traditional-relational-databases.html)
+
+[從 SQL 到 NoSQL 悟人生](https://medium.com/@diagonalyang/https-medium-com-diagonalyang-sqlvsnosql-11b65f2e1659)
+
+[快速認識4類主流NoSQL資料庫](https://www.ithome.com.tw/news/92507)
+
+[了解NoSQL不可不知的5項觀念](https://www.ithome.com.tw/news/92506)
+
+[什麼是 NoSQL？](https://aws.amazon.com/tw/nosql/)
+
 
 [📢](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
