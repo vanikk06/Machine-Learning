@@ -517,7 +517,8 @@ Git優點：
 
 兩者並不相同，很多新手容易誤解，以為Git就是GitHub（或是以為GitHub就是Git）
 - Git：一種工具，一款版本控制軟體
-- GitHub：一個商業網站，其本體是一個Git伺服器，在GitHub上的應用程式可以透過Web介面來操作一些原本需要複雜的Git指令才能做到的事
+- GitHub：一個商業網站，其本體是一個Git伺服器
+  > 在GitHub上的應用程式可以透過Web介面來操作一些原本需要複雜的Git指令才能做到的事
   
 #### Source
 [你知道 Git 是怎麼一回事嗎](https://www.youtube.com/watch?v=LgTf7m5B0xA)
