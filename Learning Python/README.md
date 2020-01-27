@@ -587,6 +587,10 @@ Linux特色：
 
 [什麼是 NoSQL？](https://aws.amazon.com/tw/nosql/)
 
+[大數據怎麼存-MySQL?NoSQL?](https://1fly2sky.wordpress.com/2015/10/30/%E5%A4%A7%E6%95%B8%E6%93%9A%E6%80%8E%E9%BA%BC%E5%AD%98-mysqlnosql/)
+
+[閃開！讓專業的來：SQL 與 NoSQL](https://ithelp.ithome.com.tw/articles/10187443)
+
 
 [📢](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
