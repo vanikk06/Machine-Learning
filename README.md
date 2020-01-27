@@ -10,7 +10,7 @@
 - [Intro](https://github.com/vanikk06/Machine-Learning#intro)
 
 # Learning Python
-[👉HERE👈](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python)
+[👉🏽HERE👈🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python)
 
 
 [👩🏻‍⚕️👨🏻‍⚕️](https://github.com/vanikk06/Machine-Learning#content)
