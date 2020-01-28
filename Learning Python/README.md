@@ -591,18 +591,26 @@ MySQL為關聯式資料庫（RDBMS）的一種，具有較久的歷史（自1970
 
 - SQL（Structured Query Language）：一個拿來查詢資料庫的**語言**，並非資料庫系統（MySQL才是一個資料庫系統）
 
-優點：
-1. 事務處理，保持數據的一致性
+RDBMS優點：
+1. 標準符合性（ACID）：透過精確
+      - 單元性（Atomicity）：不可分割性，要做大家都做，出問題就回到原始狀態
+      - 一致性（Consistency）：大家的狀態保持一致
+      - 獨立性（Isolation）：一件事情的執行不會被干擾
+      - 持久性（Durability）：數據被操作之後是不可逆的
 2. 以標準化為前提，數據更新的開銷很小
 3. 可進行較SQL較複雜的指令查詢
+4. 發展較久，較為成熟
 
 #### NoSQL
   > Not Only SQL、non-relational\
-  > 具備彈性資料模型的高效能非關聯式資料庫\
+  > 具備彈性資料模型的高效能非關聯式資料庫
   >> [快速認識4類主流NoSQL資料庫](https://www.ithome.com.tw/news/92507)\
   >> [什麼是 NoSQL？](https://aws.amazon.com/tw/nosql/)
 
 與RDBMS最大的差別，在於沒有一套固定的規則，較為彈性（但相對查詢資料的速度較慢）
+
+NoSQL優點：
+
 
 #### Source
 [在 NoSQL 和傳統關聯式資料庫之間做出決定](https://navicat.com/cht/company/aboutus/blog/1002-deciding-between-nosql-and-traditional-relational-databases.html)
