@@ -577,7 +577,7 @@ Linux特色：
 ## MySQL vs. NoSQL
 
 - [MySQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#mysql)
-- [NoSQL]()
+- [NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nosql)
 
 #### MySQL
   > RDBMS
