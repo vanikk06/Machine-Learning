@@ -21,7 +21,8 @@
   - [MySQL vs. NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#mysql-vs-nosql)
   - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
   
-  
+ ---
+ 
 # week 1
  
  [👉🏻HERE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_1.ipynb)
