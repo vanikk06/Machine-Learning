@@ -386,7 +386,7 @@ array([0.79172504, 0.52889492, 0.56804456, 0.92559664, 0.07103606])
   
 [👄](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
-
+---
 # week 2
 
 [👉🏼HERE👈🏼](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_2.ipynb)
@@ -486,6 +486,7 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
      
 [🧞‍♂️](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
      
+---
      
 # week 3
   > numpy、向量化...
