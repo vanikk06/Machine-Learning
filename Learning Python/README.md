@@ -676,3 +676,7 @@ NoSQL觀念：
 [🎮](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
  
+## Import
+   > 匯入套件
+   
+[🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
