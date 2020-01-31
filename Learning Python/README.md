@@ -42,6 +42,7 @@ python函式說明文件
    >> 一開始皆為"%"
    
 - `%pylab inline`：簡化版的魔術指令，除了可以使用`Matplotlib`、`NumPy`套件畫圖，還可以進行數學運算
+   > 讀入很多套件，並且使用很多混合的方式讀入matplotlib與numpy
     - pylab：python的實驗室
     - inline：畫圖時，直接於瀏覽器顯示
     
