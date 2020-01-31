@@ -585,7 +585,7 @@ Linux特色：
 
 
 
-#### MySQL
+#### § MySQL §
   > RDBMS（關聯式資料庫管理系統）
   >> 可使用SQL
   
@@ -620,7 +620,7 @@ RDBMS優點：
 4. 龐大營運成本的考量：於硬體、軟體和人力成本上能大幅度的降低
     > RDBMS隨著系統的規模，成本會不斷的上升且價格驚人
 
-#### NoSQL
+#### § NoSQL §
   > Not Only SQL、non-relational\
   > 具備彈性資料模型的高效能非關聯式資料庫
   >> [快速認識4類主流NoSQL資料庫](https://www.ithome.com.tw/news/92507)\
