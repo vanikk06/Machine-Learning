@@ -726,6 +726,33 @@ P.S.小心"random"與"numpy.random"隨機數選取的範圍不同
 [🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
 ### print()
+  > 打印函式
+  
+`print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)`
+- end：文末符
+- sep：分隔符
+  
 
+預設在打印字串後，文末會加上「換行符號」，若想要更改換行的預設，可使用`end`參數
+```python
+print('a')
+print('b',  end='.')
+print('c', end='/')
+#輸出
+a
+b.c/
+```
+在打印多個字串時，預設會使用「空格」將多個字串串成一行，可使用`sep`參數改變分隔符
+```python
+print('a', 'b', 'c', sep='/')
+#輸出
+a/b/c
+```
+  
+
+#### Source
+[Python初學重點 (04) – 聊聊print()](https://extenshu.com/2017/09/24/python%E5%88%9D%E5%AD%B8%E9%87%8D%E9%BB%9E-04-%E8%81%8A%E8%81%8Aprint/)
+
+[Python3 print 函數用法總結](https://www.runoob.com/w3cnote/python3-print-func-b.html)
 
 [🎲🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
