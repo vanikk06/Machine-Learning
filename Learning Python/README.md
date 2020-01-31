@@ -679,6 +679,12 @@ NoSQL觀念：
 
  
 ## Import
-   > 匯入套件
+   > 正規匯入套件方法
+   
+- `from` 套件 `import` 函式：讀入套件內的函式
+    - `*`：代表全部
+      ```python
+      from numpy import *  #會將numpy內的所有函式全部讀入
+      ```
    
 [🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
