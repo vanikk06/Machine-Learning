@@ -20,7 +20,7 @@
   - [Linux](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linux)
   - [MySQL vs. NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#mysql-vs-nosql)
   - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
-  - [](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#import)
+  - [Import](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#import)
   
  ---
  
