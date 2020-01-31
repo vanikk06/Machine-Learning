@@ -691,6 +691,14 @@ NoSQL觀念：
       from numpy import *  #會將numpy內的所有函式全部讀入
       ```
       
+- `import`：讀入整個套件
+  > 與`from xxx import *`等價
+  
+  - `import` 套件名 `as` 套件綽號：讀入整個套件，並給套件一個綽號
+    ```python
+    import numpy as np #np為numpy的標準綽號
+    ```
+      
  
 P.S.小心"random"與"numpy.random"隨機數選取的範圍不同
   - random：`randint(a,b)`
