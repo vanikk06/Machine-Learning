@@ -20,6 +20,7 @@
   - [Linux](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linux)
   - [MySQL vs. NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#mysql-vs-nosql)
   - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
+  - [](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#import)
   
  ---
  
@@ -681,10 +682,50 @@ NoSQL觀念：
 ## Import
    > 正規匯入套件方法
    
-- `from` 套件 `import` 函式：讀入套件內的函式
+- `from` 套件名 `import` 函式：讀入套件內的函式
     - `*`：代表全部
+      > 不建議如此使用（或是用%pylab inline）
+      >> 若在不同套件中，出現相同命名的函式，則可能會導致混亂或衝突
       ```python
       from numpy import *  #會將numpy內的所有函式全部讀入
       ```
-   
+      
+ 
+P.S.小心"random"與"numpy.random"隨機數選取的範圍不同
+  - random：`randint(a,b)`
+    - 範圍：\[a, b]
+      > 包含a與b
+    - 參數：兩個，僅選取範圍的上限與下限（若要選取多個隨機數，可使用for迴圈）
+  
+    ```python
+    randint(1, 10)
+    #輸出
+    10
+    
+    randint(1,10, 50)
+    #輸出
+    TypeError: randint() takes 3 positional arguments but 4 were given
+    ```
+ - numpy.random：`randint(low, high=None, size=None, dtype='l')`
+    - 範圍：\[low, high)
+      > 包含low，不包含high
+    - 參數：最多可四個，可指定要重複的次數
+    
+    ```python
+    randint(1, 10)
+    #輸出
+    9
+    
+    randint(1,10, 50)
+    #輸出
+    array([4, 5, 1, 7, 1, 1, 9, 9, 3, 6, 4, 8, 7, 7, 7, 2, 3, 3, 9, 5, 8, 4,
+       7, 1, 7, 4, 2, 8, 1, 7, 9, 3, 9, 7, 8, 9, 9, 2, 7, 6, 6, 4, 7, 7,
+       7, 6, 9, 5, 7, 5])
+    ```
+
 [🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+### print()
+
+
+[🎲🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
