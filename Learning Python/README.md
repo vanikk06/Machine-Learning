@@ -580,8 +580,8 @@ Linux特色：
 
 資料庫（Database）是專門給資料儲存使用的，使用了很多優化功能，讓速度更快
 
-- [MySQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#mysql)
-- [NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nosql)
+- [MySQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-mysql-)
+- [NoSQL](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nosql-)
 
 
 
