@@ -793,8 +793,8 @@ a/b/c
 - `np.array`：將list轉換為numpy array
 - `np.dot`：內積，按照個別位置相乘，在取全部總和
   > np.dot(array1, array2)：將array1與array2做內積
-  >> 等價於：先進行array相乘，在使用`array.sum()`取總和\
-  >> array與array相乘，會按照各別的對應位置相乘
+  >> 等價於：先進行array相乘，在使用`array.sum()`取總和
+  >>> array與array相乘，會按照各別的對應位置相乘
 
 
 [🎙](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
