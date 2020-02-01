@@ -766,3 +766,22 @@ a/b/c
 [Python3 print 函數用法總結](https://www.runoob.com/w3cnote/python3-print-func-b.html)
 
 [🎲🎲](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## Data Analysis
+
+★ 基本概念：能不用迴圈，就盡量不要用
+    > Why？效率問題（計算速度上不同）
+    
+常用套件：
+  - `%matplotlib inline`：魔術指令，讓matplotlib畫出的圖直接呈現在網頁上，不另外開視窗
+     > 新型的python不一定需要，有時使用甚至會造成錯誤，導致matplotlib無法使用
+  - `numpy`：array，可做類似**向量**的運算
+  - `matplotlib.pyplot`：畫圖
+  ```python
+  import numpy as np
+  import matplotlib.pyplot as plt
+  ```
+  
+  
+[🔮](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
