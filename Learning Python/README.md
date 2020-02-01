@@ -793,12 +793,14 @@ a/b/c
   
 - `np.array()`：將list轉換為numpy array
 - `np.dot()`：內積，按照個別位置相乘，在取全部總和
-  > np.dot(array1, array2)：將array1與array2做內積\
-  > [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npdot-)
+  > np.dot(array1, array2)：將array1與array2做內積
+  >> [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npdot-)
 - `array.shape`：查看array形狀，也可改變array形狀
   > 變更原始資料
+  >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-arrayshape--arrayreshape-)
 - `array.reshape()`：改變array形狀
   > 不變更原始資料，產生一個新array
+  >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-arrayshape--arrayreshape-)
   
   
 #### § np.dot §
@@ -867,6 +869,9 @@ A.shape
 #輸出
 (50,)
 ```
+> 有50個元素
+
+
 使用`array.shape`改變array形狀
 > 要確保形式符合元素個數
 ```python
@@ -884,6 +889,8 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
        [34.4753731 , 43.62682739, 39.71701874, 52.270227  , 72.6607359 ,
         58.17894429, 47.71655182, 39.91744768, 48.40310346, 50.50243736]])
 ```
+> array內有5個元素，每個元素皆為一個有10筆資料的array
+
 使用`array.reshape`改變array形狀
 > array.reshape為函式，直接輸入參數
 ```python
@@ -900,7 +907,8 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
         34.4753731 , 43.62682739, 39.71701874, 52.270227  , 72.6607359 ,
         58.17894429, 47.71655182, 39.91744768, 48.40310346, 50.50243736]])
 ```
-> 產生新的array，不影響原始資料
+> array內有2個元素，每個元素皆為一個有25筆資料的array
+>> 產生新的array，不影響原始資料
 ```python
 A
 #輸出
