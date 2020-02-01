@@ -27,6 +27,7 @@
   
 - [week 4](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-4)
   - [Interact](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#interact)
+  - [GUI](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#gui)
   
  ---
  
