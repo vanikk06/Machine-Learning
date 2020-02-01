@@ -497,7 +497,7 @@ print('{m}合台幣{n}元'.format(m=m, n=m*30.5))
 # week 3
   > numpy、向量化...
   
-- 一個tab == 4個空格
+- 一個tab = 4個空格
 
 ## Git
   > [Learning more_video](https://www.youtube.com/watch?v=4eOOZeL2WJ4&list=PLRxMjOjh7Y5d_eRLWr-DaujfI2YHgCqIf&index=1)
