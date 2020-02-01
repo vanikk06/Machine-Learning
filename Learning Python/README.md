@@ -1006,9 +1006,23 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
 
 
 ## GUI
- > Graphical User Interface（圖形化介面、圖形使用者介面）
+ > Graphical User Interface（圖形化介面、圖形使用者介面、圖形化輔助使用者操作介面）
  
-#### Source
+GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採用圖形式顯示的計算機操作環境使用者介面**。\
+在早期計算機的使用方式，必須要靠DOS指令（也就是所謂的CLI，Command-Line Interface）才能操作電腦與電腦互動，但有了GUI不需要再死記硬背大量的命令，極大地方便了非專業使用者對計算機的操作，他們只要透過**視窗、圖示、選單、按鍵...等**方式就可以輕鬆的進行操作。
 
+目前知名的GUI作業系統為Windows與MAC OS X，當然現在使用的消費型電子產品也具有GUI概念，全部都會預載GUI
+
+- （嵌入式）GUI基本特點要求
+  - 輕型、占用資源少
+  - 高效能
+  - 高可靠性
+  - 方便移植
+  - 可配置
+
+#### Source
+[GUI是什麼](https://www.itread01.com/content/1541936192.html)
+
+[讓使用電腦不再黑白的人生 - GUI 圖形使用者界面](https://chinese.engadget.com/2011/04/13/gui/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAIfNBHHhCvF_z75stlRxvsOkfH75vjdqiZhENs2Qpl3Jk_NwCLYbTQBrhKj6WfaUPZcl1jB_r375x32gcliakOlQAzMKcnjYQCSMF2GGyWqkzsOdcUveZnwgbsvkA-_OHZiFETh4FxakgnRpWdG81kvcEDYwTDYFzaw_cta6DEox)
 
 [⛄](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
