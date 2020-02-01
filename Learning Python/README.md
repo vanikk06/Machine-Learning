@@ -959,5 +959,26 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
 
 ## Interact
    > 與jupyter互動
+   >> 在ipywidgets內的interact函式
+   
+- interact()：產生互動工具
+  > interact(函數, 變數=範圍)
+  >> 每種資料型態，都有與其相對應的互動功能
+  
+  ```python
+  from ipywidgets import interact
+  
+  def f(x):
+    print(x)
+    
+  interact(f, x=3) #產生拉桿
+  interact(f, x=3.) #也可將範圍為符點數
+  
+  interact(f, x=(1,10)) #設定範圍
+  interact(f, x=(1.,10.))
+  
+  
+  interact(f, x='hi') #產生輸入框
+  ```
    
 [🚽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
