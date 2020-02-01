@@ -943,3 +943,7 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
 [numpy.sinc](http://doc.codingdict.com/NumPy_v111/reference/generated/numpy.sinc.html)
 
 [🎙](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+---
+
+# week 4
