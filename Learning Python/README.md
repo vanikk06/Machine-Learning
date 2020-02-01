@@ -784,5 +784,13 @@ a/b/c
   import matplotlib.pyplot as plt
   ```
   
-  
 [🔮](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+## Array
+  > numpy套件
+  
+- `np.array`：將list轉換為numpy array
+-
+
+
+[🎙](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
