@@ -801,54 +801,54 @@ a/b/c
   > 內積
 
 等價於：先進行array相乘，在使用`array.sum()`取總和 
-  ```python
-  import numpy as np
-  
-  grades = np.array([85, 70, 82])
-  weights = np.array([0.3, 0.4, 0.3])
-  
-  g = grades*weights
-  g.sum()
-  #輸出
-  78.1
-  ```
-  > array與array相乘，會按照各別的對應位置相乘（若元素個數不相等，會出現錯誤）
-  
-  ```python
-  np.dot(grades, weights)
-  #輸出
-  78.1
-  ```
+    ```python
+    import numpy as np
+
+    grades = np.array([85, 70, 82])
+    weights = np.array([0.3, 0.4, 0.3])
+
+    g = grades*weights
+    g.sum()
+    #輸出
+    78.1
+    ```
+    > array與array相乘，會按照各別的對應位置相乘（若元素個數不相等，會出現錯誤）
+
+    ```python
+    np.dot(grades, weights)
+    #輸出
+    78.1
+    ```
 
 array除了一維以外，還可以處理多維的資料
-  ```python
-  gradess = np.array([[85, 70, 82],
-          [75, 92, 85],
-          [66, 67, 64],
-          [87, 94, 60]])
-  weights = np.array([0.3, 0.4, 0.3])        
-  
-  print('gradess', np.shape(gradess))
-  print('weights', np.shape(weights))
-  #輸出
-  gradess (4, 3)
-  weights (3,)
-  ```
-  
-  ```python
-  np.dot(gradess, weights)
-  #輸出
-  array([78.1, 84.8, 65.8, 81.7])
-  ```
-  > 原理：將weights視為一個元素，以此元素對gradess內的每個元素做出相同的運算
-  
+    ```python
+    gradess = np.array([[85, 70, 82],
+            [75, 92, 85],
+            [66, 67, 64],
+            [87, 94, 60]])
+    weights = np.array([0.3, 0.4, 0.3])        
+
+    print('gradess', np.shape(gradess))
+    print('weights', np.shape(weights))
+    #輸出
+    gradess (4, 3)
+    weights (3,)
+    ```
+
+    ```python
+    np.dot(gradess, weights)
+    #輸出
+    array([78.1, 84.8, 65.8, 81.7])
+    ```
+    > 原理：將weights視為一個元素，以此元素對gradess內的每個元素做出相同的運算
+
 使用內積的兩個array，放置位置（順序）必須符合內積對矩陣的形狀要求
-  ```python
-  np.dot(weights, gradess)
-  #輸出
-  ValueError: shapes (3,) and (4,3) not aligned: 3 (dim 0) != 4 (dim 0)
-  ```
-  > 參數位置（順序）放置不當，會出現錯誤
+    ```python
+    np.dot(weights, gradess)
+    #輸出
+    ValueError: shapes (3,) and (4,3) not aligned: 3 (dim 0) != 4 (dim 0)
+    ```
+    > 參數位置（順序）放置不當，會出現錯誤
 
 
 
