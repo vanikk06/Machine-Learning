@@ -811,6 +811,9 @@ a/b/c
 - `array.reshape()`：改變array形狀
   > 不變更原始資料，產生一個新array
   >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-arrayshape--arrayreshape-)
+- `np.sinc(x)`：返回元素經過sinc函數計算的array
+  > x：要計算`sinc()`的值（可為多維）
+  >> sinc = \frac{sin(x\pi)}{x\pi}\qquad
   
   
 #### § np.dot §
@@ -932,6 +935,8 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
         36.59087623, 40.04238486, 41.11346863, 45.39145064, 50.52155565],
        [34.4753731 , 43.62682739, 39.71701874, 52.270227  , 72.6607359 ,
         58.17894429, 47.71655182, 39.91744768, 48.40310346, 50.50243736]])
-
 ```
+#### Source
+[numpy.sinc](http://doc.codingdict.com/NumPy_v111/reference/generated/numpy.sinc.html)
+
 [🎙](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
