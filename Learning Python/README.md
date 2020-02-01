@@ -813,7 +813,6 @@ a/b/c
   >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-arrayshape--arrayreshape-)
 - `np.sinc(x)`：返回元素經過sinc函數計算的array
   > x：要計算`sinc()`的值（可為多維）
-  >> sinc = \frac{sin(x\pi)}{x\pi}\qquad
   
   
 #### § np.dot §
