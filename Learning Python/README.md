@@ -25,6 +25,8 @@
   - [Data Analysis](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-analysis)
   - [Array](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#array)
   
+- [week 4](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-4)
+  
  ---
  
 # week 1
