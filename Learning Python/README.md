@@ -103,7 +103,7 @@ python函式說明文件
      - np.random.rand(a,b)：axb的二維array含axb個元素
      - np.random.rand(a,b,c)：a個bxc的二維array含ax(bxc)個元素
    
-   [✍](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrand)
+   [✍](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nprandomrand-)
     
 - `np.random.randn()`：`randn`根據給定的維度，生成具**常態分配**的隨機數據，返回指定維度的array
     > 常態分配（standard normal distribution）：平均值為0，標準差為1，可記為N(0,1)
@@ -113,7 +113,7 @@ python函式說明文件
      - np.random.randn(a,b)：axb的二維array含axb個元素
      - np.random.randn(a,b,c)：a個bxc的二維array含ax(bxc)個元素
      
-   [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrandn)
+   [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nprandomrandn-)
    
 - `np.random.randint(low, high=None, size=None, dtype='l')`：根據給定的維度，生成隨機**整數**
    > 範圍：\[low,high），包含low，不包含high
@@ -125,7 +125,7 @@ python函式說明文件
      - size：維度大小
      - dtype：數據類型，預設為np.int
     
-   [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomrandint)
+   [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nprandomrandint-)
    
 - `np.random.choice(a, size=None, replace=True, p=None)`：從**給定的一維數組中**產生隨機數
    - 參數
@@ -137,13 +137,14 @@ python函式說明文件
         > 長度需與a相同\
         > 元素為機率：介於0-1之間，總和需為1
     
-    [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomchoice)
+    [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nprandomchoice-)
     
 - `np.random.seed()`：使得隨機數據可預測
      - 當設置相同的`seed()`時，每次生成的隨機數相同
      - 當不設置`seed()`時，每次生成不同的隨機數
       
-     [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#nprandomseed)
+     [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nprandomseed-)
+     
 #### § np.random.rand() §
 生成\[0, 1)之間的隨機數據，包含0，不包含1
 
@@ -792,20 +793,35 @@ a/b/c
   
 - `np.array`：將list轉換為numpy array
 - `np.dot`：內積，按照個別位置相乘，在取全部總和
-  > np.dot(array1, array2)：將array1與array2做內積
-  > [✍🏻]()
+  > np.dot(array1, array2)：將array1與array2做內積\
+  > [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npdot-)
   
   
 #### § np.dot §
   > 內積
 
 等價於：先進行array相乘，在使用`array.sum()`取總和 
-> array與array相乘，會按照各別的對應位置相乘（若元素個數不相等，會出現錯誤）
-
-
   ```python
   import numpy as np
   
+  grades = np.array([85, 70, 82])
+  weights = np.array([0.3, 0.4, 0.3])
+  
+  g = grades*weights
+  g.sum()
+  #輸出
+  78.1
+  ```
+  > array與array相乘，會按照各別的對應位置相乘（若元素個數不相等，會出現錯誤）
+  
+  ```python
+  np.dot(grades, weights)
+  #輸出
+  78.1
+  ```
+
+array除了一維以外，還可以處理多維的資料
+  ```python
   gradess = np.array([[85, 70, 82],
           [75, 92, 85],
           [66, 67, 64],
@@ -818,7 +834,7 @@ a/b/c
   gradess (4, 3)
   weights (3,)
   ```
-  array除了一維以外，還可以處理多維的資料
+  
   ```python
   np.dot(gradess, weights)
   #輸出
@@ -826,7 +842,7 @@ a/b/c
   ```
   > 原理：將weights視為一個元素，以此元素對gradess內的每個元素做出相同的運算
   
-  使用內積的兩個array，放置位置（順序）必須符合內積對矩陣的形狀要求
+使用內積的兩個array，放置位置（順序）必須符合內積對矩陣的形狀要求
   ```python
   np.dot(weights, gradess)
   #輸出
