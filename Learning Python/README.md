@@ -22,6 +22,7 @@
   - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
   - [Import](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#import)
      - [print()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#print)
+  - [](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-analysis)
   
  ---
  
@@ -771,7 +772,7 @@ a/b/c
 ## Data Analysis
 
 ★ 基本概念：能不用迴圈，就盡量不要用
-    > Why？效率問題（計算速度上不同）
+   > Why？效率問題（計算速度上不同）
     
 常用套件：
   - `%matplotlib inline`：魔術指令，讓matplotlib畫出的圖直接呈現在網頁上，不另外開視窗
