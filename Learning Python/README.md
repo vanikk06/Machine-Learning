@@ -1000,6 +1000,14 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
   
   interact(f, x=True) #勾選的checkbox
   ```
-     
-   
-[🚽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+  
+[☃](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## GUI
+ > Graphical User Interface（圖形化介面、圖形使用者介面）
+ 
+#### Source
+
+
+[⛄](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
