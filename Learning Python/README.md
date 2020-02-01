@@ -800,6 +800,8 @@ a/b/c
 - `np.eye()`：生成一個對角矩陣的array
   > 參數：整數
   >> 對角矩陣形狀必為nxn
+- `np.linspace()`：產生一連串的值
+  > np.linspace(起始值, 結束值, 值的個數)
 - `np.dot()`：內積，按照個別位置相乘，在取全部總和
   > np.dot(array1, array2)：將array1與array2做內積
   >> [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npdot-)
