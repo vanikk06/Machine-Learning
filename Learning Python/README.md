@@ -413,6 +413,7 @@ python基本操作
     
 
 在變數放入字串中，將字串中要放入變數的位置先放置"{}"，在字串後面增加`.format()`，函式內依照{}順序放入變數
+> {}內可指定格式
 ```python
 name = 'ET'
 word = 'How are you?'
@@ -950,6 +951,7 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
 ---
 
 # week 4
+[👉🏽HERE👈🏽](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_4.ipynb)
 
 - Learning step
   > 程式目標：Resolve problems
