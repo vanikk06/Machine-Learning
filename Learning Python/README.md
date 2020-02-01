@@ -958,7 +958,7 @@ array([[65.82782968, 36.20062413, 49.34737677, 65.27853253, 36.7678792 ,
   - Make it fast：加快程式的速度、效率
 
 ## Interact
-   > 與jupyter互動
+   > 與jupyter互動，可做出GUI（圖形使用者介面）
    >> 在ipywidgets內的interact函式
    
 - interact()：產生互動工具
