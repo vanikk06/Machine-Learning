@@ -22,7 +22,7 @@
   - [numpy package](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#numpy-package)
   - [Import](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#import)
      - [print()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#print)
-  - [](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-analysis)
+  - [Data Analysis](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-analysis)
   
  ---
  
