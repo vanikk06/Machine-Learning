@@ -1111,15 +1111,23 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 
 
 #### § Pandas §
-
 - `pd.read_csv('檔名')`：讀入csv檔
 - `dataframe名稱.head()`：查看前五行資料
 - `dataframe名稱.項目名稱.mean()`：平均值
 - `dataframe名稱.項目名稱.std()`：標準差
 - `dataframe名稱.項目名稱.sum()`：總和
-    - .sum(0)：行相加
-    - .sum(1)：列相加
+    - .sum(0)：按列方向相加
+    - .sum(1)：按行方向相加
 - `dataframe名稱.describe()`：基本的統計計算
+- `dataframe名稱.DataFrame(array, columns=項目list)`：建立一個dataframe
+    - array：放入的資料
+    - columns：欄位名稱
+- `dataframe名稱.concat()`：合併dataframe
+    - axis：控制合併方向
+      > 矩陣：先row後column
+      - 0：按列方向合併，上下
+      - 1：按行方向合併，左右
+- `dataframe名稱.index`：更改index
 - 相關係數
   - `dataframe名稱.corr()`：所有的相關係數
   - `dataframe名稱.項目A.corr(dataframe名稱.項目B)`：各別的相關係數
