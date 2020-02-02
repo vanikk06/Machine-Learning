@@ -1038,6 +1038,7 @@ GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採
 ---
 
 # week 5
+[👉🏻HERE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_5.ipynb)
 
 ## Swift
    > 建造 App 的開放程式語言
