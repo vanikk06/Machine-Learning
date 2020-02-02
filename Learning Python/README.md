@@ -30,6 +30,7 @@
   - [GUI](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#gui)
 
 - [week 5](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-5)
+  - [Swift](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#swift)
  ---
  
 # week 1
