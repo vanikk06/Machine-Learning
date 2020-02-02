@@ -1026,3 +1026,6 @@ GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採
 [讓使用電腦不再黑白的人生 - GUI 圖形使用者界面](https://chinese.engadget.com/2011/04/13/gui/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAIfNBHHhCvF_z75stlRxvsOkfH75vjdqiZhENs2Qpl3Jk_NwCLYbTQBrhKj6WfaUPZcl1jB_r375x32gcliakOlQAzMKcnjYQCSMF2GGyWqkzsOdcUveZnwgbsvkA-_OHZiFETh4FxakgnRpWdG81kvcEDYwTDYFzaw_cta6DEox)
 
 [⛄](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+# 
