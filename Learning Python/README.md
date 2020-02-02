@@ -1034,10 +1034,41 @@ GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採
 # week 5
 
 ## Swift
-   > 一種程式語言
+   > 建造 App 的開放程式語言
    >> [Learning more_Stanford](https://www.youtube.com/playlist?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)\
    >> [Learning more_王巍](https://swifter.tips/)
    
+   
+Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS、Mac、Apple TV 與 Apple Watch 的軟體，自由度高且為開放原始碼，是一套快速且有效率的語言，能夠提供即時回應，更可整合現有的 Objective-C 程式碼
+
+優點：
+  - 可以開發 iPhone/iPad/Mac 的 App，且為開源，未來將有更多平台使用Swift
+    > 已開發 App：Airbnb、LinkedIn
+    >> 手機 App 的應用廣泛，與生活結合，很有實用性
+  - 開發環境整合，易於上手又強大
+    > 整合 Objective-C
+  - Swift 語言完整性夠
+   
+#### Others Language
+- 程式語言
+  - C：強大，可用於內嵌式系統，也可開發服務器級的應用
+  - Python：易於上手，且應用廣泛
+  - Swift：Apple推出，取代 Objective-C
+  - Java：跨平台的程式語言
+
+- Markup Language（標記語言）
+> e.g. 網頁的HTML/CSS
+
+
+#### Swift 相關社群
+- Swift Taipei
+  > [more](https://www.meetup.com/Swift-Taipei-User-Group/)
+- Swift Girls
+  > [more](https://www.appcoda.com.tw/swift-girls-interview/)
+
+- CocoaHeads Taipei
+  > [more](https://cocoaheads.tw/)
+
 
 #### Source
 [Swift，強大的開放程式語言，讓人人創造傑出的 App](https://www.apple.com/tw/swift/)
@@ -1045,5 +1076,7 @@ GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採
 [TOLL-FREE BRIDGING 和 UNMANAGED](https://swifter.tips/)
 
 [Stanford CS193P iOS 11 Swift 4](https://www.youtube.com/playlist?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
+
+[想學程式語言，但完全不懂？從 Swift 開始吧！](https://coder01.com/blog/%E6%83%B3%E5%AD%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80%EF%BC%9F%E5%BE%9E-swift-%E9%96%8B%E5%A7%8B%E5%90%A7%EF%BC%81/)
 
 [🍕](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
