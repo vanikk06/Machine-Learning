@@ -1123,6 +1123,7 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
     - array：放入的資料
     - columns：欄位名稱
 - `dataframe名稱.concat()`：合併dataframe
+  > 空格會自動補遺失值
     - axis：控制合併方向
       > 矩陣：先row後column
       - 0：按列方向合併，上下
