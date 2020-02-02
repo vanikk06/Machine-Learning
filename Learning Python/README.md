@@ -1188,9 +1188,19 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 - `array.mean()`：平均值
 - `array.std()`：標準差
 
-
-
 #### Source
 [Python pandas Q&A video series](https://github.com/justmarkham/pandas-videos)
 
 [🍟](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+## Moving Average
+  > 移動平均
+  
+  
+  
+#### Source
+[一文看懂移動平均線(Moving Average)及其運用策略](https://www.dailyfxasia.com/cn/feaarticle/20190222-6337.html)
+
+[投資初哥的殺手！移動平均線：你一直都用錯！均線真正用法](https://www.youtube.com/watch?v=BnkI0wejW-c)
+
+[🌭](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
