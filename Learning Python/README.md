@@ -1114,12 +1114,29 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 
 - `pd.read_csv('檔名')`：讀入csv檔
 - `dataframe名稱.head()`：查看前五行資料
+- `dataframe名稱.項目名稱.mean()`：平均值
+- `dataframe名稱.項目名稱.std()`：標準差
+- `dataframe名稱.項目名稱.sum()`：總和
+    - .sum(0)：行相加
+    - .sum(1)：列相加
+- `dataframe名稱.describe()`：基本的統計計算
+- 相關係數
+  - `dataframe名稱.corr()`：所有的相關係數
+  - `dataframe名稱.項目A.corr(dataframe名稱.項目B)`：各別的相關係數
+     > A與B之間的相關係數
 - 取單項資料
   > 索引使用"\[ ]"
   >> 取出的一欄串數據稱為Series\
   >> 每個Series都有各自的欄位名稱(columns)
   - `datafame名稱[項目名稱]`
   - `dataframe名稱.項目名稱`
+- `dataframe名稱['新增項目'] = 要新增的內容`：新增一個欄位
+- `dataframe名稱.sort_values()`：排序
+    - by：基於何者進行排序
+      > 若為list，則按順序作為基準
+    - ascending：是否遞進排列
+      - True：由小到大
+      - False：由大到小
 - 將單項資料轉換成array
   - `dataframe名稱[項目名稱].values`
   - `dataframe名稱.項目名稱.values`
