@@ -1114,7 +1114,7 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 #### § Pandas §
   > Pandas傾向不變更原始資料，一般指令無設定參數會產生新的datafrme（有回傳值）
   >> pandas_datareader.data套件：有財務、股票相關的實際資料
-  >> ```python
+    ```python
      import pandas_datareader.data as web
      ```
   
