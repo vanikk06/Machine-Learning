@@ -1034,7 +1034,16 @@ GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採
 # week 5
 
 ## Swift
+   > 一種程式語言
+   >> [Learning more_Stanford](https://www.youtube.com/playlist?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)\
+   >> [Learning more_王巍](https://swifter.tips/)
+   
 
+#### Source
+[Swift，強大的開放程式語言，讓人人創造傑出的 App](https://www.apple.com/tw/swift/)
 
+[TOLL-FREE BRIDGING 和 UNMANAGED](https://swifter.tips/)
+
+[Stanford CS193P iOS 11 Swift 4](https://www.youtube.com/playlist?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
 
 [🍕](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
