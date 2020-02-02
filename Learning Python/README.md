@@ -1096,3 +1096,43 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
     - DataFrame：類似Excel的試算表
 
 [🍔](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## Practice Pandas
+
+一般先用 Pandas 進行資本處理，找出想要的資料後，再使用 Numpy 做進一步的分析
+
+- csv：資料格式，每欄用逗點隔開
+- `%ls`：魔術指令，可查看此目錄下有什麼檔案
+
+
+#### § Pandas §
+
+- `pd.read_csv('檔名')`：讀入csv檔
+- `dataframe名稱.head()`：查看前五行資料
+- 取單項資料
+  > 索引使用"\[ ]"
+  >> 取出的一欄串數據稱為Series\
+  >> 每個Series都有各自的欄位名稱(columns)
+  - `datafame名稱[項目名稱]`
+  - `dataframe名稱.項目名稱`
+- 將單項資料轉換成array
+  - `dataframe名稱[項目名稱].values`
+  - `dataframe名稱.項目名稱.values`
+- 畫圖
+  > 支援直接畫圖
+  - `dataframe名稱.項目名稱.plot()`：單項資料折線圖
+  - `dataframe名稱.項目名稱.hist(bins=區分區間)`：單項資料直方圖
+  
+  
+
+
+#### § Numpy §
+
+- `array.mean()`：平均值
+- `array.std()`：標準差
+
+
+
+
+[🍟](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
