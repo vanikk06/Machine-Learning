@@ -31,6 +31,7 @@
 
 - [week 5](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-5)
   - [Swift](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#swift)
+  - [Pandas](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#pandas)
  ---
  
 # week 1
