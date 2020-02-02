@@ -1146,6 +1146,8 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
   - `datafame名稱[項目名稱]`
   - `dataframe名稱.項目名稱`
 - `dataframe名稱['新增項目'] = 要新增的內容`：新增一個欄位
+- `dataframe名稱.loc[]`：尋找索引對象（適用於要更改索引對象時）
+  > 參數：欄位名
 - `dataframe名稱.sort_values()`：排序
     - by：基於何者進行排序
       > 若為list，則按順序作為基準
