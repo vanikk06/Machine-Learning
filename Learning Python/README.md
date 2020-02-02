@@ -28,7 +28,8 @@
 - [week 4](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-4)
   - [Interact](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#interact)
   - [GUI](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#gui)
-  
+
+- [week 5](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-5)
  ---
  
 # week 1
@@ -1027,6 +1028,7 @@ GUI可以說是讓電子裝置普遍化的一個超重要變革，它是指**採
 
 [⛄](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
+---
 
 # week 5
 
