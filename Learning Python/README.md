@@ -1080,3 +1080,18 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 [想學程式語言，但完全不懂？從 Swift 開始吧！](https://coder01.com/blog/%E6%83%B3%E5%AD%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80%EF%BC%9F%E5%BE%9E-swift-%E9%96%8B%E5%A7%8B%E5%90%A7%EF%BC%81/)
 
 [🍕](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## Pandas
+   > Python的Excel
+   >> 用於「整理資料」：數據分析有80%的時間在做資料清理\
+   >> 再利用Numpy、SKLearn套件，進行「計算分析」
+
+奠定python奠定數據分析龍頭地位的重要套件
+
+- 核心概念：
+  - 資料型態有兩種
+    - Series：類似list、array，每個欄位皆有名稱
+    - DataFrame：類似Excel的試算表
+
+[🍔](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
