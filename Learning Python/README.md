@@ -1113,6 +1113,10 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 
 #### § Pandas §
   > Pandas傾向不變更原始資料，一般指令無設定參數會產生新的datafrme（有回傳值）
+  >> pandas_datareader.data套件：有財務、股票相關的實際資料
+  >> ```python
+     import pandas_datareader.data as web
+     ```
   
 - `pd.read_csv('檔名')`：讀入csv檔
    > 也可讀取網路上的csv檔
@@ -1170,6 +1174,13 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
   - `dataframe名稱.項目名稱.hist(bins=區分區間)`：單項資料直方圖
   
   
+- `web.DataReader(股票代號, 資料源, 開始時間, 結束時間)`：讀入股票資料
+- `dataframe名稱.diff()`：可計算此期與前一期的差異
+  > 可進一步應用來計算「報酬率」
+  >> 報酬率：(今日報酬率-昨日報酬率)/昨日報酬率
+- `dataframe名稱.rolling()`：移動平均
+  > 其一應用：#移動平均：讓漲幅變平滑，好看出走向
+  - window：取多少範圍的平均
 
 
 #### § Numpy §
