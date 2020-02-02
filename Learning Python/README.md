@@ -33,6 +33,7 @@
   - [Swift](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#swift)
   - [Pandas](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#pandas)
   - [Practice Pandas](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#practice-pandas)
+  - [Moving Average](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#moving-average)
   
   
   
