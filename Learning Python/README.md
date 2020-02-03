@@ -35,7 +35,7 @@
   - [Practice Pandas](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#practice-pandas)
   - [Moving Average](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#moving-average)
   
-- []()  
+- [week 6](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-6)  
   
  ---
  
@@ -1248,4 +1248,19 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 ---
 
 # week 6
+  > 數據分析：預測
 
+數據分析、人工智慧、機器學習，皆在學習現實世界中的「函數」
+- 函數：定義域 → f(x) → 值域
+  > 問對問題重要
+  >> y要一定程度的被x涵蓋
+    - f(x) = y：x、y通常是一個或一組數字
+      > 1. 數學建模，將想要解決的問題化為函數
+      > 2. 以「歷史資料」找出此函數
+      >>  e.g.回歸、機器學習、神經網路
+      > 3. 評估是否符合需求
+       - x：features（特徵）
+       - y：預測值
+    - 定義域：所有可能的問題
+      > 想預知的東西
+    - 值域：所有可能的答案
