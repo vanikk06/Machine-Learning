@@ -35,7 +35,8 @@
   - [Practice Pandas](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#practice-pandas)
   - [Moving Average](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#moving-average)
   
-- [week 6](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-6)  
+- [week 6](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-6)
+  - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linear-regression)
   
  ---
  
@@ -1277,3 +1278,5 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 >> f(x) = ax + b
 
 其中a、b為線性迴歸要學習的參數，也就是要找的目標（可利用統計或線性代數的最小平方法）
+
+[👑](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
