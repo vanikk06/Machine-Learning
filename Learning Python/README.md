@@ -35,7 +35,7 @@
   - [Practice Pandas](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#practice-pandas)
   - [Moving Average](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#moving-average)
   
-  
+- []()  
   
  ---
  
@@ -1244,3 +1244,8 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 [投資初哥的殺手！移動平均線：你一直都用錯！均線真正用法](https://www.youtube.com/watch?v=BnkI0wejW-c)
 
 [🌭](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+---
+
+# week 6
+
