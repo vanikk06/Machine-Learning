@@ -1340,6 +1340,21 @@ train data的準確度高於test data的準確度
 ## DataSet
   > 數據集
   
-在scikit-learn內有一些真實世界的數據，稱為「Toy Datasets」
+在scikit-learn內有一些真實世界的數據，稱為「Toy Datasets」，可從`sklearn.datasets`匯入想要的數據
+> import 後面放要匯入的資料
+```python
+from sklearn.datasets import load_boston
+
+boston = load_boston()
+```
+> 匯入套件後，要記得實例化才可使用
+
+- `.feature_names`：查看數據中所有的features
+- `.data`：所有特徵變數
+- `.target`：所有目標變數
+- `.DESCR`：查看完整的解釋數據內容
+  ```python
+  print(boston.DESCR)
+  ```
 
 [💎](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
