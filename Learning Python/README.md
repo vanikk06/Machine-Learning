@@ -1298,3 +1298,35 @@ from sklearn.linear_model import LinearRegression
   - X：真實資料中的特徵變數（測試集）
   
 [👑](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+## data split
+  > 資料集切割
+  >> 分成「訓練資料」與「測試資料」
+  
+一般想要看算出的逼近函式在預測上是否是可靠的，會把一些資料留給「測試」，也就是在電腦計算時，不會計算到這些資料。\
+等函式學成之後，再拿這些保留資料看函式是否準確
+
+- training data：訓練集，訓練模型
+- testing data：測試集，測試模型的準確度如何
+
+使用`sklearn.model_selection`套件內的`train_test_split`來**亂數選一定百分比**的資料
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x, y,
+                                                    test_size = 0.2,
+                                                    random_state=87)
+```
+- `train_test_split(x, y, test_size, random_state)`：亂數分割「訓練集」與「測試集」
+    - x：真實資料的特徵變數
+    - y：真實資料的目標變數
+    - test_size：測試集的大小
+      > 百分比
+    - random_state：隨機種子
+    
+#### Overfitting
+  > 過度擬合
+  
+train data的準確度高於test data的準確度
+
+[💍](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
