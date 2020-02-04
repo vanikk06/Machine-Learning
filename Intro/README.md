@@ -374,7 +374,7 @@ b = np.array([4,5,6]
 - `plt.legend()`：圖例
    > plt.legend(loc=9)
    >> loc=9：位置，中間偏上
-- `plt.annotate`：註解
+- `plt.annotate()`：註解
    > plt.annotate(s, xy, xytext, textcoords)
    >> [[learning more]](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.annotate.html)
    - s：註解文字內容
@@ -384,7 +384,20 @@ b = np.array([4,5,6]
    - textcoords：註釋文字的整個座標系屬性
      > offset points：相對於被註釋點xy的偏移量(單位：點)
 - `plt.axis()`：數字座標軸
+- `plt.figure()`：建立一個figure（空的顯示區）
+    - figsize：顯示區大小
+      > e.g. `plt.figure(figsize=(8,10))`
+- `plt.subplot()`：畫多張圖
+    > plt.subplot(nrows, ncols, plot_number)
+    - nrows：幾個橫排
+    - ncols：幾行
+    - plot_number：第幾個圖
+    ```python
+    plt.subplot(2,2,1) #第一張
+    ```
+- `plt.tight_layout()`：圖表過度集中，可用此分開
     
+ 
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-17_02-45-09.png)
 
 -  Figure vs. Axes vs. Axis
@@ -398,6 +411,8 @@ b = np.array([4,5,6]
 [matplotlib.pyplot.plot](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html)
 
 [matplotlib.pyplot.annotate](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.annotate.html)
+
+[Python學習筆記#5：Matplotlib資料視覺化篇](http://psop-blog.logdown.com/posts/3020978-python-matplotlib)
 
 [🕛](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
