@@ -1281,4 +1281,12 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 
 其中a、b為線性迴歸要學習的參數，也就是要找的目標（可利用統計或線性代數的最小平方法）
 
+使用`sklearn`套件裡面的`LinearRegression`函式
+```python
+from sklearn.linear_model import LinearRegression
+```
+★ 注意！在此函數要的資料類型是[x_1], [x_2], \\ldots, [x_{50}]]而非[x_1, x_2, \ldots, x_{50}]
+
+
+
 [👑](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
