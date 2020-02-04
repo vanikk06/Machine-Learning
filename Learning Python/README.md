@@ -1358,3 +1358,43 @@ boston = load_boston()
   ```
 
 [💎](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## enumerate()
+  > 枚舉
+  >> 回傳枚舉物件
+
+`enumerate(iterable, start=0)`：計算元素為第幾個
+  > 會將list的index與list的元素（item），包成一個tuple，再將每個tuple包成按index排序的list
+  - iterable：list
+
+```python
+L = ['a', 'b', 'c']
+
+list(enumerate(L))
+#輸出
+[(0, 'a'), (1, 'b'), (2, 'c')]
+```
+
+#### § 使用時機 §
+原本方法
+```python
+for i in range(3):
+    print(i+1, L[i])
+#輸出
+1 a
+2 b
+3 c
+```
+使用`enumerate()`
+```python
+for i, j in enumerate(L):
+    print(i+1, j)
+#輸出
+1 a
+2 b
+3 c
+```
+
+[💋](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
