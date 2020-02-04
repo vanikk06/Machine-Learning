@@ -41,6 +41,7 @@
   - [DataSet](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#dataset)
   - [enumerate()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#enumerate)
   
+- [week 7](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-7)
  ---
  
 # week 1
@@ -1258,6 +1259,8 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 [👉🏿HERE👈🏿](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_6.ipynb)
 
 數據分析、人工智慧、機器學習，皆在學習現實世界中的「函數」
+> input與output必須是「一堆數字」，否則電腦無法計算
+
 - 函數：定義域 → f(x) → 值域
   > 問對問題重要
   >> y要一定程度的被x涵蓋
