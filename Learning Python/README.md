@@ -38,6 +38,7 @@
 - [week 6](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-6)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linear-regression)
   - [data split](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-split)
+  - [DataSet](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#dataset)
   
  ---
  
