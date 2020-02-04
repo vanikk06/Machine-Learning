@@ -339,6 +339,7 @@ b = np.array([4,5,6]
 
 ## Matplotlib
    > 繪圖套件
+   >> 顏色查詢：MatplotlibColormap
    
 - `%matplotlib inline`：魔法函式，內嵌繪圖，可以省略`plt.show()`
   > 新版的不一定需要
