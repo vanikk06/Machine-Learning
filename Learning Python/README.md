@@ -1324,10 +1324,21 @@ x_train, x_test, y_train, y_test = train_test_split(x, y,
     - test_size：測試集的大小
       > 百分比
     - random_state：隨機種子
-    
+      > 指定隨機的種子，可以知道這次抽取亂數的方式為何
+      >> 1. 下次可以使用相同分配的亂數
+      >> 2. 有時分析結果好，是因為亂數分配的方式好，記錄下來方便應用
+      
 #### Overfitting
   > 過度擬合
   
 train data的準確度高於test data的準確度
 
 [💍](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+## DataSet
+  > 數據集
+  
+在scikit-learn內有一些真實世界的數據，稱為「Toy Datasets」
+
+[💎](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
