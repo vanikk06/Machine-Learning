@@ -1401,3 +1401,10 @@ for i, j in enumerate(L):
 
 [💋](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
+---
+
+# week 7
+  > 機器學習
+
+機器學習：讓機器學一個函數
+  > e.g. 分類
