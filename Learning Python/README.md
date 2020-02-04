@@ -1285,7 +1285,7 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 ```python
 from sklearn.linear_model import LinearRegression
 ```
-★ 注意！在此函數要的資料類型是[<x_1>], [<x_2>], <\\ldots>, [<x_{50}>]]而非[<x_1>, <x_2>, <\ldots>, <x_{50}>]
+★ 注意！在此函數要的資料類型並非一個array，而是要將每筆訓練資料\[ ]起來，當作一列
 
 
 
