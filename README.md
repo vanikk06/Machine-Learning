@@ -9,8 +9,9 @@
 [良葛格學習筆記](https://openhome.cc/Gossip/)
 
 # Content
-- [Intro](https://github.com/vanikk06/Machine-Learning#intro)
 - [Learning Python](https://github.com/vanikk06/Machine-Learning#learning-python)
+- [Intro](https://github.com/vanikk06/Machine-Learning#intro)
+- [Data](https://github.com/vanikk06/Machine-Learning#data)
 
 # Learning Python
   > [class](http://moocs.nccu.edu.tw/course/123/intro)\
