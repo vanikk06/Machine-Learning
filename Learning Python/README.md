@@ -1424,10 +1424,25 @@ for i, j in enumerate(L):
 
 ## SVM
   > 支持向量機（Support Vector Machine）
-  
+  >> `sklearn.svm`套件
   
  是一種用**曲線**把資料分隔的方法，在高維度時為**曲面（超曲面）**分隔資料
  
+ ```python
+ from sklearn.svm import SVC
  
+ clf = SVC() #分類機
+ ```
+ 
+ 先使用`clf.fit()`擬合模型，再使用`clf.predict()`預測
+ 
+ - `clf.fit(x, y)`：拿資料去訓練模型
+      - x：特徵變數（輸入資料）
+      - y：目標變數（正確答案）
+      
+ - `clf.predict()`：預測
+      - input：**2D**的list或array
+      - output：回傳array，分類的結果
+
 
 [🍰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
