@@ -1575,7 +1575,7 @@ for i, j in enumerate(L):
   > 支持向量機（Support Vector Machine）
   >> `sklearn.svm`套件
   
- 是一種用**曲線**把資料分隔的方法，在高維度時為**曲面（超曲面）**分隔資料
+ 監督式學習的一種，是一種用**曲線**把資料分隔的方法，在高維度時為**曲面（超曲面）**分隔資料
  
  ```python
  from sklearn.svm import SVC
@@ -1614,3 +1614,21 @@ list(zip(xx, yy))
 
 [🍰🍰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
+## K-Mean
+
+非監督式學習的一種，當不知道資料該如何分類時，可使用此方法\
+先請電腦進行分類，再觀察每個分類有何特性
+
+使用 sklearn.cluster 套件內的 KMeans函式
+
+```python
+from sklearn.cluster import KMeans
+
+clf = KMeans(n_clusters=3)
+```
+- `KMeans(n_clusters)`：實例化
+    - n_clusters：要分幾個類群
+    
+- `.labels_`：查看模型分的結果
+
+[🍪](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
