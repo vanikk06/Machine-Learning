@@ -819,6 +819,8 @@ a/b/c
   > numpy套件
   
 - `np.array()`：將list轉換為numpy array
+- `array.mean()`：平均值
+- `array.std()`：標準差
 - `np.zeros()`：生成一個元素皆為0的array
   > 參數：array形狀
 - `np.ones()`：生成一個元素皆為1的array
@@ -852,9 +854,14 @@ a/b/c
     - end：結束範圍
     - step：間距
       > 可為分數
-- `np.c_[ ]`：按列向量連接兩個矩陣，也就是將兩個矩陣**上下**相加
+- `np.c_[ ]`：將兩個矩陣**左右**相加
    > 要求「行數」相同
-- `np.r_[ ]`：按
+   >> []()
+- `np.r_[ ]`：將兩個矩陣**上下**相加
+  > 要求「列數」相同
+  >> []()
+  
+  
   
 #### § np.dot §
   > 內積
@@ -1047,11 +1054,68 @@ array([ 0.3,  0.5,  0.7,  0.9,  1.1,  1.3,  1.5,  1.7,  1.9,  2.1,  2.3,
         6.9,  7.1,  7.3,  7.5,  7.7,  7.9,  8.1,  8.3,  8.5,  8.7,  8.9,
         9.1,  9.3,  9.5,  9.7,  9.9, 10.1])
 ```
+#### § np.c_\[ ] vs. np.r_\[ ] §
+
+- `np.c_[ ]`：將矩陣「左右」合併
+- `np.r_[ ]`：將矩陣「上下」合併
+
+```python
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+```
+
+將矩陣左右合併
+```python
+np.c_[a,b]
+#輸出
+array([[1, 4],
+       [2, 5],
+       [3, 6]])
+```
+> 若行數不相等，會出現錯誤
+>> `ValueError: all the input array dimensions except for the concatenation axis must match exactly`
+
+將矩陣上下合併
+```python
+np.r_[a,b]
+#輸出
+array([1, 2, 3, 4, 5, 6])
+```
+> 若列數不相等，會出現錯誤
+>> `ValueError: all the input arrays must have same number of dimensions
+`
+
+多維向量
+```python
+aa = np.array([[1,2,3], [4,5,6]])
+bb = np.array([[1,1,1], [0,0,0]])
+```
+
+左右合併
+```python
+np.c_[aa, bb]
+#輸出
+array([[1, 2, 3, 1, 1, 1],
+       [4, 5, 6, 0, 0, 0]])
+```
+
+上下合併
+```python
+np.r_[aa, bb]
+#輸出
+array([[1, 2, 3],
+       [4, 5, 6],
+       [1, 1, 1],
+       [0, 0, 0]])
+```
+
 
 #### Source
 [numpy.sinc](http://doc.codingdict.com/NumPy_v111/reference/generated/numpy.sinc.html)
 
 [🎙](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+[numpy中np.c_和np.r_](https://blog.csdn.net/yj1556492839/article/details/79031693)
 
 ---
 
@@ -1279,12 +1343,6 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
 - `dataframe名稱.rolling()`：移動平均
   > 其一應用：#移動平均：讓漲幅變平滑，好看出走向
   - window：取多少範圍的平均
-
-
-#### § Numpy §
-
-- `array.mean()`：平均值
-- `array.std()`：標準差
 
 #### Source
 [Python pandas Q&A video series](https://github.com/justmarkham/pandas-videos)
