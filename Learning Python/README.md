@@ -842,6 +842,9 @@ a/b/c
   > x-座標放一起；y-座標放一起\
   > 回傳 2D array
   >> [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npmeshgrid-)
+- `np.ravel()`：拉平法，將多維array拉為一維
+   > 不變更原始資料
+   >> []()
   
 #### § np.dot §
   > 內積
@@ -993,6 +996,34 @@ array([[5, 5, 5, 5],
        [8, 8, 8, 8]])
 ```
 > y座標的第一列、第二列...
+
+#### § np.ravel() §
+  > 拉平法
+  
+將多維的array拉為一維
+
+
+先生成一筆資料，為二維array
+```python
+X, Y = np.meshgrid(np.linspace(-6,3,30), np.linspace(-8,5,30))
+
+print('X:', X.shape)
+print('Y:', Y.shape)
+#輸出
+X: (30, 30)
+Y: (30, 30)
+```
+使用`np.ravel()`函式
+```python
+X = X.ravel()
+Y = Y.ravel()
+
+print('X:', X.shape)
+print('Y:', Y.shape)
+#輸出
+X: (900,)
+Y: (900,)
+```
 
 #### Source
 [numpy.sinc](http://doc.codingdict.com/NumPy_v111/reference/generated/numpy.sinc.html)
@@ -1483,3 +1514,6 @@ for i, j in enumerate(L):
 
 
 [🍰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
+### 
