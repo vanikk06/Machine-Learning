@@ -44,7 +44,7 @@
 - [week 7](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-7)
   - [SVM](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#svm)
     - [zip()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#zip)
-
+   - [K-Mean](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#k-mean)
 
  ---
  
