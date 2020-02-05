@@ -839,7 +839,9 @@ a/b/c
 - `np.sinc(x)`：返回元素經過sinc函數計算的array
   > x：要計算`sinc()`的值（可為多維）
 - `np.meshgrid(x格線, y格線)`：找出各個格點座標
-  > x-座標放一起；y-座標放一起
+  > x-座標放一起；y-座標放一起\
+  > 回傳 2D array
+  >> [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npmeshgrid-)
   
 #### § np.dot §
   > 內積
