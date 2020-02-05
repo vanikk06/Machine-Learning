@@ -847,11 +847,12 @@ a/b/c
    > 不變更原始資料
    >> [✍🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npravel-)
 - `np.arange(start, end, step)`：產生一組**等差數列**
-   > []()
+   > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-nparange-)
     - start：起始範圍
     - end：結束範圍
     - step：間距
       > 可為分數
+- `np.c_[ ]`：
   
 #### § np.dot §
   > 內積
