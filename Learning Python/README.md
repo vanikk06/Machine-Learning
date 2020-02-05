@@ -1557,6 +1557,8 @@ for i, j in enumerate(L):
 
 # week 7
   > 機器學習
+  
+[👉🏼HERE👈🏼](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_7.ipynb)
 
 機器學習：讓機器學一個函數
   > e.g. 分類：透過新資料的特徵、特性，預測它的分類
