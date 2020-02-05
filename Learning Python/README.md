@@ -43,6 +43,7 @@
   
 - [week 7](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-7)
   - [SVM](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#svm)
+    - [zip()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#zip)
 
 
  ---
@@ -1517,6 +1518,19 @@ for i, j in enumerate(L):
 
 
 ### zip()
+  > 高級組合
+  
+壓縮合併兩格list
+> e.g. 可將各自記錄x-座標、y-座標的list，合併為一個記錄各點的list
 
-[🧁](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+```python
+xx = [1,2,3,4]
+yy = [5,6,7,8]
+
+list(zip(xx, yy))
+#輸出
+[(1, 5), (2, 6), (3, 7), (4, 8)]
+```
+
+[🍰🍰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
