@@ -397,6 +397,14 @@ b = np.array([4,5,6]
     plt.subplot(2,2,1) #第一張
     ```
 - `plt.tight_layout()`：圖表過度集中，可用此分開
+- 三維等高線圖
+    - `plt.coutour(x, y, f(x,y), cmap, alpha)`：輪廓線
+    - `plt.contourf(x, y, f(x,y), cmap, alpha)`：填充輪廓
+        - x、y：變數
+          > 2D array，兩者shape要相同
+        - f(x, y)：對應到顏色
+        - cmap：繪圖主題
+        - alpha：透明度
     
  
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/image/Snipaste_2020-01-17_02-45-09.png)
@@ -414,6 +422,8 @@ b = np.array([4,5,6]
 [matplotlib.pyplot.annotate](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.annotate.html)
 
 [Python學習筆記#5：Matplotlib資料視覺化篇](http://psop-blog.logdown.com/posts/3020978-python-matplotlib)
+
+[matplotlib.pyplot contourf()函式的使用](https://www.itread01.com/content/1542579970.html)
 
 [🕛](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
