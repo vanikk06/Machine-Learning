@@ -10,7 +10,7 @@
 
 # Content
 - [Intro](https://github.com/vanikk06/Machine-Learning#intro)
-- [Learning Python](https://github.com/vanikk06/Machine-Learning/blob/master#learning-python)
+- [Learning Python](https://github.com/vanikk06/Machine-Learning#learning-python)
 
 # Learning Python
   > [class](http://moocs.nccu.edu.tw/course/123/intro)\
