@@ -844,7 +844,7 @@ a/b/c
   >> [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npmeshgrid-)
 - `np.ravel()`：拉平法，將多維array拉為一維
    > 不變更原始資料
-   >> []()
+   >> [✍🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npravel-)
   
 #### § np.dot §
   > 內積
@@ -1516,4 +1516,7 @@ for i, j in enumerate(L):
 [🍰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
 
 
-### 
+### zip()
+
+[🧁](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
