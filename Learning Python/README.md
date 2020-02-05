@@ -1420,3 +1420,14 @@ for i, j in enumerate(L):
       > 完全不知道答案
       >> e.g. K-Means
     - 深度學習
+
+
+## SVM
+  > 支持向量機（Support Vector Machine）
+  
+  
+ 是一種用**曲線**把資料分隔的方法，在高維度時為**曲面（超曲面）**分隔資料
+ 
+ 
+
+[🍰](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
