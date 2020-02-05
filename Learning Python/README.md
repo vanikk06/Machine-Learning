@@ -42,6 +42,9 @@
   - [enumerate()](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#enumerate)
   
 - [week 7](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-7)
+  - [SVM](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#svm)
+
+
  ---
  
 # week 1
@@ -970,7 +973,24 @@ X, Y = np.meshgrid(xx, yy)
 ```
 > 回傳會將x-座標值放一起，y-座標值放一起，因此使用兩個變數
   
-
+```python
+X
+#輸出
+array([[1, 2, 3, 4],
+       [1, 2, 3, 4],
+       [1, 2, 3, 4],
+       [1, 2, 3, 4]])
+```
+> 從x座標來看，對應y軸的第一列、第二列...
+```python
+Y
+#輸出
+array([[5, 5, 5, 5],
+       [6, 6, 6, 6],
+       [7, 7, 7, 7],
+       [8, 8, 8, 8]])
+```
+> y座標的第一列、第二列...
 
 #### Source
 [numpy.sinc](http://doc.codingdict.com/NumPy_v111/reference/generated/numpy.sinc.html)
