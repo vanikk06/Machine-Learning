@@ -856,10 +856,10 @@ a/b/c
       > 可為分數
 - `np.c_[ ]`：將兩個矩陣**左右**相加
    > 要求「行數」相同
-   >> []()
+   >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npc_--vs-npr_--)
 - `np.r_[ ]`：將兩個矩陣**上下**相加
   > 要求「列數」相同
-  >> []()
+  >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#-npc_--vs-npr_--)
   
   
   
