@@ -45,7 +45,15 @@
 
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
 
-
+- normal distribution：正態分佈，資料呈「對稱」分佈
+  > mean、median、mode相同
+- skewed distribution：偏態分佈
+  > 左右以尾部判斷
+  >> mean：落在約「底部面積一半」的位置
+    - negatively skewed distribution：負偏態，又稱 left skewed distribution（左偏態），資料大多集中於右側
+      > Mode > Median > Mean
+    - positively skewed distribution：正偏態，又稱 right skewed distribution（右偏態），資料大多集中於左側
+      > Mean > Median > Mode
 
 #### Source
 [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/stats1/)
