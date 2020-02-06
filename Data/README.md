@@ -1,6 +1,7 @@
 # Content
 - [Attributes](https://github.com/vanikk06/Machine-Learning/tree/master/Data#attributes)
 - [Symmetric vs. Skewed Data](https://github.com/vanikk06/Machine-Learning/tree/master/Data#symmetric-vs-skewed-data)
+- [Basic Statistical Descriptions](https://github.com/vanikk06/Machine-Learning/tree/master/Data#basic-statistical-descriptions)
 
 # Attributes
   > 屬性
@@ -83,3 +84,13 @@
 
 - IQR（四分位距）：Q3 - Q1
 - 離群值：範圍為「小於Q1 - 1.5IQR」的值與「大於Q3 + 1.5IQR」的值
+
+```python
+sum( )/4    #Q1
+
+sum( )/2    #Q2
+
+sum( )/4*3  #Q3
+```
+
+[🦅](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
