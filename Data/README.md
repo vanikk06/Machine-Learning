@@ -16,7 +16,7 @@
 - Non-numeric：非數值型
   - Nominal：類別尺度，種類（categories）、狀態（states）或事物名稱（names of things）
     > E.g. red、blue
-      - Binary：二進制，類別尺度特徵僅有「兩個狀態」，0和1
+      - Binary：二進制，特徵僅有「兩個狀態」，0和1
         > 特殊的Nominal案例
   - Ordinal：順序尺度，值與值之間為有意義的順序（有優劣、先後區分），但連續值之間的大小關係未知
     > E.g. freshman、sophomore、junior、senior
