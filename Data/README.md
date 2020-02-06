@@ -36,3 +36,7 @@
       1. 具固有的零點
       2. 值之間可明確的進行數量級的比較
          > E.g. 10m是5m的兩倍
+
+[🦢](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+#
