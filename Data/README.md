@@ -62,3 +62,24 @@
 [正態分佈（normal distribution）與偏態分佈（skewed distribution）](https://www.itread01.com/content/1542005346.html)
 
 [🕊](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+# Basic Statistical Descriptions
+  > 基本統計描述
+  
+- Histogram：直方圖，x軸為值（values），y軸為次數、頻率（frequencies）
+  > 連續型資料
+  >> 長條間黏在一起
+- Boxplot：盒鬚圖，由五個數組成，又稱「五數綜合圖」
+  > []()
+    - 最大值（Max）
+    - 最小值（min）
+    - 四分位數：資料由小到大排序
+        - Q1：25%
+        - Q2：50%（中位數）
+        - Q3：75%
+- Scatter plot：散佈圖，每對值為一對座標，並在平面中繪製為點
+
+#### § Boxplot §
+
+- IQR（四分位距）：Q3 - Q1
+- 離群值：範圍為「小於Q1 - 1.5IQR」的值與「大於Q3 + 1.5IQR」的值
