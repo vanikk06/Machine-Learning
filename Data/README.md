@@ -1,5 +1,5 @@
 # Content
-
+- [Attributes](https://github.com/vanikk06/Machine-Learning/tree/master/Data#attributes)
 
 # Attributes
   > 屬性
@@ -39,13 +39,17 @@
 
 [🦢](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
 
-#
+# Symmetric vs. Skewed Data
+  > 正態分佈 與 偏態分佈
+ 
 
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
 
 
 
 #### Source
-[]()
+[Analytics Vidhya](https://www.analyticsvidhya.com/blog/2017/05/41-questions-on-statisitics-data-scientists-analysts/stats1/)
+
+[正態分佈（normal distribution）與偏態分佈（skewed distribution）](https://www.itread01.com/content/1542005346.html)
 
 [🕊](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
