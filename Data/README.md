@@ -98,3 +98,24 @@ sum( )/4*3  #Q3
 ```
 
 [🦅](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+
+# Machine Learning Process
+  > 機器學習步驟
+  
+Step 1. 準備資料（包含資料愈處理）
+  > [👆🏻Exercise👇🏻]()
+
+Step 2. 選擇演算法
+
+Step 3. 調整參數
+
+Step 4. 評估結果
+
+### § 準備資料 §
+> 使用 Iris Data Set（鳶尾花卉數據集）
+>> 為150個樣本，屬於鳶尾花下的三個亞屬
+>> - 山鳶尾（setosa）
+>> - 變色鳶尾（versicolor）
+>> - 維吉尼亞鳶尾（virginica）\
+>> 各自的四個特徵：花萼（Sepal）和花瓣（Petal）的長度與寬度
