@@ -104,7 +104,7 @@ sum( )/4*3  #Q3
   > 機器學習步驟
   
 Step 1. 準備資料（包含資料愈處理）
-  > [👆🏻Exercise👇🏻]()
+  > [👆🏻Exercise👇🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99-)
 
 Step 2. 選擇演算法
 
@@ -120,5 +120,44 @@ Step 4. 評估結果
 >> - 維吉尼亞鳶尾（virginica）
 >>> 各自的四個特徵：花萼（Sepal）和花瓣（Petal）的長度與寬度
 
+- Loading the Data
+  ```python
+  import pandas as pd
 
+  df = pd.read_csv('iris.csv', header=None, names=names)
+  ```
+  - `pd.read_csv('檔案名', header, names)`
+      - header：檔案是否有欄位名
+        > header=None：沒有欄位名
+      - names：指定欄位名稱
+- Observing the data
+  ```python
+  df.head()
+  
+  df.info()
+  
+  df.describe()
+  ```
+  - `df.head()`：前五前五筆資料
+  - `df.info()`：資料的基本資料（個數、資料類型...）
+  - `df.describe()`：基本的統計計算（個數、平均數、標準差...）
+  
+- Plotting graph 
+  > 藉由圖形來輔助我們判斷class及其他特徵關係
+  
+  - matplotlib.pyplot：python繪圖套件
+  - seaborn：matplotlib的補強，以matplotlib建構的高階繪圖套件
+  
+  ```python
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+  ```
+  - `plt.style.use()`：指定主題
+  - ``
+  
+  
+  
+ #### Source
+ [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
+  
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
