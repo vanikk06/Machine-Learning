@@ -152,12 +152,14 @@ Step 4. 評估結果
   import matplotlib.pyplot as plt
   import seaborn as sns
   ```
-  - `plt.style.use()`：指定主題
+  - `plt.style.use()`：指定套用風格、主題
   - ``
   
   
   
  #### Source
  [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
+ 
+ [[Matplotlib-06]圖表風格](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700)
   
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
