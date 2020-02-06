@@ -1,5 +1,6 @@
 # Content
 - [Attributes](https://github.com/vanikk06/Machine-Learning/tree/master/Data#attributes)
+- [Symmetric vs. Skewed Data](https://github.com/vanikk06/Machine-Learning/tree/master/Data#symmetric-vs-skewed-data)
 
 # Attributes
   > 屬性
