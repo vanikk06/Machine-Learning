@@ -40,3 +40,12 @@
 [🦢](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
 
 #
+
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
+
+
+
+#### Source
+[]()
+
+[🕊](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
