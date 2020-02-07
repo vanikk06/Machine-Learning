@@ -188,6 +188,22 @@ sum( )/4*3  #Q3
  ### § 選擇演算法 §
  
  - Split into train and test
+   > 區分training data、testing data，用於交叉驗證
+   
+   先匯入套件
+   ```python
+   import numpy as np
+   from sklearn.model_selection import train_test_split
+   ```
+   再將數據從dataframe的資料格式轉換為array，並放入函式中將data set用隨機分配方式，分割為"training set"與"testing set"
+   ```python
+   x = df.iloc[:,:-1].values
+   y = df.iloc[:,4].values
+   
+   x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=42)
+   ```
+   
+    
  
  - Algorithm：K-NN
  
