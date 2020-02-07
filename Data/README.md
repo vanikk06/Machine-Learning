@@ -177,7 +177,11 @@ Step 4. 評估結果
         > 預設為True
       - hue：分類，定義數據子集
   
-  
+ ### § 選擇演算法 §
+ 
+ ### § 調整參數 §
+ 
+ ### § 評估結果 §
   
  #### Source
  [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
