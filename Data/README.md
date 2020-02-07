@@ -104,19 +104,19 @@ sum( )/4*3  #Q3
 # Machine Learning Process
   > 機器學習步驟
   
-Step 1. 準備資料（包含資料愈處理）
+- **Step 1. 準備資料（包含資料愈處理）**
   
-  [👆🏻Exercise👇🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99-)
+  [Exercise](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99-)
 
-Step 2. 選擇演算法
+- Step 2. 選擇演算法
+
+  [👆🏻Exercise👇🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E9%81%B8%E6%93%87%E6%BC%94%E7%AE%97%E6%B3%95-)
+
+- Step 3. 調整參數
 
   [👆🏻Exercise👇🏻]()
 
-Step 3. 調整參數
-
-  [👆🏻Exercise👇🏻]()
-
-Step 4. 評估結果
+- Step 4. 評估結果
 
   [👆🏻Exercise👇🏻]()
 
