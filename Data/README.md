@@ -118,7 +118,7 @@ sum( )/4*3  #Q3
 
 - **Step 4. 評估結果**
 
-  [Exercise]()
+  [Exercise](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E8%A9%95%E4%BC%B0%E7%B5%90%E6%9E%9C-)
 
 ### § 準備資料 §
 > 使用 Iris Data Set（鳶尾花卉數據集）
@@ -186,6 +186,8 @@ sum( )/4*3  #Q3
       - hue：分類，定義數據子集
   
  ### § 選擇演算法 §
+ 
+ - Split into train and test
  
  ### § 調整參數 §
  
