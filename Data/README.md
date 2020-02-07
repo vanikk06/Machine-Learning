@@ -26,6 +26,7 @@
   
 - Numeric：數值型
   >  Quantity，以可否進行數學運算作區分
+  >> 主要用於**迴歸分析**
   
   - Interval-scaled：區間尺度（等距）
     > 意義可加減、不可乘除
@@ -215,10 +216,39 @@ sum( )/4*3  #Q3
         - random_state：隨機抽取的方式
           > PRG(Pseudo-random- Generator):偽隨機數生成器
    
-   
-    
+- Algorithm：K-NN
  
- - Algorithm：K-NN
+  使用K-NN（k-nearest neighbor）演算法，簡單來說，它假設欲預測點是i，找出離i最近的k筆資料多數是哪一類，以此預測i的類型
+  > Given a test instance i, find the k closest neighbors and their labels
+Predict i’s label as the majority of the labels of the k nearest neighbors.
+
+  K-NN為監督式學習的一種，適用於「數值型」和「標稱型」
+    > 標稱型：目標變數的結果，只有在有限目標集中取值
+    >> 主要用於**分類**
+  
+  - 優點：
+      - 精確度高
+      - 對離群值不敏感
+      - 無資料輸入假定
+  - 缺點：
+      - 時間與空間複雜度高
+      - 訓練模型依賴訓練集，且不可丟棄
+  
+  ![](https://ooo.0o0.ooo/2016/06/22/576a3afd1bb03.png)
+  
+  匯入套件，k為用戶定義的參數，為新資料附近的k個鄰居
+   > k 的設定很重要，好的 k 能夠讓 training 出來的 model 有足夠的彈性，避免掉 Overfitting 和 Underfitting
+   >> - 若 k 為偶數，有可能碰到「無法直接決定類別」的時候，需再針對該狀況作exception handling
+   >> - Overfitting：當 k=1 時，會導致過度符合training set的資料特性，使其無法預測較為普遍的資料
+   >> - Underfitting：當 k=n （過大）時，預測結果一定是資料數量最多的那類，導致model失去預測能力
+  
+  ```python
+  from sklearn.neighbors import KNeighborsClassifier
+  
+  knn = KNeighborsClassifier(n_neighbors=3)
+  ```
+  
+  
  
  ### § 調整參數 ＆ 評估結果 §
  
@@ -231,5 +261,13 @@ sum( )/4*3  #Q3
  [[Matplotlib-06]圖表風格](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700)
  
  [train_test_split用法](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/37690/)
+ 
+ [k近邻--一个懒惰学习算法](https://ljalphabeta.gitbooks.io/python-/content/knn.html)
+  
+  
+ [kNN分類演算法](https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df)
+ 
+ [機器學習：KNN分類演算法！](https://ithelp.ithome.com.tw/articles/10197110)
+  
   
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
