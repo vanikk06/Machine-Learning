@@ -189,6 +189,8 @@ sum( )/4*3  #Q3
  
  - Split into train and test
  
+ - Algorithm：K-NN
+ 
  ### § 調整參數 §
  
  ### § 評估結果 §
