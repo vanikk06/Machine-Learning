@@ -202,6 +202,19 @@ sum( )/4*3  #Q3
    
    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=42)
    ```
+   > x為特徵變數（class以外的）\
+   > y為目標變數（class）
+   
+   - `df.iloc[row, column]`：選取欄位
+      > 參數：index
+   - `df.values`：將dataframe轉為array
+   -  `train_test_split(x, y, test_size, random_state)`：將x、y按照相同的隨機分配進行切割
+        - x：特徵變數
+        - y：目標變數
+        - test_size：測試集大小
+        - random_state：隨機抽取的方式
+          > PRG(Pseudo-random- Generator):偽隨機數生成器
+   
    
     
  
