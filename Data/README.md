@@ -2,6 +2,7 @@
 - [Attributes](https://github.com/vanikk06/Machine-Learning/tree/master/Data#attributes)
 - [Symmetric vs. Skewed Data](https://github.com/vanikk06/Machine-Learning/tree/master/Data#symmetric-vs-skewed-data)
 - [Basic Statistical Descriptions](https://github.com/vanikk06/Machine-Learning/tree/master/Data#basic-statistical-descriptions)
+- [Machine Learning Process](https://github.com/vanikk06/Machine-Learning/tree/master/Data#machine-learning-process)
 
 # Attributes
   > 屬性
@@ -104,13 +105,20 @@ sum( )/4*3  #Q3
   > 機器學習步驟
   
 Step 1. 準備資料（包含資料愈處理）
-  > [👆🏻Exercise👇🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99-)
+  
+  [👆🏻Exercise👇🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99-)
 
 Step 2. 選擇演算法
 
+  [👆🏻Exercise👇🏻]()
+
 Step 3. 調整參數
 
+  [👆🏻Exercise👇🏻]()
+
 Step 4. 評估結果
+
+  [👆🏻Exercise👇🏻]()
 
 ### § 準備資料 §
 > 使用 Iris Data Set（鳶尾花卉數據集）
