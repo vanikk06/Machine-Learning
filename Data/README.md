@@ -108,17 +108,17 @@ sum( )/4*3  #Q3
   
   [Exercise](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E6%BA%96%E5%82%99%E8%B3%87%E6%96%99-)
 
-- Step 2. 選擇演算法
+- **Step 2. 選擇演算法**
 
-  [👆🏻Exercise👇🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E9%81%B8%E6%93%87%E6%BC%94%E7%AE%97%E6%B3%95-)
+  [Exercise](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E9%81%B8%E6%93%87%E6%BC%94%E7%AE%97%E6%B3%95-)
 
-- Step 3. 調整參數
+- **Step 3. 調整參數**
 
-  [👆🏻Exercise👇🏻]()
+  [Exercise](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-%E8%AA%BF%E6%95%B4%E5%8F%83%E6%95%B8-)
 
-- Step 4. 評估結果
+- **Step 4. 評估結果**
 
-  [👆🏻Exercise👇🏻]()
+  [Exercise]()
 
 ### § 準備資料 §
 > 使用 Iris Data Set（鳶尾花卉數據集）
