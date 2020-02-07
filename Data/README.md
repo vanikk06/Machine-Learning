@@ -151,14 +151,38 @@ Step 4. 評估結果
   ```python
   import matplotlib.pyplot as plt
   import seaborn as sns
+  
+  plt.style.use('ggplot')
+  sns.lmplot("sepal_length", "sepal_width", data=df, fit_reg=False, hue='class')
   ```
   - `plt.style.use()`：指定套用風格、主題
-  - ``
+    >  可結合兩種不同的內建風格使用，也可自訂風格
+    >> [Learning more](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700#2a92)
+    
+    ```python
+    plt.style.use([“bmh”, “dark_background”])
+    ```
+    - `plt.style.available`：可印出所有可用的內建風格
+      
+      ```python
+      print(plt.style.available)
+      ```
+  - `sns.lmplot()`：迴歸圖，可直觀地總覽數據的內在關係
+    > 必要參數：x、y、data
+      - x、y：x軸、y軸要放置的欄位
+        > 必須指定為**字符串**
+        >> 此種數據格式稱為「長格式」或「整潔」數據
+      - data：整個資料變數
+      - fit_reg：是否要有迴關線
+        > 預設為True
+      - hue：分類，定義數據子集
   
   
   
  #### Source
  [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
+ 
+ [Seaborn(sns)官方文档学习笔记（第四章 线性关系的可视化）](https://zhuanlan.zhihu.com/p/27593869)
  
  [[Matplotlib-06]圖表風格](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700)
   
