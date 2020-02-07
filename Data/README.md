@@ -220,9 +220,8 @@ sum( )/4*3  #Q3
  
  - Algorithm：K-NN
  
- ### § 調整參數 §
+ ### § 調整參數 ＆ 評估結果 §
  
- ### § 評估結果 §
   
  #### Source
  [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
