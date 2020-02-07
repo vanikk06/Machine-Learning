@@ -229,5 +229,7 @@ sum( )/4*3  #Q3
  [Seaborn(sns)官方文档学习笔记（第四章 线性关系的可视化）](https://zhuanlan.zhihu.com/p/27593869)
  
  [[Matplotlib-06]圖表風格](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700)
+ 
+ [train_test_split用法](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/37690/)
   
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
