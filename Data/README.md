@@ -225,6 +225,12 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
   K-NN為監督式學習的一種，適用於「數值型」和「標稱型」
     > 標稱型：目標變數的結果，只有在有限目標集中取值
     >> 主要用於**分類**
+    
+  Step 1. 確定 k 大小
+  
+  Step 2. 對於 testing set中的一個樣本，找到 training set 中和它最近的 k 個樣本
+  
+  Step 3. 將這 k 個樣本的投票結果作為測試樣本的類別（多數決）
   
   - 優點：
       - 精確度高
@@ -234,7 +240,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
       - 時間與空間複雜度高
       - 訓練模型依賴訓練集，且不可丟棄
   
-  ![](https://ooo.0o0.ooo/2016/06/22/576a3afd1bb03.png)
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Data/image/Snipaste_2020-02-08_03-14-14.png)
   
   匯入套件，k為用戶定義的參數，為新資料附近的k個鄰居
    > k 的設定很重要，好的 k 能夠讓 training 出來的 model 有足夠的彈性，避免掉 Overfitting 和 Underfitting
@@ -247,8 +253,34 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
   
   knn = KNeighborsClassifier(n_neighbors=3)
   ```
+  > 要告知 k 的大小
   
+  擬合model並進行預測
+  ```python
+  knn.fit(x_train, y_train)
   
+  pred = knn.predict(x_test)
+  ```
+  
+  - `knn.fit(X, y)`：訓練model，拿training set去訓練model
+     > X、y為training data
+  - `knn.predict(X)`：預測，將testing set放入由training set訓練出的model中，看model的準確程度
+     > X為testing data 
+  
+  計算模型準確度
+  ```python
+  from sklearn.metrics import accuracy_score
+  
+  accuracy_score(y_test, pred)
+  ```
+  
+  - `accuracy_score(y_true, y_pred, normalize=True)`：計算**分類器**的準確率
+    > [Learning more](https://blog.csdn.net/CherDW/article/details/55813071)
+      - y_true：testing set中 y 的真實資料
+      - y_pred：model預測出的 y
+      - normalize：是否返回正確的分類比例
+          - True：正確的分類比例
+          - False：正確的分類樣本數
  
  ### § 調整參數 ＆ 評估結果 §
  
@@ -269,5 +301,6 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
  
  [機器學習：KNN分類演算法！](https://ithelp.ithome.com.tw/articles/10197110)
   
+ [sklearn.metrics中的评估方法介绍（accuracy_score, recall_score, roc_curve, roc_auc_score, confusion_matrix）](https://blog.csdn.net/CherDW/article/details/55813071) 
   
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
