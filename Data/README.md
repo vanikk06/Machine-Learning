@@ -470,7 +470,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 - 填補**遺失值**
   > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-missing-value-)
 - 找出**Outliers**並淡化（平滑）雜訊
-  > []()
+  > [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-noisy-data-)
 - 修正資料的**不一致**
 - 解決資料整合所造成的**重複**
 
@@ -485,8 +485,13 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 - Method 3：自動填入
     - 利用**全域常數（Global Constant）**
       > E.g. "未知", "±∞"
-    - 使用**平均值**
+    - 使用**平均值、中位數或眾數**
+        - 數值型：平均數
+          > 確保無極端值
+        - 順序型：中位數
+        - 類別型：眾數
     - 使用**相同類別值組的屬性平均值**
+      > 資料類型為數值型
     - 使用**最有可能的值**：可透過迴歸、貝氏理論等推論式工具，或決策樹推論來決定
     
 
