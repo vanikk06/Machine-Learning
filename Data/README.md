@@ -3,6 +3,7 @@
 - [Symmetric vs. Skewed Data](https://github.com/vanikk06/Machine-Learning/tree/master/Data#symmetric-vs-skewed-data)
 - [Basic Statistical Descriptions](https://github.com/vanikk06/Machine-Learning/tree/master/Data#basic-statistical-descriptions)
 - [Machine Learning Process](https://github.com/vanikk06/Machine-Learning/tree/master/Data#machine-learning-process)
+- [Data Pre-processing](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-pre-processing)
 
 # Attributes
   > 屬性
@@ -403,3 +404,63 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 # Data Pre-processing
   > 資料預處理
+
+在真實世界中的資料是**不乾淨的（Dirty）**，再進行分析之前，必須先對資料做些處理，否則會分析出的結果
+> garbage in, garbage out（GIGO）
+>> 沒有高品質的資料，就沒有高品質的探勘結果
+
+- 不乾淨的資料可能出現的問題
+    1. 不完整（Incomplete）：缺少「屬性值」或「某些有價值的屬性」，也可能「僅包含聚集資料」
+       > E.g. 職業=' ', 公司人數=20（公司人數為聚集資料，而無公司人員資料）
+    2. 有雜訊（Noise）：包含「錯誤」或「離異值/離群值」
+    3. 不一致（Inconsistent）：資料本身或命名上不一致
+
+
+- 在資料預處理中，主要包含四項工作
+    - 資料清理(Data Cleaning)：
+      > []()
+        - 填入**遺失值**
+        - 找出且移除**離異值（雜訊）**
+        - 解決**不一致**
+    - 資料整合(Data Integration)：整合**不同來源**的資料庫或檔案
+      > []()
+    - 資料轉換(Data Transformation)：**標準化**與**聚合**
+      > []()
+    - 資料縮減(Data Reduction)：降低資料量的大小，並預期能獲得相同或近似的分析結果
+      > []()
+
+[🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+## Data description 
+   > 資料描述
+
+
+[🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+
+## Data cleaning
+   > 資料清理
+
+
+
+[🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+
+## Data integration
+   > 資料整合
+   
+[🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)  
+
+
+## Data transformation
+   > 資料轉換
+
+
+[🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)  
+
+## Data reduction
+   > 資料壓縮
+   
+   
+   
+[🐓🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)     
