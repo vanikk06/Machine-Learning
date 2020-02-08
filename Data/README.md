@@ -292,9 +292,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
           - False：正確的分類樣本數
  
  ### § 調整參數 ＆ 評估結果 §
- 
- 
- 
+
  - cross-validation：交叉驗證
     > 檢驗model方法，協助調節參數
     >> 避免model依賴某一特定的training set與testing set產生**偏差**
@@ -473,6 +471,35 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
   > [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-noisy-data-)
 - 修正資料的**不一致**
 - 解決資料整合所造成的**重複**
+
+機器學習的model是利用**空間中的距離**來做迴歸或是分類，若資料中有缺值，就無法在空間中表現位置，需要處理
+
+    ```python
+    import pandas as pd
+
+    df = pd.read_csv('data.csv')
+    ```
+
+    查看是否有遺失值
+    ```python
+    df.isnull()
+
+    df.isnull().sum() #總合
+    ```
+     - `df.isnull()`：是否為空值/遺失值
+        > 回傳布林值的dataframe
+        
+     刪除遺失值
+     ```python
+     df.dropna(axis=0) #row
+     
+     df.dropna(axis=1) #column
+     
+     df.dropna(how='all') #指定
+     ```
+      - `df.dropna(axis, how, inplace)`：移除遺失值
+
+
 
 #### § Missing value §
 
