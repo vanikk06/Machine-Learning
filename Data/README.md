@@ -4,6 +4,11 @@
 - [Basic Statistical Descriptions](https://github.com/vanikk06/Machine-Learning/tree/master/Data#basic-statistical-descriptions)
 - [Machine Learning Process](https://github.com/vanikk06/Machine-Learning/tree/master/Data#machine-learning-process)
 - [Data Pre-processing](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-pre-processing)
+    - [Data description](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-description)
+    - [Data cleaning](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-cleaning)
+    - [Data integration](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-integration)
+    - [Data transformation](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-transformation)
+    - [Data reduction](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-reduction)
 
 # Attributes
   > 屬性
