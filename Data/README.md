@@ -195,7 +195,10 @@ sum( )/4*3  #Q3
  ### § 選擇演算法 §
  
  - Split into train and test
-   > 區分training data、testing data，用於交叉驗證
+   > 驗證model
+   >> 區分training data、testing data，用於交叉驗證
+   
+   進行model驗證的一個重要目的，是要選出一個適合的model，對監督式學習而言，我們希望model**對於未知數據的泛化能力強**
    
    先匯入套件
    ```python
@@ -270,7 +273,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
   
   - `knn.fit(X, y)`：訓練model，拿training set去訓練model
      > X、y為training data
-  - `knn.predict(X)`：預測，將testing set放入由training set訓練出的model中，看model的準確程度
+  - `knn.predict(X)`：預測，將testing set放入由training set訓練出的model中，看model的準確程度（預測表現能力）
      > X為testing data 
   
   計算模型準確度
@@ -290,8 +293,10 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
  
  ### § 調整參數 ＆ 評估結果 §
  
+ 
+ 
  - cross-validation：交叉驗證
-    > 檢驗model方法
+    > 檢驗model方法，協助調節參數
     >> 避免model依賴某一特定的training set與testing set產生**偏差**
  
     一般我們會將數據分為training set與testing set，交叉驗證是一種統計學上將樣本切割為多個小子集，以不同分區作為training與testing，並計算不同分區上的平均得分
@@ -306,7 +311,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
     ```python
     from sklearn.model_selection import cross_val_score
     
-    scores = cross_val_score(knn, x_train, y_train, cv=10, scoring='accuracy')
+    scores = cross_val_score(knn, x, y, cv=10, scoring='accuracy')
     print(scores)
     print(scores.mean())
     #輸出
@@ -317,8 +322,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
     - `cross_val_score(estimator, X, y=None, cv=None, scoring=None)`：對數據集進行指定次數的交叉驗證，並為每次驗證效果評測
        > [Learning more](https://www.itread01.com/content/1541250025.html)
        - estimator：分類器，估計方法對象
-       - X：特徵變數（features）
-       - y：目標變數（Labels）
+       - X：特徵變數（features），需放入完整資料
+       - y：目標變數（Labels），需放入完整資料
        - cv：分幾組
        - scoring：分數計算方法
          - accuracy：顯示準確度高不高
@@ -333,7 +338,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
     
     for k in neighbors:
       knn = KNeighborsClassifier(n_neighbors=k)
-      scores = cross_val_score(knn, x_train, y_train, cv=10, scoring='accuracy')
+      scores = cross_val_score(knn, x, y, cv=10, scoring='accuracy')
       cv_scores.append(scores.mean())
     ```
     > cv_scores為不同model（由不同 k 訓練）各自的準確度平均
@@ -402,6 +407,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 [交叉驗證(Cross-validation, CV)-K-fold CV](https://medium.com/@chih.sheng.huang821/%E4%BA%A4%E5%8F%89%E9%A9%97%E8%AD%89-cross-validation-cv-3b2c714b18db#681e)
 
 [機器學習：交叉驗證！](https://ithelp.ithome.com.tw/articles/10197461)
+
+[cross_val_score交叉验证及其用于参数选择、模型选择、特征选择](https://blog.csdn.net/weixin_38536057/article/details/78702564)
  
 [機器/深度學習: 基礎介紹-損失函數(loss function)](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E5%9F%BA%E7%A4%8E%E4%BB%8B%E7%B4%B9-%E6%90%8D%E5%A4%B1%E5%87%BD%E6%95%B8-loss-function-2dcac5ebb6cb) 
  
