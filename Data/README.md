@@ -284,6 +284,17 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
  
  ### § 調整參數 ＆ 評估結果 §
  
+ - cross-validation：交叉驗證
+    > 避免model依賴某一特定的training set與testing set產生偏差
+ 
+    一般我們會將數據分為training set與testing set，交叉驗證是一種統計學上將樣本切割為多個小子集，以不同分區作為training與testing，並計算不同分區上的平均得分
+    
+    此次使用K-Fold交叉驗證的方式，使用不同的資料組合來驗證訓練的model
+    > E.g. 將資料分為10等份，其中「第一等份」作為testing set，其餘九等份作為training set；下一輪，繼續將「第二等份」作為testing set，剩下的九等份作為training set，重複此動作做10次\
+    最後，藉由將10次的準確性（Accuracy）平均，得到的平均值可以做為我們判斷準確度是否偏差的指標
+    
+    ![](https://i.imgur.com/tLWEE80.png)
+
   
  #### Source
  [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
