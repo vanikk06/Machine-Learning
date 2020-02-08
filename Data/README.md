@@ -285,7 +285,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
  ### § 調整參數 ＆ 評估結果 §
  
  - cross-validation：交叉驗證
-    > 避免model依賴某一特定的training set與testing set產生偏差
+    > 檢驗model方法
+    >> 避免model依賴某一特定的training set與testing set產生**偏差**
  
     一般我們會將數據分為training set與testing set，交叉驗證是一種統計學上將樣本切割為多個小子集，以不同分區作為training與testing，並計算不同分區上的平均得分
     
@@ -316,8 +317,62 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
        - scoring：分數計算方法
          - accuracy：顯示準確度高不高
            > 愈高愈好
+
+
+    交叉檢驗為驗證model的方法，而此次model是依照K-NN演算法去訓練出的，用戶自行設定的 k 也會影響到 model 的好壞，帶入不同的 k 進行交叉檢驗，看哪個模型的分數較高，以此找出最適當的 k
     
-#### Source
+    ```python
+    neighbors = [x for x in range(1,50) if x%2 != 0]
+    cv_scores = []
+    
+    for k in neighbors:
+      knn = KNeighborsClassifier(n_neighbors=k)
+      scores = cross_val_score(knn, x_train, y_train, cv=10, scoring='accuracy')
+      cv_scores.append(scores.mean())
+    ```
+    > cv_scores為不同model（由不同 k 訓練）各自的準確度平均
+
+    - changing to misclassification error：分類錯誤
+      > MSE：均方誤差，預測值與真實值之間差異的均方值(大小)
+      
+      ```python
+      MSE = [1-x for x in cv_scores]
+      ```
+      
+    - determining best k：找出最佳的 k
+      
+      ```python
+      optimal_k = neighbors[MSE.index(min(MSE))]
+      
+      print("The optimal number of neighbors is %d" % optimal_k)
+      #輸出
+      The optimal number of neighbors is 7
+      ```
+        - `index(x, start, end)`：list中第一個匹配的值
+            - x：查找的對象
+            - start, end：開始結束的範圍
+        - 格式化操作
+        
+          ```python
+          print("I'm %s. I'm %d years old." % ("kid", 18))
+          print("Hi, %s. I'm %s" % ('mom', 'kid'))
+          #輸出
+          I'm kid. I'm 18 years old.
+          Hi, mom. I'm kid
+          ```
+           - %s：字符串
+           - %d：十進位制整數
+           
+     - plot misclassification error vs. k：畫出「分類誤差」與「k」之間的折線圖
+     
+       ```python
+       plt.plot(neighbors, MSE)
+       plt.xlabel('Number of neighbors k')
+       plt.ylabel('Misclassification Error')
+       ```
+       > 由圖可看出，當 k 數字大到一定程度時，model分類的錯誤率也會愈來愈高
+
+#### Source   
 [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
  
 [Seaborn(sns)官方文档学习笔记（第四章 线性关系的可视化）](https://zhuanlan.zhihu.com/p/27593869)
@@ -341,5 +396,10 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 [交叉驗證(Cross-validation, CV)-K-fold CV](https://medium.com/@chih.sheng.huang821/%E4%BA%A4%E5%8F%89%E9%A9%97%E8%AD%89-cross-validation-cv-3b2c714b18db#681e)
 
 [機器學習：交叉驗證！](https://ithelp.ithome.com.tw/articles/10197461)
-  
+ 
+[機器/深度學習: 基礎介紹-損失函數(loss function)](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E5%9F%BA%E7%A4%8E%E4%BB%8B%E7%B4%B9-%E6%90%8D%E5%A4%B1%E5%87%BD%E6%95%B8-loss-function-2dcac5ebb6cb) 
+ 
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+# Data Pre-processing
+  > 資料預處理
