@@ -290,28 +290,56 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
     一般我們會將數據分為training set與testing set，交叉驗證是一種統計學上將樣本切割為多個小子集，以不同分區作為training與testing，並計算不同分區上的平均得分
     
     此次使用K-Fold交叉驗證的方式，使用不同的資料組合來驗證訓練的model
-    > E.g. 將資料分為10等份，其中「第一等份」作為testing set，其餘九等份作為training set；下一輪，繼續將「第二等份」作為testing set，剩下的九等份作為training set，重複此動作做10次\
+    > E.g. 將資料分為10等份，其中「第一等份」作為testing set，其餘九等份作為training set；\
+    下一輪，繼續將「第二等份」作為testing set，剩下的九等份作為training set，重複此動作做10次\
     最後，藉由將10次的準確性（Accuracy）平均，得到的平均值可以做為我們判斷準確度是否偏差的指標
     
     ![](https://i.imgur.com/tLWEE80.png)
 
+    ```python
+    from sklearn.model_selection import cross_val_score
+    
+    scores = cross_val_score(knn, x_train, y_train, cv=10, scoring='accuracy')
+    print(scores)
+    print(scores.mean())
+    #輸出
+    [0.91666667 0.72727273 0.90909091 0.81818182 0.9        0.88888889
+    1.         1.         0.77777778 0.77777778]
+    0.8715656565656567
+    ```
+    - `cross_val_score(estimator, X, y=None, cv=None, scoring=None)`：對數據集進行指定次數的交叉驗證，並為每次驗證效果評測
+       > [Learning more](https://www.itread01.com/content/1541250025.html)
+       - estimator：分類器，估計方法對象
+       - X：特徵變數（features）
+       - y：目標變數（Labels）
+       - cv：分幾組
+       - scoring：分數計算方法
+         - accuracy：顯示準確度高不高
+           > 愈高愈好
+    
+#### Source
+[10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
+ 
+[Seaborn(sns)官方文档学习笔记（第四章 线性关系的可视化）](https://zhuanlan.zhihu.com/p/27593869)
+ 
+[[Matplotlib-06]圖表風格](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700)
+ 
+[train_test_split用法](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/37690/)
+ 
+[k近邻--一个懒惰学习算法](https://ljalphabeta.gitbooks.io/python-/content/knn.html)
   
- #### Source
- [10分钟python图表绘制 | seaborn入门（四）：回归模型lmplot](https://zhuanlan.zhihu.com/p/25909753)
+[kNN分類演算法](https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df)
  
- [Seaborn(sns)官方文档学习笔记（第四章 线性关系的可视化）](https://zhuanlan.zhihu.com/p/27593869)
- 
- [[Matplotlib-06]圖表風格](https://medium.com/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/matplotlib-06-%E5%9C%96%E8%A1%A8%E9%A2%A8%E6%A0%BC-d58498069700)
- 
- [train_test_split用法](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/37690/)
- 
- [k近邻--一个懒惰学习算法](https://ljalphabeta.gitbooks.io/python-/content/knn.html)
+[機器學習：KNN分類演算法！](https://ithelp.ithome.com.tw/articles/10197110)
   
-  
- [kNN分類演算法](https://medium.com/@NorthBei/machine-learning-knn%E5%88%86%E9%A1%9E%E6%BC%94%E7%AE%97%E6%B3%95-b3e9b5aea8df)
+[sklearn.metrics中的评估方法介绍（accuracy_score, recall_score, roc_curve, roc_auc_score, confusion_matrix）](https://blog.csdn.net/CherDW/article/details/55813071)
  
- [機器學習：KNN分類演算法！](https://ithelp.ithome.com.tw/articles/10197110)
-  
- [sklearn.metrics中的评估方法介绍（accuracy_score, recall_score, roc_curve, roc_auc_score, confusion_matrix）](https://blog.csdn.net/CherDW/article/details/55813071) 
+[sklearn 中的交叉驗證](https://www.itread01.com/content/1541250025.html)
+
+[sklearn中的cross_val_score()函数参数](https://blog.csdn.net/Asher117/article/details/87617702)
+
+[交叉驗證(Cross-validation, CV)-K-fold CV](https://medium.com/@chih.sheng.huang821/%E4%BA%A4%E5%8F%89%E9%A9%97%E8%AD%89-cross-validation-cv-3b2c714b18db#681e)
+
+[機器學習：交叉驗證！](https://ithelp.ithome.com.tw/articles/10197461)
   
 [🦃](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
