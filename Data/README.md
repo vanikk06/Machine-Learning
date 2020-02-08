@@ -468,7 +468,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
    > 資料清理
    
 - 填補**遺失值**
-  > []()
+  > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-missing-value-)
 - 找出**Outliers**並淡化（平滑）雜訊
   > []()
 - 修正資料的**不一致**
@@ -476,6 +476,19 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 #### § Missing value §
 
+通常在進行分類時，值組的類別資料有可能是遺失的狀況，當對分析結果有重大影響的資料屬性存在遺失值時，分析效果會很差
+
+- Method 1：忽略
+    > 不是很有效，除非許多值組的屬性包含遺失值
+- Method 2：**人工方式**填入遺失值
+    > 費時且不實際
+- Method 3：自動填入
+    - 利用**全域常數（Global Constant）**
+      > E.g. "未知", "±∞"
+    - 使用**平均值**
+    - 使用**相同類別值組的屬性平均值**
+    - 使用**最有可能的值**：可透過迴歸、貝氏理論等推論式工具，或決策樹推論來決定
+    
 
 #### § Noisy data §
 
