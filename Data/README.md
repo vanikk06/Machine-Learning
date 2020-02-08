@@ -418,16 +418,16 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 - 在資料預處理中，主要包含四項工作
     - 資料清理(Data Cleaning)：
-      > []()
+      > [✍🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-cleaning)
         - 填入**遺失值**
         - 找出且移除**離異值（雜訊）**
         - 解決**不一致**
     - 資料整合(Data Integration)：整合**不同來源**的資料庫或檔案
-      > []()
+      > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-integration)
     - 資料轉換(Data Transformation)：**標準化**與**聚合**
-      > []()
+      > [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-transformation)
     - 資料縮減(Data Reduction)：降低資料量的大小，並預期能獲得相同或近似的分析結果
-      > []()
+      > [✍🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-reduction)
 
 [🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
 
