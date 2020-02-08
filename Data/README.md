@@ -517,9 +517,30 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
      df.dropna(axis=1) #column
      
      df.dropna(how='all') #指定
+     
+     df.dropna(subset=['C'])  #刪掉C內有missing value的row
      ```
-      - `df.dropna(axis, how, inplace)`：移除遺失值
-
+     - `df.dropna(axis, how, subset, inplace)`：移除遺失值
+        - axis：按何方向
+            - axis=0：預設，按**row方向**刪除
+              > 含有遺失值的row會被刪除
+              >> 一般處理遺失值，不太會將整筆資料刪除
+            - axis=1：按**column方向**刪除
+              > 含有遺失值的column會被刪除
+        - how：指定刪除條件
+            - any：預設，只要含有遺失值，即刪除那row或column
+            - all：當全部資料為遺失值時，即刪除那row或column
+        - subset：指定特定特徵
+        - inplace：是否改變原始資料
+          > 預設為False
+          
+   填補遺失值
+     ```python
+     df.fillna(0) #補上固定值
+     ```
+     - `df.fillna()`：補上遺失值
+   
+   使用model填補遺失值
     
 
 #### § Noisy data §
