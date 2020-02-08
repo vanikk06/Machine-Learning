@@ -472,34 +472,6 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 - 修正資料的**不一致**
 - 解決資料整合所造成的**重複**
 
-機器學習的model是利用**空間中的距離**來做迴歸或是分類，若資料中有缺值，就無法在空間中表現位置，需要處理
-
-    ```python
-    import pandas as pd
-
-    df = pd.read_csv('data.csv')
-    ```
-
-    查看是否有遺失值
-    ```python
-    df.isnull()
-
-    df.isnull().sum() #總合
-    ```
-     - `df.isnull()`：是否為空值/遺失值
-        > 回傳布林值的dataframe
-        
-     刪除遺失值
-     ```python
-     df.dropna(axis=0) #row
-     
-     df.dropna(axis=1) #column
-     
-     df.dropna(how='all') #指定
-     ```
-      - `df.dropna(axis, how, inplace)`：移除遺失值
-
-
 
 #### § Missing value §
 
@@ -520,6 +492,34 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
     - 使用**相同類別值組的屬性平均值**
       > 資料類型為數值型
     - 使用**最有可能的值**：可透過迴歸、貝氏理論等推論式工具，或決策樹推論來決定
+    
+   機器學習的model是利用**空間中的距離**來做迴歸或是分類，若資料中有缺值，就無法在空間中表現位置，需要處理
+
+    ```python
+    import pandas as pd
+
+    df = pd.read_csv('data.csv')
+    ```
+
+   查看是否有遺失值
+    ```python
+    df.isnull()
+
+    df.isnull().sum() #總合
+    ```
+     - `df.isnull()`：是否為空值/遺失值
+        > 回傳布林值的dataframe
+        
+   刪除遺失值
+     ```python
+     df.dropna(axis=0) #row
+     
+     df.dropna(axis=1) #column
+     
+     df.dropna(how='all') #指定
+     ```
+      - `df.dropna(axis, how, inplace)`：移除遺失值
+
     
 
 #### § Noisy data §
