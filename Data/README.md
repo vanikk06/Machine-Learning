@@ -445,7 +445,20 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 ## Data description 
    > 資料描述
+   
+若要資料預處理成功，對資料有**全盤的概念**是很重要的
 
+- Descriptive Data Summarization：敘述資料彙總，用於說明資料整體特性，並指出哪些資料值為雜訊或離異值
+
+    主要想知道的資料整體特性：
+    > 統計資訊
+        - 主要傾向
+            - Mean：平均數
+            - Mediam：中位數
+            - Mode：眾數            
+        - 資料散佈
+            - Quartiles：四分位數
+            - Variance：變異數
 
 [🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
 
