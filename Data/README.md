@@ -736,3 +736,9 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 
 [🦜](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
+
+# Pandas map()、apply() and applymap()
+
+
+
+[🦚](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
