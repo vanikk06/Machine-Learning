@@ -1428,6 +1428,24 @@ Swift 是強大且直覺的程式語言，由Apple創造，專門用來撰寫iOS
     
 - noise：雜訊，相信數據背後含有一個涵式，在數據中不符合此函式的資料就稱為noise
 
+## Scikit-learn
+   > 基於 Numpy 與 SciPy
+   
+- SciPy：一個開源的 Python 科學計算庫，涵蓋科學計算中的各種工具，包含統計、積分、插值、最優化、圖像處理...等等
+  > SciPy 可以與 Numpy 合作，高效地進行矩陣計算
+  
+  各種不同領域的開發者，在 SciPy 的基礎上發展許多分支版本，統一稱為 Scikits，即SciPy工具箱
+  
+- Scikit-learn：基於 Numpy 與 SciPy 兩大著名工具包，通常與 pandas、Matplotlib 等開源數據處理框架合作，進行數據挖掘任務
+  > 機器學習領域最知名的分支版本
+
+#### Source
+
+[Python 機器學習 Scikit-learn 完全入門指南](https://kknews.cc/zh-tw/code/g5qoogm.html)
+
+[👠](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#content)
+
+
 ## Linear Regression
    > 線性迴歸
    >> 可解決直線函式、多變數函式，甚至是非線性函式
