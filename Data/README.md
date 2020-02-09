@@ -676,6 +676,33 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
   > 經此轉換後，資料將符合標準常態分佈
 
     ![](https://raw.githubusercontent.com/chenkenanalytic/img/master/tm-01/f01.png)
+    
+- 十進位標準化：可讓資料介於\[0, 1]之間
+
+
+接著，練習看看處理不同類型的資料
+
+- 非數值型：要將非數值型的資料轉換為數值型，python才有辦法處理
+    - 順序特徵：定義**對應字典（mapping dictionary）**
+      
+      ```python
+      df = pd.DataFrame([['green', 'M', 10.1, 'class1'],
+                         ['red', 'L', 13.5, 'class2'],
+                         ['blue', 'XL', 15.3, 'class1']])
+                         
+      df.columns = ['color', 'size', 'price', 'classlabel']
+      ```
+      - `pd.DataFrame()`：生成一個dataframe
+      - `.columns`：dataframe欄位名稱
+      
+      利用字典將「順序型」資料，轉換為「數值型」
+       ```python
+       size_mapping = {'XL':3, 'L':2, 'M':1}
+       
+       df['size'] = df['size'].map(size_mapping)
+       ```
+        
+        
 
 
 
