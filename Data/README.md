@@ -576,8 +576,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
    - 權重：距離的倒數，另其加總為1才可使用
      > 一種演算基礎標準化的方式
      >> E.g. 假設總共有4筆資料（G1-G4），每筆資料各有5個屬性（E1-E5）\
-        G3在E1的位置為遺失值\
-        可以利用計算G3其E2-E5屬性與其他筆資料的E2-E5屬性之間的距離，轉換為權重，透過其他3筆資料的E1值搭配權重計算，以此推測G3的E1為何
+             G3在E1的位置為遺失值\
+             可以利用計算G3其E2-E5屬性與其他筆資料的E2-E5屬性之間的距離，轉換為權重，透過其他3筆資料的E1值搭配權重計算，以此推測G3的E1為何
    
    查詢說明文件
      ```python
@@ -588,6 +588,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
         > 資料型態：字串
     
 #### § Noisy data §
+     > 有可能為「離群值」、「離散值」，導致資料呈現曲折
 
 
 
