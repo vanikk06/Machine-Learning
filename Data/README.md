@@ -622,3 +622,16 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
    
    
 [🐓🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)     
+
+
+# fit and transform
+
+- fit()：一個訓練 model 的過程，可求得 training set 的固有屬性（平均值、標準差、最大、最小...等等）
+
+- transform()：在fit()的基礎上，進行標準化、降維、歸一化...等操作
+  > 因建立在fit()基礎之上，若直接執行會出錯
+  
+- fit_transform()：結合fit()與transform()
+
+
+[🦜](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
