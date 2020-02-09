@@ -592,8 +592,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 處裡這類資料，可分為四種方法：
 1. 箱狀法（Binning）
-2. 迴歸
-3. 聚類
+2. 迴歸（Regression）
+3. 聚類（Clustering）
 4. 整合電腦與人檢驗：利用人檢驗有問題的值
    > E.g.處裡可能離異值
  
@@ -622,6 +622,11 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
           > E.g. \[9,9,9], [22,22,22], [29,29,29]
         - 邊界值（Bin Boundaries）：以箱子內資料的 Max 與 min 作基準，將其他資料以最接近的邊界值取代
           > E.g. \[4,4,15], [21,21,24], [25,25,34] 
+
+- 迴歸（Regression）：透過將資料分佈情況對應至函數，來進行平滑化
+  > 將離群值用「迴歸線上對應的點」取代
+  
+- 聚類（Clustering）：偵測聚類，並移除離異值
 
 #### Source
 [sklearn.preprocessing中的Imputer用法解析](https://www.chzzz.club/post/212.html)
@@ -653,7 +658,35 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 ## Data transformation
    > 資料轉換
+   
+- Normalization：正則化，讓資料在原始的樣態下，**等比縮放**落在\[0, 1]區間中
+  > 將資料原本的 min-Max 轉換為 new_min-new_Max，且不改變原本分佈
+ 
+- Standardization：標準化，將原始資料轉換成符合標準常態分佈的樣態
+  > 優點：
+  >  1. 提升model的收斂速度
+  >  2. 提升model的精準度：可讓每個特徵值對結果做出相近程度的貢獻
+    
+    - 標準常態分配（Standard Normal Distribution）：平均值為0，標準化為1
+        - 一個標準差：68%
+        - 兩個標準差：95%
+        - 三個標準差：99.7%
+        
+- Z-score：代表原始資料和母體平均值之間的距離，以標準差為單位計算
+  > 經此轉換後，資料將符合標準常態分佈
 
+    ![](https://raw.githubusercontent.com/chenkenanalytic/img/master/tm-01/f01.png)
+
+
+
+
+
+#### Source
+[資料的正規化(Normalization)及標準化(Standardization)](https://aifreeblog.herokuapp.com/posts/54/data_science_203/)
+
+[標準分數](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E5%88%86%E6%95%B8#%E6%A6%82%E5%BF%B5)
+
+[資料預處理——標準化、歸一化、正則化](https://www.itread01.com/content/1541512225.html)
 
 [🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)  
 
