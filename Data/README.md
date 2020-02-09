@@ -540,11 +540,54 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
      ```
      - `df.fillna()`：補上遺失值
    
-   使用model填補遺失值
+   使用`sklearn.preprocessing`套件內的 Imputer 來訓練 model 以填補遺失值
+     ```python
+     from sklearn.preprocessing import Imputer
+      
+     imr = Imputer(missing_values='NaN', strategy = 'mean', axis=0) 
+     imr = imr.fit(df.values)
+     imputed_data = imr.transform(df.values)
+     imputed_data
+     #輸出
+     array([[ 1. ,  2. ,  3. ,  4. ],
+            [ 5. ,  6. ,  7.5,  8. ],
+            [ 0. , 11. , 12. ,  6. ]])
+     ```
+     - `Imputer(missing_values='NaN', strategy='mean', axis=0)`：使用數據的**統計訊息**（平均值、中位數...等）來填補遺失值
+         - missing_values：遺失值表示符，可為整數或NaN
+            > 預設值為'NaN'
+            >> NaN：為numpy.nan用字符串
+         - strategy：替換策略，字符串
+              - 'mean'：預設，用axis的平均值填補
+              - 'median'：用axis的中位數填補
+              - 'most_frequent'：用axis的眾數填補
+         - axis：指定軸向
+              - axis=0：預設，計算columns（按欄位）
+              - axis=1：計算rows（按單筆資料）
+     - `imr.fit(X)`：計算 training set 的統計值，儲存統計值
+         - X：訓練model變數，資料型態為array              
+     - `imr.transform(X)`：將統計值應用於 testing set
+         - X：計算missing values於X中
+         
+   查詢說明文件
+     ```python
+     help('imputer')
+     ```
+     
+     - `help()`：查詢說明文件
+        > 資料型態：字串
     
-
 #### § Noisy data §
 
+
+
+
+#### Source
+[sklearn.preprocessing中的Imputer用法解析](https://www.chzzz.club/post/212.html)
+
+[sklearn.preprocessing.Imputer](https://blog.csdn.net/kancy110/article/details/75041923)
+
+[Python 機器學習 Scikit-learn 完全入門指南](https://kknews.cc/zh-tw/code/g5qoogm.html)
 
 
 [🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
