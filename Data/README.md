@@ -9,6 +9,7 @@
     - [Data integration](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-integration)
     - [Data transformation](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-transformation)
     - [Data reduction](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-reduction)
+- [fit and transform](https://github.com/vanikk06/Machine-Learning/tree/master/Data#fit-and-transform)
 
 # Attributes
   > 屬性
