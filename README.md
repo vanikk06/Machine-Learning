@@ -59,6 +59,7 @@
   
 - [week 6](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-6)
   > [🤜🏼Code🤛🏼](https://github.com/vanikk06/Machine-Learning/blob/master/Learning%20Python/week_6.ipynb)
+  - [Scikit-learn](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#scikit-learn)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linear-regression)
   - [data split](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-split)
   - [DataSet](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#dataset)
