@@ -710,7 +710,9 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            inv_size_mapping = {v:k for k, v in size_mapping.items()}
            df['size'] = df['size'].map(inv_size_mapping)
            ```
-    - **類別型**特徵 
+    - **類別型**特徵：將類別標籤轉換為整數值
+       
+          - Method 1：對應字典
          
          
         
