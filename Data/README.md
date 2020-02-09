@@ -705,11 +705,11 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
        - `.map()`：用於Series物件或DataFrame對象的一欄，接收函數或字典作為參數，返回經函數或字典處理後的值
          > 對物件內每個元素做處理
          
-         若要反轉字典映射後的結果，也就是要返回value:key的結果，可以利用字典中的`.item()`
-        ```python
-        inv_size_mapping = {v:k for k, v in size_mapping.items()}
-        df['size'] = df['size'].map(inv_size_mapping)
-        ```
+           若要反轉字典映射後的結果，也就是要返回value:key的結果，可以利用字典中的`.item()`
+           ```python
+           inv_size_mapping = {v:k for k, v in size_mapping.items()}
+           df['size'] = df['size'].map(inv_size_mapping)
+           ```
     - **類別型**特徵 
          
          
