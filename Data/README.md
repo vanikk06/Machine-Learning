@@ -10,6 +10,7 @@
     - [Data transformation](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-transformation)
     - [Data reduction](https://github.com/vanikk06/Machine-Learning/tree/master/Data#data-reduction)
 - [fit and transform](https://github.com/vanikk06/Machine-Learning/tree/master/Data#fit-and-transform)
+- [Pandas map()、apply() and applymap()](https://github.com/vanikk06/Machine-Learning/tree/master/Data#pandas-mapapply-and-applymap)
 
 # Attributes
   > 屬性
@@ -683,7 +684,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 接著，練習看看處理不同類型的資料
 
 - 非數值型：要將非數值型的資料轉換為數值型，python才有辦法處理
-    - 順序特徵：定義**對應字典（mapping dictionary）**
+    - **順序型**特徵：定義**對應字典（mapping dictionary）**
       
       ```python
       df = pd.DataFrame([['green', 'M', 10.1, 'class1'],
@@ -701,6 +702,17 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
        
        df['size'] = df['size'].map(size_mapping)
        ```
+       - `.map()`：用於Series物件或DataFrame對象的一欄，接收函數或字典作為參數，返回經函數或字典處理後的值
+         > 對物件內每個元素做處理
+         
+         若要反轉字典映射後的結果，也就是要返回value:key的結果，可以利用字典中的`.item()`
+        ```python
+        inv_size_mapping = {v:k for k, v in size_mapping.items()}
+        df['size'] = df['size'].map(inv_size_mapping)
+        ```
+    - **類別型**特徵 
+         
+         
         
         
 
@@ -714,6 +726,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 [標準分數](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E5%88%86%E6%95%B8#%E6%A6%82%E5%BF%B5)
 
 [資料預處理——標準化、歸一化、正則化](https://www.itread01.com/content/1541512225.html)
+
+[pandas map()用法](https://blog.csdn.net/y12345678904/article/details/72385656)
 
 [🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)  
 
@@ -740,5 +754,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 # Pandas map()、apply() and applymap()
 
 
+#### Source
+[pandas的map、apply、applymap](https://home.gamer.com.tw/creationDetail.php?sn=4219422)
 
 [🦚](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
