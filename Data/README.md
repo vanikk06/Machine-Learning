@@ -227,6 +227,7 @@ sum( )/4*3  #Q3
           > PRG(Pseudo-random- Generator):偽隨機數生成器
    
 - Algorithm：K-NN
+  > K-NN：物以類聚
  
   使用K-NN（k-nearest neighbor）演算法，簡單來說，它假設欲預測點是i，找出離i最近的k筆資料多數是哪一類，以此預測i的類型
   > Given a test instance i, find the k closest neighbors and their labels
@@ -570,6 +571,14 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
      - `imr.transform(X)`：將統計值應用於 testing set
          - X：計算missing values於X中
          
+   另一個例子，也可使用**加權平均式**的方式，如之前提到的K-NN演算法，物以類聚，透過計算不同維度之間的關係來找出最有可能的答案，也就是以不同維度之間的關係（距離）作為權重的大小，距離愈近的要愈相似
+   
+   - 權重：距離的倒數，另其加總為1才可使用
+     > 一種演算基礎標準化的方式
+     >> E.g. 假設總共有4筆資料（G1-G4），每筆資料各有5個屬性（E1-E5）\
+        G3在E1的位置為遺失值\
+        可以利用計算G3其E2-E5屬性與其他筆資料的E2-E5屬性之間的距離，轉換為權重，透過其他3筆資料的E1值搭配權重計算，以此推測G3的E1為何
+   
    查詢說明文件
      ```python
      help('imputer')
