@@ -36,6 +36,7 @@
   - [Moving Average](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#moving-average)
   
 - [week 6](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#week-6)
+  - [Scikit-learn](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#scikit-learn)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#linear-regression)
   - [data split](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#data-split)
   - [DataSet](https://github.com/vanikk06/Machine-Learning/tree/master/Learning%20Python#dataset)
