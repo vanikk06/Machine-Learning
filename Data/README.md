@@ -588,10 +588,24 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
         > 資料型態：字串
     
 #### § Noisy data §
-     > 有可能為「離群值」、「離散值」，導致資料呈現曲折
+  > 有可能為「離群值」、「離散值」，導致資料呈現曲折
 
-
-
+處裡這類資料，可分為四種方法：
+    1. 箱狀法（Binning）
+    2. 迴歸
+    3. 聚類
+    4. 整合電腦與人檢驗：利用人檢驗有問題的值
+        > E.g.處裡可能離異值
+ 
+- 箱狀法（Binning）：先將資料進行排序，再利用其鄰居的值進行**平滑化**
+  > 為考量箱內資料之「鄰居」（Neighborhood）的值，因此屬於**區域平滑法（Local Smoothing）**方法
+    - Step 1. 排序：將資料分成數個頻率相同的的箱子（Buckets、Bins）
+      > 頻率相同：箱內資料筆數相同
+    
+    - Step 2. 平滑化：每個箱子獨立，對各個箱子內的資料進行平滑化
+      > 箱子寬度愈大，愈平滑
+        - 平均值、中間值：替代箱內所有的值
+        - 邊界值：以箱子內資料的 Max 與 min 作基準，將其他資料以最接近的邊界值取代
 
 #### Source
 [sklearn.preprocessing中的Imputer用法解析](https://www.chzzz.club/post/212.html)
