@@ -595,7 +595,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 2. 迴歸
 3. 聚類
 4. 整合電腦與人檢驗：利用人檢驗有問題的值
-  > E.g.處裡可能離異值
+   > E.g.處裡可能離異值
  
 - 箱狀法（Binning）：先將資料進行排序，再利用其鄰居的值進行**平滑化**
   > 為考量箱內資料之「鄰居」（Neighborhood）的值，因此屬於**區域平滑法（Local Smoothing）**方法
