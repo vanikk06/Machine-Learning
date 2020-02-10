@@ -794,7 +794,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            ```
            
             - `.fit_transform()`：訓練model並取代之 
-              > input：array
+              > input：1-D array
             - `.inverse_transform`：將數值型轉換為原本的類別型            
             
                 ```python            
@@ -814,10 +814,26 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            ```
            > blue=0, green=1, red=2
            >> 0,1,2有大小之分，但名目特徵本身無
+             
+         - Method 3-1：One hot encoding
+           > 將類別拆成多個column，每個column中的數值由1、0替代（可轉換字串、數字）
+           >> 1：True\
+           >> 2：False
            
-   
+           - 指定column：無法直接對字串進行編碼，須先透過Label encoding將字串以數字取代，再進行One hot encoding處理
            
-         
+             ```python
+             from sklearn.preprocessing import OneHotEncoder
+             
+             ohe = OneHotEncoder(categorical_features=[0])
+             temp = ohe.fit_transform(X).toarray()
+             dff = pd.DataFrame(temp)              
+             ```
+               - `OneHotEncoder(categorical_features=[0])`：實例化，OneHotEncoder函式
+                   - categorical_features：指定欄位（index）
+               - `.fit_transform(X)`：訓練model並轉換之
+                   - X：經Label encoding編碼後的資料
+                     > input：2-D array
          
         
         
@@ -834,6 +850,10 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 [資料預處理——標準化、歸一化、正則化](https://www.itread01.com/content/1541512225.html)
 
 [pandas map()用法](https://blog.csdn.net/y12345678904/article/details/72385656)
+
+[初學Python手記#3-資料前處理( Label encoding、 One hot encoding)](https://medium.com/@PatHuang/%E5%88%9D%E5%AD%B8python%E6%89%8B%E8%A8%98-3-%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86-label-encoding-one-hot-encoding-85c983d63f87)
+
+[Preprocessing Data : 類別型特徵_OneHotEncoder & LabelEncoder 介紹與實作](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/preprocessing-data-onehotencoder-labelencoder-%E5%AF%A6%E4%BD%9C-968936124d59)
 
 [🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)  
 
