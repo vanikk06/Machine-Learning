@@ -770,11 +770,12 @@ Pandas中「映射」與「應用」兩中方法的整理應用
       
 - DataFrame
   > 無map()
-  >> []()
+  >> [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-dataframe-)
     - `apply(function, agrs)`：針對column的aggregates（合集）操作
        > 若給定的函數是ufunc，也會有element-wise效果
          - Aggregate functions：合計函數，是SQL中一種基本的函數類型，指**操作面向為一系列的值，並返回一個單一值**
            > E.g. count、max、min、sum、avg(平均)...等等
+           >> 回傳Series
          - universal function：縮寫為ufunc，這類函數能夠作用於narray對象中的**每一個元素上**，而分針對narray對象操作
            > [Learning more](https://blog.csdn.net/unixtch/article/details/78531585)
               
@@ -939,7 +940,50 @@ Pandas中「映射」與「應用」兩中方法的整理應用
 
 #### § DataFrame §
 
+可以使用`apply()`與`applymap()`
+- `apply()`：以column為單位做計算
+- `applymap()`以element-wise計算
 
+   ```python
+   df = pd.DataFrame([[1,2,3], [4,5,6], [7,8,9]])
+   
+   df.apply(sum)
+   #輸出
+   0    12
+   1    15
+   2    18
+   dtype: int64
+   ```
+   > 計算每col的總合
+   >> 與`df.sum()`相同
+   
+   也可設定args
+   ```python
+   def ff(xs, n):
+       return xs.sum() *n
+   
+   df.apply(ff, args=(2,))
+   #輸出
+   0    24
+   1    30
+   2    36
+   dtype: int64
+   ```
+   > 因 function 為 Aggregate functions，所以回傳為Series
+    
+   若 function 為 ufunc ，也可有 element-wise 效果
+   ```python
+   df.apply(lambda x:x-5)
+   ```
+   > 回傳為dataframe
+   
+   ```python
+   import numpy as np
+   
+   df.apply(np.sqrt)   
+   ```
+     - `np.sqrt`：取各個元素的平方根
+   
 #### Source
 [pandas的map、apply、applymap](https://home.gamer.com.tw/creationDetail.php?sn=4219422)
 
@@ -948,5 +992,7 @@ Pandas中「映射」與「應用」兩中方法的整理應用
 [[Day10]Pandas Groupby使用！](https://ithelp.ithome.com.tw/articles/10194027)
 
 [python科学计算之numpy——ufunc函数](https://blog.csdn.net/unixtch/article/details/78531585)
+
+[【python】numpy库ndarray多维数组的的运算：np.abs(x)、np.sqrt(x)、np.modf(x)等](https://blog.csdn.net/brucewong0516/article/details/79186176)
 
 [🦚](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
