@@ -730,55 +730,55 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            df['classlabel'] = df['classlabel'].map(class_mapping)
            ```
            
-       - `np.unique(array, return_index=False)`：除去重複值，返回唯一值
-          > 返回 array ，若input為非 1-D array會壓平為 1-D\
-          >  - 「數值型」與「字串型」不可同時放在一起，會出現錯誤
-          >  - 若返回array內為數值型，會由小到大排列
-          >> 不影響原始資料
-          
-            - array：input
-            - return_index：預設為False，是否回傳唯一值在原始資料中的位置
-              > 回傳值為 array，會另存在唯一值以外的array中
-              
-           ```python
-           a = [1,6,43,7,7,7,1,2,4,6]
-           A = np.unique(a)
-           A
-           #輸出
-           array([ 1,  2,  4,  6,  7, 43])
-           ```
-           返回唯一值原始的位置
-           ```python
-           A, i = np.unique(a, return_index=True)
+           - `np.unique(array, return_index=False)`：除去重複值，返回唯一值
+              > 返回 array ，若input為非 1-D array會壓平為 1-D\
+              >  - 「數值型」與「字串型」不可同時放在一起，會出現錯誤
+              >  - 若返回array內為數值型，會由小到大排列
+              >> 不影響原始資料
+
+                - array：input
+                - return_index：預設為False，是否回傳唯一值在原始資料中的位置
+                  > 回傳值為 array，會另存在唯一值以外的array中
+
+               ```python
+               a = [1,6,43,7,7,7,1,2,4,6]
+               A = np.unique(a)
+               A
+               #輸出
+               array([ 1,  2,  4,  6,  7, 43])
+               ```
+               返回唯一值原始的位置
+               ```python
+               A, i = np.unique(a, return_index=True)
+
+               A
+               #輸出           
+               array([ 1,  2,  4,  6,  7, 43])
+
+               i
+               #輸出
+               array([0, 7, 8, 1, 3, 2], dtype=int64)
+               ```
            
-           A
-           #輸出           
-           array([ 1,  2,  4,  6,  7, 43])
-           
-           i
-           #輸出
-           array([0, 7, 8, 1, 3, 2], dtype=int64)
-           ```
-           
-       - `enumerate()`：枚舉，計算元素位置
-          > 會將list的index與list的元素（item），包成一個tuple，再將每個tuple包成按index排序的list
-          
-          ```python
-          list(enumerate(np.unique(df['classlabel'])))
-          #輸出
-          [(0, 'class1'), (1, 'class2')]        
-          ```
-          
-          在字典中，是要將原本「類別型」資料轉換為「數值型」，因此要改變idx與label位置
-          
-          ```python
-          for idx, label in enumerate(np.unique(df['classlabel'])):
-                 print('{}:{}'.format(label, idx))
-                 
-          #輸出
-          class1:0
-          class2:1
-          ```
+           - `enumerate()`：枚舉，計算元素位置
+              > 會將list的index與list的元素（item），包成一個tuple，再將每個tuple包成按index排序的list
+
+              ```python
+              list(enumerate(np.unique(df['classlabel'])))
+              #輸出
+              [(0, 'class1'), (1, 'class2')]        
+              ```
+
+              在字典中，是要將原本「類別型」資料轉換為「數值型」，因此要改變idx與label位置
+
+              ```python
+              for idx, label in enumerate(np.unique(df['classlabel'])):
+                     print('{}:{}'.format(label, idx))
+
+              #輸出
+              class1:0
+              class2:1
+              ```
           
          
          
