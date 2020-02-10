@@ -681,9 +681,11 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 - 十進位標準化：可讓資料介於\[0, 1]之間
 
 
-接著，練習看看處理不同類型的資料
+#### § Exercise §
+    
+   練習處理不同類型的資料，必須將非數值型資料轉換數值型，才可丟入model訓練
 
-- 非數值型：要將非數值型的資料轉換為數值型，python才有辦法處理
+- 非數值型
     - **順序型**特徵：定義**對應字典（mapping dictionary）**
       
       ```python
@@ -712,7 +714,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            ```
     - **類別型**特徵：將類別標籤轉換為整數值
        
-          - Method 1：對應字典
+         - Method 1：對應字典
          
          
         
