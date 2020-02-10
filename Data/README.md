@@ -684,6 +684,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 #### § Exercise §
     
    練習處理不同類型的資料，必須將非數值型資料轉換數值型，才可丟入model訓練
+   > 大部分model是基於數學運算
 
 - 非數值型
     - **順序型**特徵：定義**對應字典（mapping dictionary）**
@@ -779,7 +780,43 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
               class1:0
               class2:1
               ```
-          
+         - Method 2：使用LabelEncoder
+           > 會將每個類別 mapping 到某個**整數**，不會增加新欄位
+           >> 適用於「有序」離散值，因整數有大小之分
+           
+           
+           放入 LabelEncoder的模型，去轉換類別型資料，不須特別去定義轉換對象
+           ```python
+           from sklearn.preprocessing import LabelEncoder
+           
+           class_le = LabelEncoder()
+           df['classlabel'] = class_le.fit_transform(df['classlabel'].values)    
+           ```
+           
+            - `.fit_transform()`：訓練model並取代之 
+              > input：array
+            - `.inverse_transform`：將數值型轉換為原本的類別型            
+            
+                ```python            
+                df['classlabel'] = class_le.inverse_transform(df['classlabel'])
+                ```
+           換個方式對另一個欄位做處理
+           ```python
+           X = df[['color', 'size', 'price']].values
+           
+           color_le = LabelEncoder()
+           X[:,0] = color_le.fit_transform(X[:,0])
+           X
+           #輸出
+           array([[1, 1, 10.1],
+           [2, 2, 13.5],
+           [0, 3, 15.3]], dtype=object)
+           ```
+           > blue=0, green=1, red=2
+           >> 0,1,2有大小之分，但名目特徵本身無
+           
+   
+           
          
          
         
