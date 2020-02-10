@@ -754,13 +754,14 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 [🦜](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
 
 # Pandas map()、apply() and applymap()
+  > 皆不改變原始資料
 
 Pandas中「映射」與「應用」兩中方法的整理應用
 
 - Series
   > Series物件 或 dataframe 中的任一欄
-  >> []()
-    - `map()`：可對Series物件，執行給定的function、dictionary、Series映射處理
+  >> [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-series-)
+    - `map()`：可對Series物件中的每個元素，執行給定的function、dictionary、Series映射處理（只要元素可以一一對應即可）
     - `apply()`：能對物件執行給定的function，並設定額外參數（args）
       > 適用於Series與dataframe
       
@@ -780,6 +781,121 @@ Pandas中「映射」與「應用」兩中方法的整理應用
 
 
 #### § Series §
+
+可使用`map()`與`apply()`兩種函式，兩者功能差不多，都是對**Series物件中的每一個元素值**做處理，差別在於`apply()`僅能進行functiont處理，而`map()`可以進行function、dictionary、Series處理
+
+- `pd.Series(data, index=None)`：建立一個Series物件
+    - data：資料內容
+    - index：指標，預設為數字
+    
+    ```python
+    import pnadas as pd
+    
+    ser = pd.Series([1,2,3,4,5])
+    ser
+    #輸出
+    0    1
+    1    2
+    2    3
+    3    4
+    4    5
+    dtype: int64
+    ```
+    若指定index
+    ```python
+    ser = pd.Series([1,2,3,4,5], index=['one', 'two', 'three', 'four', 'five'])
+    ser
+    #輸出
+    one      1
+    two      2
+    three    3
+    four     4
+    five     5
+    dtype: int64
+    ```
+
+- 進行function處理：對Series中的每個元素，`apply()`與`map()`皆可使用
+  > 兩者結果相同
+   
+   
+   ```python
+   ser.map(lambda x:x**2)
+   #輸出
+   0     1
+   1     4
+   2     9
+   3    16
+   4    25
+   dtype: int64
+    
+    
+   ser.apply(lambda x:x**2)
+   #輸出
+   0     1
+   1     4
+   2     9
+   3    16
+   4    25
+   dtype: int64
+   ```
+    - `lambda x:y`：簡易的定義函式方法
+         - x：input
+         - y：output
+   
+   除此之外，`apply()`還可以指定function中要帶入的參數
+   ```python
+   
+   ```
+   
+   
+   
+   雖然結果相同，但兩者處理過程不同
+    - `apply()`：對Series中的元素做出function的應用
+    - `map()`：**將原本的值映射（mapping）到另一個值**
+       > 因此`map()`不只可以接收function，還可以接收dictionary、Series
+       
+- 進行dictionary處理：將Serice中的元素作為dict中的keys，以此對應values
+  > 僅適用`map()`
+  
+  會將Series中的元素作為key對應到dict中，映射出相對應的value
+  ```python
+  dic = {1:11, 2:21, 3:31, 5:51, 6:61}
+  ser.map(dic)
+  #輸出
+  0    11.0
+  1    21.0
+  2    31.0
+  3     NaN
+  4    51.0
+  dtype: float64
+  ```
+  > 將Series中的元素，由key轉為value
+  >> 因為dict中不存在「4」這個key，因此自動填補「NaN」
+  
+  
+- 進行Series處理：將Series_A中的元素作為index，對應到Series_B中的元素
+  > 僅適用`map()`
+  
+    - Series_A.map(Series_B)
+      > 若Series_A與Series_B中元素不相等，會自動補上「NaN」
+  
+  ```python
+  ser_map = pd.Series(['A', 'B', 'C', 'D', 'E', 'F', 'G'])
+  ser.map(ser_map)
+  #輸出
+  0    B
+  1    C
+  2    D
+  3    E
+  4    F
+  dtype: object  
+  ```
+   
+
+    
+
+  
+
 
 #### § DataFrame §
 
