@@ -755,8 +755,42 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 
 # Pandas map()、apply() and applymap()
 
+Pandas中「映射」與「應用」兩中方法的整理應用
+
+- Series
+  > Series物件 或 dataframe 中的任一欄
+  >> []()
+    - `map()`：可對Series物件，執行給定的function、dictionary、Series映射處理
+    - `apply()`：能對物件執行給定的function，並設定額外參數（args）
+      > 適用於Series與dataframe
+      
+- DataFrame
+  > 無map()
+  >> []()
+    - `apply()`：針對column的aggregates（合集）操作
+       > 若給定的函數是ufunc，也會有element-wise效果
+         - Aggregate functions：合計函數，是SQL中一種基本的函數類型，指**操作面向為一系列的值，並返回一個單一值**
+           > E.g. count、max、min、sum、avg(平均)...等等
+         - universal function：縮寫為ufunc，這類函數能夠作用於narray對象中的**每一個元素上**，而分針對narray對象操作
+           > [Learning more](https://blog.csdn.net/unixtch/article/details/78531585)
+              
+    - `applymap()`：針對element-wise操作
+       > element-wise：按元素
+    
+
+
+#### § Series §
+
+#### § DataFrame §
+
 
 #### Source
 [pandas的map、apply、applymap](https://home.gamer.com.tw/creationDetail.php?sn=4219422)
+
+[SQL 函数](https://www.w3school.com.cn/sql/sql_functions.asp)
+
+[[Day10]Pandas Groupby使用！](https://ithelp.ithome.com.tw/articles/10194027)
+
+[python科学计算之numpy——ufunc函数](https://blog.csdn.net/unixtch/article/details/78531585)
 
 [🦚](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)
