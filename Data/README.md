@@ -762,13 +762,16 @@ Pandas中「映射」與「應用」兩中方法的整理應用
   > Series物件 或 dataframe 中的任一欄
   >> [✍🏾](https://github.com/vanikk06/Machine-Learning/tree/master/Data#-series-)
     - `map()`：可對Series物件中的每個元素，執行給定的function、dictionary、Series映射處理（只要元素可以一一對應即可）
-    - `apply()`：能對物件執行給定的function，並設定額外參數（args）
+    - `apply(function, agrs)`：能對物件執行給定的function，還能設定指定參數（args）
       > 適用於Series與dataframe
+          - function：要執行的函式
+          - agrs：tuple，指定function內參數
+            > 前提，function須為兩個以上參數
       
 - DataFrame
   > 無map()
   >> []()
-    - `apply()`：針對column的aggregates（合集）操作
+    - `apply(function, agrs)`：針對column的aggregates（合集）操作
        > 若給定的函數是ufunc，也會有element-wise效果
          - Aggregate functions：合計函數，是SQL中一種基本的函數類型，指**操作面向為一系列的值，並返回一個單一值**
            > E.g. count、max、min、sum、avg(平均)...等等
@@ -843,13 +846,40 @@ Pandas中「映射」與「應用」兩中方法的整理應用
          - y：output
    
    除此之外，`apply()`還可以指定function中要帶入的參數
+   > function須為**兩個以上參數**
    ```python
-   
+   def f(x, m):
+       return x**m
+    
+   ser.apply(f, args=(3,))
+   #輸出
+   0      0
+   1      8
+   2    512
+   3     64
+   4    125
+   dtype: int64
    ```
+   > f為兩個參數的函式：
+   >  - 第一個參數：Series中的各個元素
+   >  - 第二個參數：args中指定
    
-   
-   
-   雖然結果相同，但兩者處理過程不同
+   function也可以兩個參數以上
+   ```python
+   def f(x, m, a):
+       return (x**m)+a
+
+   ser.apply(f, args=(3,1))
+   #輸出
+   0      1
+   1      9
+   2    513
+   3     65
+   4    126
+   dtype: int64
+   ```   
+      
+   執行function雖然兩者結果相同，但處理過程不同
     - `apply()`：對Series中的元素做出function的應用
     - `map()`：**將原本的值映射（mapping）到另一個值**
        > 因此`map()`不只可以接收function，還可以接收dictionary、Series
@@ -877,7 +907,7 @@ Pandas中「映射」與「應用」兩中方法的整理應用
   > 僅適用`map()`
   
     - Series_A.map(Series_B)
-      > 若Series_A與Series_B中元素不相等，會自動補上「NaN」
+      > 若Series_A與Series_B中元素不相等，不足的會自動補上「NaN」
   
   ```python
   ser_map = pd.Series(['A', 'B', 'C', 'D', 'E', 'F', 'G'])
@@ -890,11 +920,21 @@ Pandas中「映射」與「應用」兩中方法的整理應用
   4    F
   dtype: object  
   ```
-   
-
-    
-
+  > Series_B 元素較 Series_A 多，但因Series_A中的元素對應值已滿足，因此不影響
   
+  
+  ```python
+  ser = pd.Series([0,2,8,4,5])
+  ser.map(ser_map)
+  #輸出
+  0      A
+  1      C
+  2    NaN
+  3      E
+  4      F
+  dtype: object
+  ```
+  > 無法對應元素，自動補上「NaN」 
 
 
 #### § DataFrame §
