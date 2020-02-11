@@ -816,6 +816,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            >> 0,1,2有大小之分，但名目特徵本身無
              
          - Method 3-1：One hot encoding
+           > 將每個值轉為一個新的「虛擬特徵」\
            > 將類別拆成多個column，每個column中的數值由1、0替代（可轉換字串、數字）
            >> 1：True\
            >> 2：False
@@ -835,18 +836,18 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
              temp = ohe.fit_transform(X).toarray()
              dff = pd.DataFrame(temp)              
              ```
-               - `OneHotEncoder(categorical_features=[0])`：實例化，OneHotEncoder函式
-                  > [Learning more](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/preprocessing-data-onehotencoder-labelencoder-%E5%AF%A6%E4%BD%9C-968936124d59)
-                   - categorical_features：指定欄位（index）
-                     > 預設為'all'
-               - `.fit_transform(X)`：訓練model並轉換之
-                   - X：經Label encoding編碼後的資料
-                     > input：2-D array\
-                     > output：scipy.csr_matrix資料結構
-                  - `.toarray()`：將scipy.csr_matrix轉為array
-                    > - scipy.csr_matrix：**稀疏矩陣**相關函式
-                    > - sparse matrix：稀疏矩陣，2-D array，矩陣中多數的元素沒有資料（為0）
-                    >> 當多數元素沒有資料時，因2-D array的大小與使用的記憶體空間成正比，會造成記憶體空間的浪費，為此必須設計稀疏矩陣的array儲存方式，以利用較少的記憶體空間儲存完整的矩陣資訊
+              - `OneHotEncoder(categorical_features=[0])`：實例化，OneHotEncoder函式
+                > [Learning more](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/preprocessing-data-onehotencoder-labelencoder-%E5%AF%A6%E4%BD%9C-968936124d59)
+                - categorical_features：指定欄位（index）
+                  > 預設為'all'
+              - `.fit_transform(X)`：訓練model並轉換之
+                - X：經Label encoding編碼後的資料
+                  > input：2-D array\
+                  > output：scipy.csr_matrix資料結構
+                - `.toarray()`：將scipy.csr_matrix轉為array
+                  > - scipy.csr_matrix：**稀疏矩陣**相關函式
+                  > - sparse matrix：稀疏矩陣，2-D array，矩陣中多數的元素沒有資料（為0）
+                  >> 當多數元素沒有資料時，因2-D array的大小與使用的記憶體空間成正比，會造成記憶體空間的浪費，為此必須設計稀疏矩陣的array儲存方式，以利用較少的記憶體空間儲存完整的矩陣資訊
                              
              一次轉換所有資料
              ```python
