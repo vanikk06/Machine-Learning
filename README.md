@@ -124,3 +124,11 @@
 
   
 [👩🏻‍🚀👨🏻‍🚀](https://github.com/vanikk06/Machine-Learning#content)
+
+
+# Regression
+[👉🏻HERE👈🏻](https://github.com/vanikk06/Machine-Learning/tree/master/Regression)
+
+
+
+[👩🏻‍🏭👨🏻‍🏭](https://github.com/vanikk06/Machine-Learning#content)
