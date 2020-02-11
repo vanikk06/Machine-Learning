@@ -820,7 +820,13 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            >> 1：True\
            >> 2：False
            
-           - 字串：無法直接進行編碼，須先透過Label encoding將字串以數字取代，再進行One hot encoding處理
+           
+           可以轉換「字串」與「數字」：
+            - 字串：需先透過Label encoding將字串以數字取代
+            - 數字：直接轉換
+            
+           
+            無法直接進行字串編碼，透過Label encoding先對字串做處理，再進行One hot encoding處理
            
              ```python
              from sklearn.preprocessing import OneHotEncoder
@@ -841,11 +847,20 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
                     > - scipy.csr_matrix：**稀疏矩陣**相關函式
                     > - sparse matrix：稀疏矩陣，2-D array，矩陣中多數的元素沒有資料（為0）
                     >> 當多數元素沒有資料時，因2-D array的大小與使用的記憶體空間成正比，會造成記憶體空間的浪費，為此必須設計稀疏矩陣的array儲存方式，以利用較少的記憶體空間儲存完整的矩陣資訊
-                           
-        
-        
+                             
+             一次轉換所有資料
+             ```python
+             ohe = OneHotEncoder()
+             temp = ohe.fit_transform(df).toarray()
+             dff = pd.DataFrame(temp)              
+             ```
+             > 會將資料表中每欄的相異值當作一個欄位
 
-
+        | 轉換方式 | 適用資料 | 資料表示方式 | 是否增加欄位 |
+        | --- | --- | --- | --- |
+        | Label Encoding | 有序離散值 | 數字 | 否 |
+        | One Hot Encoding | 無序離散值 | 1/0 | 是 |
+        
 
 
 
