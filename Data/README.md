@@ -862,9 +862,34 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
         | Label Encoding | 有序離散值 | 數字 | 否 |
         | One Hot Encoding | 無序離散值 | 1/0 | 是 |
         
+        - Method 3-2：pandas套件的get_dummies()
+            
+           - `pd.get_dummies(data, drop_first)`：可直接進行One hot encoding編碼
+              > - 可直接轉換字串，但無法轉換數字
+              > - 會根據其變數名稱自動新增新欄名
+              >> 不改變原始資料
+              
+              - data：資料
+                > input：Series or DataFrame
+                > output：DataFrame
+              - drop_first：是否丟掉第一個特徵欄位
+                > 預設為False
+                >> 在一個特徵變數中，其特徵值彼此是有相關性的
+                >>> E.g. 一個特徵變數有blue、green、red三個值，轉換後會新增三個欄位，\
+                >>> 但其實只需要兩個欄位即可，因非green且非red者，其必然是blue
 
 
-
+           ```python
+           pd.get_dummies(df[['price', 'color', 'size']])        
+           ```
+           > 需指定columns，若無資料會全部轉換
+           
+           丟掉其中一個特徵欄位
+           ```python
+           pd.get_dummies(df[['price', 'color', 'size']], drop_first=True)
+           ```
+           
+           
 #### Source
 [資料的正規化(Normalization)及標準化(Standardization)](https://aifreeblog.herokuapp.com/posts/54/data_science_203/)
 
