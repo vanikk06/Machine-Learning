@@ -1,4 +1,7 @@
 # Content
+- [Lecture 2 Data.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Data/Lecture%202%20Data.pdf)
+- [Class_02.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Data/Class_02.ipynb)
+   - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Data/Class_02.ipynb)
 - [Attributes](https://github.com/vanikk06/Machine-Learning/tree/master/Data#attributes)
 - [Symmetric vs. Skewed Data](https://github.com/vanikk06/Machine-Learning/tree/master/Data#symmetric-vs-skewed-data)
 - [Basic Statistical Descriptions](https://github.com/vanikk06/Machine-Learning/tree/master/Data#basic-statistical-descriptions)
