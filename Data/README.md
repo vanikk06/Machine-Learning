@@ -820,7 +820,7 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
            >> 1：True\
            >> 2：False
            
-           - 指定column：無法直接對字串進行編碼，須先透過Label encoding將字串以數字取代，再進行One hot encoding處理
+           - 字串：無法直接進行編碼，須先透過Label encoding將字串以數字取代，再進行One hot encoding處理
            
              ```python
              from sklearn.preprocessing import OneHotEncoder
@@ -830,11 +830,18 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
              dff = pd.DataFrame(temp)              
              ```
                - `OneHotEncoder(categorical_features=[0])`：實例化，OneHotEncoder函式
+                  > [Learning more](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/preprocessing-data-onehotencoder-labelencoder-%E5%AF%A6%E4%BD%9C-968936124d59)
                    - categorical_features：指定欄位（index）
+                     > 預設為'all'
                - `.fit_transform(X)`：訓練model並轉換之
                    - X：經Label encoding編碼後的資料
-                     > input：2-D array
-         
+                     > input：2-D array\
+                     > output：scipy.csr_matrix資料結構
+                  - `.toarray()`：將scipy.csr_matrix轉為array
+                    > - scipy.csr_matrix：**稀疏矩陣**相關函式
+                    > - sparse matrix：稀疏矩陣，2-D array，矩陣中多數的元素沒有資料（為0）
+                    >> 當多數元素沒有資料時，因2-D array的大小與使用的記憶體空間成正比，會造成記憶體空間的浪費，為此必須設計稀疏矩陣的array儲存方式，以利用較少的記憶體空間儲存完整的矩陣資訊
+                           
         
         
 
@@ -854,6 +861,8 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
 [初學Python手記#3-資料前處理( Label encoding、 One hot encoding)](https://medium.com/@PatHuang/%E5%88%9D%E5%AD%B8python%E6%89%8B%E8%A8%98-3-%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86-label-encoding-one-hot-encoding-85c983d63f87)
 
 [Preprocessing Data : 類別型特徵_OneHotEncoder & LabelEncoder 介紹與實作](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/preprocessing-data-onehotencoder-labelencoder-%E5%AF%A6%E4%BD%9C-968936124d59)
+
+[稀疏矩陣](https://openhome.cc/Gossip/AlgorithmGossip/SparseMatrix.htm)
 
 [🐓🐓🐓🐓🐓](https://github.com/vanikk06/Machine-Learning/tree/master/Data#content)  
 
