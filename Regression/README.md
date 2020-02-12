@@ -1,6 +1,7 @@
 # Content
   
   - [Correlation coefficient](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#correlation-coefficient)
+  - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#linear-regression)
 
 
 # Correlation coefficient
@@ -36,7 +37,10 @@
 線性模型：點與線之間距離最短
  > 線性函數：y = ax + b
  >> ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-13_04-14-05.png)
-
-
+ 
+- Machine learning：利用 data 計算假設 g，讓其近似目標 f
+  - Step 1. 收集訓練資料
+  - Step 2. 設計數學模型
+  - Step 3. 找出具最佳參數之模型
 
 [🧪](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
