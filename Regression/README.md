@@ -1,4 +1,6 @@
 # Content
+  
+  - [Correlation coefficient](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#correlation-coefficient)
 
 
 # Correlation coefficient
@@ -19,10 +21,18 @@
   數字愈接近 1 代表相關性愈大
     - 正相關：正號
     - 負相關：負號
-
-
+    - 相關係數=0：僅代表不存在線性相關，**不代表不存在相關性**
 
 #### Source
 [相關係數](https://wiki.mbalib.com/zh-tw/%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0)
 
 [⚗](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+
+# Linear Regression
+  > 線性回歸
+  
+
+線性模型：點與線之間距離最短
+ > 線性函數：y = ax + b
+ >> ![]()
