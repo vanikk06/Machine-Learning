@@ -14,7 +14,7 @@
   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-13_03-54-34.png)
   
   是透過計算「xy的標準差」除以「x標準差乘以y標準差而來的」
-  > ![]()
+  > ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-13_04-03-36.png)
 
 
 
