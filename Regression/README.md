@@ -9,6 +9,8 @@
   > 相關關係
   
 - Correlation coefficient：相關係數，用以反映變數之間相關關係密切程度的統計指標
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-13_03-54-34.png)
 
 
 
