@@ -61,8 +61,6 @@
     
     ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_00-02-57.png)
    
-    
-    
   
 - Gradient descent：透過不斷**更新參數**慢慢靠近目標，最終找到一個極近似目標的函式
   > 微積分
@@ -98,13 +96,15 @@
 
 #### § Pratices §
 
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_03-02-20.png)
+
 - h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x
 - θ<sub>0</sub>調整：h<sub>θ</sub>( x ) - y
 - θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )*x
    
-     
- 
-  
+      
+P.S. 要小心，找到的 min 是 local 還是 global
+      
 #### Source
 [[深度學習講中文] 簡單解釋梯度下降法 (Gradient Descent)](https://medium.com/@arlen.mg.lu/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E8%AC%9B%E4%B8%AD%E6%96%87-gradient-descent-b2a658815c72)
 
