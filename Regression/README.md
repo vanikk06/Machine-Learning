@@ -120,3 +120,8 @@ P.S. 要小心，找到的 min 是 local 還是 global
 [[Day4] 梯度下降法（Gradient Descent）](https://ithelp.ithome.com.tw/articles/10193297?sc=iThelpR)
 
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+# Pratices Linear Regression
+
+
+[🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
