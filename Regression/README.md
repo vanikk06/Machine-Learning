@@ -87,11 +87,11 @@
        > model要設定的參數
        >> 設定不好會無法收斂到最小
        - 過小
-         ![]()
+         ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_02-26-43.png)
        - 過大
-         ![]()
+         ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_02-30-32.png)
        - 適中
-         ![]()
+         ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_02-31-37.png)
        
        
    
