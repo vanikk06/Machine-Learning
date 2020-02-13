@@ -69,7 +69,9 @@
    
    梯度下降法，是最佳化理論裡的一個一階找最佳解的一種方法，利用此方法找到函式中局部最小值
    > 找一組θ<sub>0</sub>, θ<sub>1</sub> 使E(θ<sub>0</sub>, θ<sub>1</sub>)最小
-   >> θ<sub>1</sub>：斜率，與相關係數同號
+   >> θ<sub>1</sub>：斜率，與相關係數同號\
+   >> θ<sub>0</sub>：截距（高度）
+   >>> 從\[0,0]開始慢慢找，用每點與回歸線的距離總合為判斷，找最小值
    
    - 梯度
      > 微分：函式在某點上變化的方向
@@ -93,7 +95,12 @@
        ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_02-36-50.png)
        ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_02-38-07.png)
        
-       
+
+#### § Pratices §
+
+- h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x
+- θ<sub>0</sub>調整：h<sub>θ</sub>( x ) - y
+- θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )*x
    
      
  
