@@ -55,10 +55,20 @@
   >> 因為在尋找「最佳化」函數時，會使用微積分的方式，絕對值微分的話，在0會突然變化劇烈
   （sharp），不利於判斷
   
+  - Cost function / Loss function：損失函數，在最佳化理論裡稱為目標函數（objection function），希望目標函數愈小愈好
+    > 找 minimize
+    
+    ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_00-02-57.png)
+    
+    
   
-  
+- Gradient descent：透過不斷**更新參數**慢慢靠近目標，最終找到一個極近似目標的函式
+ 
   
   
 #### Source
+[[深度學習講中文] 簡單解釋梯度下降法 (Gradient Descent)](https://medium.com/@arlen.mg.lu/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E8%AC%9B%E4%B8%AD%E6%96%87-gradient-descent-b2a658815c72)
+
+[機器/深度學習-基礎數學(二):梯度下降法(gradient descent)](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E5%9F%BA%E7%A4%8E%E6%95%B8%E5%AD%B8-%E4%BA%8C-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95-gradient-descent-406e1fd001f)
 
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
