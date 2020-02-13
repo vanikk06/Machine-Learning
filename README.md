@@ -83,6 +83,7 @@
 - [Lecture 1.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/Lecture%201.pdf)
 - [Class_01.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/Class_01.ipynb)
     - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Intro/Class_01.ipynb)
+- [作業1.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/%E4%BD%9C%E6%A5%AD1.pdf)
 - [作業一.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Intro/%E4%BD%9C%E6%A5%AD%E4%B8%80.ipynb)
     - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Intro/%E4%BD%9C%E6%A5%AD%E4%B8%80.ipynb)
 - [Introduction](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#introduction)
