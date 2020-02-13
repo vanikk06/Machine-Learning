@@ -46,11 +46,19 @@
 
 [🧪](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
-# Least square Method ＆ Gradient descent
+# Least square method ＆ Gradient descent
   > 「最小平方法」與「梯度下降法」
 
-
-
+利用「最小平方法」與「梯度下降法」找出最佳的回歸線
+- Least square method：目的是為了尋找**最小**的cost function
+  > P.S. 距離的計算「平方」會優於「絕對值」
+  >> 因為在尋找「最佳化」函數時，會使用微積分的方式，絕對值微分的話，在0會突然變化劇烈
+  （sharp），不利於判斷
+  
+  
+  
+  
+  
 #### Source
 
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
