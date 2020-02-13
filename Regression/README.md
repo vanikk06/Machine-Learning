@@ -1,5 +1,9 @@
 # Content
-  
+  - [Lecture 3 Regression 拷貝_完整.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/Lecture%203%20Regression%20%E6%8B%B7%E8%B2%9D_%E5%AE%8C%E6%95%B4.pdf)
+  - [作業2.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD2.pdf)
+  - [Class_03.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/Class_03.ipynb)
+    - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Regression/Class_03.ipynb)
+  - [作業2_answer.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD2_answer.pdf)  
   - [Correlation coefficient](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#correlation-coefficient)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#linear-regression)
   - [Least square method ＆ Gradient descent](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#least-square-method--gradient-descent)
@@ -95,6 +99,7 @@
        
 
 #### § Pratices §
+[👉🏻HERE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/Class_03.ipynb)
 
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_03-02-20.png)
 
