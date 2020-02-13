@@ -59,13 +59,17 @@
     > 找 minimize
     
     ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_00-02-57.png)
-    > 找一組θ<sub>0</sub>, θ<sub>1</sub> 使E(θ<sub>0</sub>, θ<sub>1</sub>)最小
+   
     
     
   
 - Gradient descent：透過不斷**更新參數**慢慢靠近目標，最終找到一個極近似目標的函式
+  > 微積分
+   
+   梯度下降法，是最佳化理論裡的一個一階找最佳解的一種方法，利用此方法找到函式中局部最小值
+   > 找一組θ<sub>0</sub>, θ<sub>1</sub> 使E(θ<sub>0</sub>, θ<sub>1</sub>)最小
+   >> θ<sub>1</sub>：斜率，與相關係數同號
  
-  
   
 #### Source
 [[深度學習講中文] 簡單解釋梯度下降法 (Gradient Descent)](https://medium.com/@arlen.mg.lu/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E8%AC%9B%E4%B8%AD%E6%96%87-gradient-descent-b2a658815c72)
