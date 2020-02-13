@@ -106,6 +106,8 @@
 - h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x
 - θ<sub>0</sub>調整：h<sub>θ</sub>( x ) - y
 - θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )*x
+
+梯度下降法是不斷往下找誤差（cost）的最小值，但在找到之前，我們不知道要給model疊代多少次才會找到，因此可以在model上「給予誤差臨界值的限制」，讓model在誤差的變化小到一定程度時，就知道要停止，以減少多餘的時間、記憶體浪費
    
       
 P.S. 要小心，找到的 min 是 local 還是 global
@@ -114,5 +116,7 @@ P.S. 要小心，找到的 min 是 local 還是 global
 [[深度學習講中文] 簡單解釋梯度下降法 (Gradient Descent)](https://medium.com/@arlen.mg.lu/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E8%AC%9B%E4%B8%AD%E6%96%87-gradient-descent-b2a658815c72)
 
 [機器/深度學習-基礎數學(二):梯度下降法(gradient descent)](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E5%9F%BA%E7%A4%8E%E6%95%B8%E5%AD%B8-%E4%BA%8C-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95-gradient-descent-406e1fd001f)
+
+[[Day4] 梯度下降法（Gradient Descent）](https://ithelp.ithome.com.tw/articles/10193297?sc=iThelpR)
 
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
