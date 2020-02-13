@@ -32,7 +32,8 @@
 
 # Linear Regression
   > 線性回歸
-  
+
+尋找數據背後隱藏的函式，也就是數據背後統一一致的規則
 
 線性模型：點與線之間距離最短
  > 線性函數：y = ax + b
@@ -44,3 +45,12 @@
   - Step 3. 找出具最佳參數之模型
 
 [🧪](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+# Least square Method ＆ Gradient descent
+  > 「最小平方法」與「梯度下降法」
+
+
+
+#### Source
+
+[🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
