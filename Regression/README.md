@@ -219,6 +219,12 @@ Intercept: 428.600
       - f：浮點數
       - .3：小數點後三位
 
+畫出資料的散佈圖與迴歸線來看彼此的關係
+```python
+plt.scatter(X_std, y)
+plt.plot(X_std, y_pred, 'c')
+```
+
 
 #### Source
 [sklearn中的数据预处理](http://d0evi1.com/sklearn/preprocessing/)
