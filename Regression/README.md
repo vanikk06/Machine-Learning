@@ -188,9 +188,10 @@ P.S. 要小心，找到的 min 是 local 還是 global
   - R<sup>2</sup> = 0.7 ~ 0.8：表示 model 部分解釋數據
   - R<sup>2</sup> = 0 ：表示 model 完全無法解釋數據
   
-  
+#### Source 
+[機器學習-線性回歸分析(linear regression)](http://www.taroballz.com/2018/07/16/ML_LinearRegression/)
 
-
+[如何預測資料：迴歸模型的評估](https://medium.com/datainpoint/evaluating-reg-e993ce27b61)
 
 [💉](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
