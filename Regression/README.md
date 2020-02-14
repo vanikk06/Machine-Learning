@@ -61,7 +61,8 @@
   > 「最小平方法」與「梯度下降法」
 
 利用「最小平方法」與「梯度下降法」找出最佳的回歸線
-- Least square method：目的是為了尋找**最小**的cost function
+- Least square method：目的是為了尋找**最小**的cost function，希望誤差的平方愈小愈好，因誤插有正有負，取平方後皆為正值
+
   > P.S. 距離的計算「平方」會優於「絕對值」
   >> 因為在尋找「最佳化」函數時，會使用微積分的方式，絕對值微分的話，在0會突然變化劇烈
   （sharp），不利於判斷
@@ -125,6 +126,8 @@ P.S. 要小心，找到的 min 是 local 還是 global
 [機器/深度學習-基礎數學(二):梯度下降法(gradient descent)](https://medium.com/@chih.sheng.huang821/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E5%9F%BA%E7%A4%8E%E6%95%B8%E5%AD%B8-%E4%BA%8C-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95-gradient-descent-406e1fd001f)
 
 [[Day4] 梯度下降法（Gradient Descent）](https://ithelp.ithome.com.tw/articles/10193297?sc=iThelpR)
+
+[線性回歸(Linear Regression)](https://medium.com/@chih.sheng.huang821/%E7%B7%9A%E6%80%A7%E5%9B%9E%E6%AD%B8-linear-regression-3a271a7453e)
 
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
