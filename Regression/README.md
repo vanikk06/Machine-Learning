@@ -39,7 +39,8 @@
 # Linear Regression
   > 線性回歸
 
-尋找數據背後隱藏的函式，也就是數據背後統一一致的規則
+線性迴歸，是尋找數據背後隱藏的函式，也就是符合數據規律的函式，
+  > 為在資料點中找出規律、畫出一條直線的專業說法
 
 線性模型：點與線之間距離最短
  > 線性函數：y = ax + b
@@ -49,6 +50,10 @@
   - Step 1. 收集訓練資料
   - Step 2. 設計數學模型
   - Step 3. 找出具最佳參數之模型
+
+
+#### Source
+[線性迴歸的運作原理](https://brohrer.mcknote.com/zh-Hant/how_machine_learning_works/how_linear_regression_works.html)
 
 [🧪](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
@@ -124,6 +129,8 @@ P.S. 要小心，找到的 min 是 local 還是 global
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 # Pratices Linear Regression
+  > 用套件來實踐 Linear Regression
 
+讓機器透過學習觀察特徵來分類
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
