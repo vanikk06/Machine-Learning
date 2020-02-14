@@ -121,6 +121,7 @@
 [👉🏻HERE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/Class_03.ipynb)
 
 - 直線
+
   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_03-02-20.png)
 
   - h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x
@@ -128,6 +129,7 @@
   - θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )*x
   
 - 二項式
+
   ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-15_02-27-46.png)
   
   - h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup>
@@ -151,6 +153,14 @@ P.S. 要小心，找到的 min 是 local 還是 global
 [線性回歸(Linear Regression)](https://medium.com/@chih.sheng.huang821/%E7%B7%9A%E6%80%A7%E5%9B%9E%E6%AD%B8-linear-regression-3a271a7453e)
 
 [🧫](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+# Coefficient of Determination
+  > 決定係數
+
+
+
+[💉](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
 
 # Pratices Linear Regression
   > 用套件來實踐 Linear Regression
