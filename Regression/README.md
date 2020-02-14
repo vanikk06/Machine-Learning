@@ -159,8 +159,13 @@ x = data.iloc[:,0].values
 y = data.iloc[:,-1].values
 ```
 
-先將資料進行
+先將資料特徵進行 normalization 處理，讓特徵資料（X）不改變原始分佈的按比例縮放，讓資料落在某一特定區間
+> 使用`sklearn.preprocessing`套間中的`StandardScaler`函式
+```python
+from sklearn.preprocessing import StandardScaler
 
+
+```
 
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
