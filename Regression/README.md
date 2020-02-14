@@ -164,8 +164,47 @@ y = data.iloc[:,-1].values
 ```python
 from sklearn.preprocessing import StandardScaler
 
+sc_x = StandardScaler()
+x1 = x.reshape(-1,1)
 
+X_std = sc_x.fit_transform(x1)
 ```
+> 小心，fit_transform()的input格式為2-D array
+
+- `StandardScaler()`：標準化，能夠計算訓練數據的平均值和標準差，從而在訓練數據集上再次使用
+  > 平均值為 0；單位為標準差
+  
+  - 標準化：在此為「減掉平均值，再除以標準差」，有就是去除均值，再按標準差比例縮放
+
+- `np.reshape(newshape)`：改變array形狀，不改變內部元素
+  - newshape：新形狀
+    - int：1-D array
+    - int of ints：(row, col)
+      > 新形狀的元素個數，要等於原array的元素個數
+      >> -1：自動計算
+
+- `.fit_transform()`：執行訓練並轉化
+  > input：2-D array
+
+接著再建立線性迴歸model
+> 使用`sklearn.linear_model`套件中的`LinearRegression`函式
+```python
+from sklearn.linear_model import LinearRegression
+
+lr = LinearRegression()
+lr.fit(X_std, y)
+y_pred = lr.predict(X_std)
+```
+查看訓練出的迴歸線係數
+```python
+print('Slope: %.3f' % lr.coef_[0])
+print('Intercept: %.3f' % lr.intercept_)
+#輸出
+Slope: 95.564
+Intercept: 428.600
+```
+
+
 
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
