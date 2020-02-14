@@ -318,6 +318,17 @@ model主要利用training set訓練，以期待可以使用歷史數據，進行
 
 - Underfitting：model 擬合不足，model 沒有學好訓練集的特徵，導致 model 無法進行預測
 
+#### 如何判斷Overfitting??
+可將 data set 分割為 training set 與 testing set
+1. training set：建立model
+2. testing set：預測，以評估model
+
+- Overfitting 發生情形
+  - train MSE < test MSE
+    > MSE愈小愈好
+  - train R<sup>2</sup> > test R<sup>2</sup>
+    > R<sup>2</sup>愈接近 1 愈好
+
 
 [💊](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
