@@ -41,7 +41,16 @@
 
 線性迴歸，是尋找數據背後隱藏的函式，也就是符合數據規律的函式，
   > 為在資料點中找出規律、畫出一條直線的專業說法
-
+  
+是統計上在找「多個自變數和依變數之間的關係」建造出的模型
+  - 簡單線性回歸（Simple linear regression）：一個自變數與一個依變數
+  - 多元回歸（multiple regression）：大於一個自變數與一個依變數
+      - 自變數（independent variable）：獨立，理論上此變數是不被其他變數影響的，只會影響別的變數，因此被認為是「因」（Cause）
+      
+      - 依變數（dependent variable）：相依，此變數基本上是被其他變數影響，引此被認為是「果」（effect）
+  
+  
+  
 線性模型：點與線之間距離最短
  > 線性函數：y = ax + b
  >> ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-13_04-14-05.png)
@@ -54,6 +63,8 @@
 
 #### Source
 [線性迴歸的運作原理](https://brohrer.mcknote.com/zh-Hant/how_machine_learning_works/how_linear_regression_works.html)
+
+[線性回歸(Linear Regression)](https://medium.com/@chih.sheng.huang821/%E7%B7%9A%E6%80%A7%E5%9B%9E%E6%AD%B8-linear-regression-3a271a7453e)
 
 [🧪](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
@@ -135,5 +146,21 @@ P.S. 要小心，找到的 min 是 local 還是 global
   > 用套件來實踐 Linear Regression
 
 讓機器透過學習觀察特徵來分類
+
+先匯入相關套件與資料，並將資料由dataframe轉為array
+
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv('regression1.csv')
+x = data.iloc[:,0].values
+y = data.iloc[:,-1].values
+```
+
+先將資料進行
+
+
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
