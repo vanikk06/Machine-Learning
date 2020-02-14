@@ -161,10 +161,34 @@ P.S. 要小心，找到的 min 是 local 還是 global
 當model訓練好後，要評估model的效能如何
 
 在此 linear regression model主要是要尋找「誤差極小值」，因此可以用 MSE 作評估
-- MSE（Mean Squared Error）：均方誤差
+- MSE（Mean Squared Error）：均方誤差，可將其視為Cost function
   > 迴歸model的核心，扮演尋找係數的依據
-  >> MSE愈小，代表預測值與實際值差距愈小
-
+  >> 單獨解讀無法判斷好壞，需透過比較才有意義
+ 
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-15_02-58-23.png)
+  > MSE愈小，代表預測值與實際值差距愈小
+  
+  在線性迴歸中
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-15_03-03-51.png)
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-15_03-08-05.png)
+  
+  - SST：總誤差，為 真實值_y 到 平均值_y 的距離，可分為 SSE 與 SSR
+  - SSR：迴歸model可解釋的部分，為 預測值_y 到 平均值_y 的距離  
+  - SSE：隨機誤差，為 真實值_y 到 預測值_y 的距離
+  
+  SST = SSR + SSE\
+  透過上述式子，可將 SSR 於 SST 中的佔比，理解為一個「標準化後的MSE」，則為R<sup>2</sup>
+  > 因其縮至\[0, 1]
+  
+  R<sup>2</sup>愈高，表示 model 的解釋能力愈好
+  - R<sup>2</sup> = 1：表示 model 完全解釋數據
+  - R<sup>2</sup> = 0.7 ~ 0.8：表示 model 部分解釋數據
+  - R<sup>2</sup> = 0 ：表示 model 完全無法解釋數據
+  
+  
 
 
 
