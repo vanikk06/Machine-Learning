@@ -7,6 +7,7 @@
   - [Correlation coefficient](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#correlation-coefficient)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#linear-regression)
   - [Least square method ＆ Gradient descent](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#least-square-method--gradient-descent)
+  - [Coefficient of Determination](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#coefficient-of-determination)
   - [Pratices Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-linear-regression)
 
 
@@ -156,6 +157,14 @@ P.S. 要小心，找到的 min 是 local 還是 global
 
 # Coefficient of Determination
   > 決定係數
+  
+當model訓練好後，要評估model的效能如何
+
+在此 linear regression model主要是要尋找「誤差極小值」，因此可以用 MSE 作評估
+- MSE（Mean Squared Error）：均方誤差
+  > 迴歸model的核心，扮演尋找係數的依據
+  >> MSE愈小，代表預測值與實際值差距愈小
+
 
 
 
