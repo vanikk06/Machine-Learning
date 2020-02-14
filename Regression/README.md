@@ -120,11 +120,21 @@
 #### § Pratices §
 [👉🏻HERE👈🏻](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/Class_03.ipynb)
 
-![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_03-02-20.png)
+- 直線
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-14_03-02-20.png)
 
-- h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x
-- θ<sub>0</sub>調整：h<sub>θ</sub>( x ) - y
-- θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )*x
+  - h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x
+  - θ<sub>0</sub>調整：h<sub>θ</sub>( x ) - y
+  - θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )*x
+  
+- 二項式
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-15_02-27-46.png)
+  
+  - h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup>
+  - θ<sub>0</sub>調整：h<sub>θ</sub>( x ) - y
+  - θ<sub>1</sub>調整：( h<sub>θ</sub>( x ) - y )x
+  - θ<sub>2</sub>調整：( h<sub>θ</sub>( x ) - y )x<sup>2</sup>
+  
 
 梯度下降法是不斷往下找誤差（cost）的最小值，但在找到之前，我們不知道要給model疊代多少次才會找到，因此可以在model上「給予誤差臨界值的限制」，讓model在誤差的變化小到一定程度時，就知道要停止，以減少多餘的時間、記憶體浪費
    
