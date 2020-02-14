@@ -205,6 +205,7 @@ Intercept: 428.600
 ```
 
 
-
+#### Source
+[sklearn中的数据预处理](http://d0evi1.com/sklearn/preprocessing/)
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
