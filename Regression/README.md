@@ -9,6 +9,8 @@
   - [Least square method ＆ Gradient descent](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#least-square-method--gradient-descent)
   - [Coefficient of Determination](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#coefficient-of-determination)
   - [Pratices Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-linear-regression)
+  - [Overfitting v.s. Underfitting](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#overfitting-vs-underfitting)
+  - [Pratices Polynomial Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-polynomial-regression)
 
 
 # Correlation coefficient
@@ -320,8 +322,60 @@ model主要利用training set訓練，以期待可以使用歷史數據，進行
 [💊](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 #  Pratices Polynomial Regression
+   > 多項式迴歸
+   >> 通過增加 x 的高次項，對數據進行逼近
 
 - Polynomial Regression：數據分佈為曲線，而非直線
 
+要進行多項式函數的線性迴歸前，要先對特徵變數做些處理
+
+使用`sklearn.preprocessing`套件的`PolynomialFeatures`函式
+```python
+from sklearn.preprocessing import PolynomialFeatures
+
+quadratic = PolynomialFeatures(degree=2)
+x_quad = quadratic.fit_transform(X_std)
+```
+- `PolynomialFeatures(degree=2)`：實例化，可理解為專門生成多項式特徵，並且多項式包含的是相互影響的特徵集
+   > 要指定「函式維度」
+   >> [Learning more](https://www.itread01.com/content/1541737027.html)
+   - degree：多項式階數，預設為2
+- `quadratic.fit_transform(X_std)`：將數據放入model轉換
+  > 可轉換為 x 內積 θ
+  >> h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup> 為 三維向量
+  
+放入線性迴歸模型做訓練
+```python
+pr = LinearRegression()
+pr.fit(x_quad, y)
+y_quad_pred = pr.predict(x_quad)
+
+print('theta1: %.3f' % pr.coef_[1])
+print('theta2: %.3f' % pr.coef_[2])
+print('Intercept: %.3f' % pr.intercept_)
+#輸出
+theta1: 97.133
+theta2: 22.623
+Intercept: 405.977
+```
+- `pr.coef_[1]`：x係數
+- `pr.coef_[2]`：x<sup>2</sup>係數
+  > pr.coef_\[0]：預設為1，因其可還原為 x 內積 θ
+- `pr.intercept_`：截距
+
+
+評估模型
+```python
+print('MSE: %.3f' % sm.mean_squared_error(y, y_quad_pred))
+print('R^2: %.3f' % sm.r2_score(y, y_quad_pred))
+#輸出
+MSE: 377.582
+R^2: 0.963
+```
+
+#### Source
+[Day13-Scikit-learn介紹(5)_ Linear-Regression](https://ithelp.ithome.com.tw/articles/10206114)
+
+[Sklearn-preprocessing.PolynomialFeatures](https://www.itread01.com/content/1541737027.html)
 
 [🔬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
