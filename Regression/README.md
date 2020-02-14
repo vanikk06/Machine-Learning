@@ -183,7 +183,7 @@ X_std = sc_x.fit_transform(x1)
       > 新形狀的元素個數，要等於原array的元素個數
       >> -1：自動計算
 
-- `.fit_transform()`：執行訓練並轉化
+- `sc_x.fit_transform()`：執行訓練並轉化
   > input：2-D array
 
 接著再建立線性迴歸model
@@ -195,6 +195,13 @@ lr = LinearRegression()
 lr.fit(X_std, y)
 y_pred = lr.predict(X_std)
 ```
+- `LinearRegression()`：實例化
+- `lr.fit(X_std, y)`：訓練/擬合model
+    - X_std：特徵變數
+    - y：目標變數
+- lr.predict(X_std)：將資料放入model中進行預測
+
+
 查看訓練出的迴歸線係數
 ```python
 print('Slope: %.3f' % lr.coef_[0])
@@ -203,9 +210,21 @@ print('Intercept: %.3f' % lr.intercept_)
 Slope: 95.564
 Intercept: 428.600
 ```
+- `lr.coef_[0]`：斜率（θ<sub>1</sub>）
+- `lr.intercept_`：截距（θ<sub>0</sub>）
+    - `%.3f`：字串化格式
+      - %：操作符，可將資料格式化
+        > 基本語法`'' % ('')`
+        >> [Learning more](https://www.footmark.info/programming-language/python/python-string-format/)
+      - f：浮點數
+      - .3：小數點後三位
 
 
 #### Source
 [sklearn中的数据预处理](http://d0evi1.com/sklearn/preprocessing/)
+
+[Day13-Scikit-learn介紹(5)_ Linear-Regression](https://ithelp.ithome.com.tw/articles/10206114)
+
+[Python 字串格式化](https://www.footmark.info/programming-language/python/python-string-format/)
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
