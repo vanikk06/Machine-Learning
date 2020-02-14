@@ -306,3 +306,22 @@ R^2: 0.903
 [Python 字串格式化](https://www.footmark.info/programming-language/python/python-string-format/)
 
 [🧬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+
+# Overfitting v.s. Underfitting
+
+model主要利用training set訓練，以期待可以使用歷史數據，進行預測
+
+- Overfitting：model 過度擬合訓練集的特徵，導致 model 失去泛化能力
+
+- Underfitting：model 擬合不足，model 沒有學好訓練集的特徵，導致 model 無法進行預測
+
+
+[💊](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+#  Pratices Polynomial Regression
+
+- Polynomial Regression：數據分佈為曲線，而非直線
+
+
+[🔬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
