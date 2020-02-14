@@ -278,7 +278,25 @@ Intercept: 428.600
 plt.scatter(X_std, y)
 plt.plot(X_std, y_pred, 'c')
 ```
+用 MSE 與 R<sup>2</sup> 來評估model
+> 使用`sklearn.metrics`套件
+```python
+import sklearn.metrics as sm
 
+print('MSE: %.3f' % sm.mean_squared_error(y, y_pred))
+print('R^2: %.3f' % sm.r2_score(y, y_pred))
+#輸出
+MSE: 978.262
+R^2: 0.903
+```
+> model 只能解釋90.3%的銷售收入變因
+
+- `sm.mean_squared_error(y, y_pred)`：均方誤差迴歸損失，拿 model預測值 與 真實值 比較
+    - y：真實數據的目標變數
+    - y_pred：model的預測值
+- `sm.r2_score(y, y_pred)`：測量 x 對 y 的解釋程度，也就是預測值 y 的變異中，有多少百分比可以由 x 解釋
+  > 最佳為 1\
+  > 有可能為負
 
 #### Source
 [sklearn中的数据预处理](http://d0evi1.com/sklearn/preprocessing/)
