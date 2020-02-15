@@ -347,13 +347,84 @@ from sklearn.preprocessing import PolynomialFeatures
 quadratic = PolynomialFeatures(degree=2)
 x_quad = quadratic.fit_transform(X_std)
 ```
-- `PolynomialFeatures(degree=2)`：實例化，可理解為專門生成多項式特徵，並且多項式包含的是相互影響的特徵集
+- `PolynomialFeatures(degree=2, interaction_only=False)`：實例化，專門生成「多項式特徵」，並且多項式包含的是相互影響的特徵集
    > 要指定「函式維度」
    >> [Learning more](https://www.itread01.com/content/1541737027.html)
    - degree：多項式階數，預設為2
+   - interaction_only：是否只找互動作用的多項式
+     > 預設False
+     >> 互動作用：與他者互動\
+     - interaction_only = True：\[1, a, b, a<sup>2</sup>, ab, b<sup>2</sup>] 會變成僅有 \[1, a, b, ab]
+       > 無自己與自己互動的情形
 - `quadratic.fit_transform(X_std)`：將數據放入model轉換
   > 可轉換為 x 內積 θ
-  >> h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup> 為 三維向量
+  >> 在此為 h<sub>θ</sub>( x ) = θ<sub>0</sub> + θ<sub>1</sub>x + θ<sub>2</sub>x<sup>2</sup> 為 三維向量
+  - input：2-D array
+  
+  產生一個二項式的係數
+  ```python
+  x = np.arange(4)
+  x = x.reshape(-1,1)
+  x
+  #輸出
+  array([[0],
+         [1],
+         [2],
+         [3]])
+  ```
+  將資料格式每row為 \[a] 的 x 放入
+  ```python
+  poly = PolynomialFeatures(2)
+  poly.fit_transform(x)
+  #輸出
+  array([[1., 0., 0.],
+         [1., 1., 1.],
+         [1., 2., 4.],
+         [1., 3., 9.]])
+  ```
+  > 會生成 \[1, a, a<sup>2</sup>]的資料
+  
+  改成生成三項式的係數
+  ```python
+  poly = PolynomialFeatures(3)
+  poly.fit_transform(x) 
+  #輸出
+  array([[ 1.,  0.,  0.,  0.],
+         [ 1.,  1.,  1.,  1.],
+         [ 1.,  2.,  4.,  8.],
+         [ 1.,  3.,  9., 27.]])
+  ```
+  > 生成 \[1, a, a<sup>2</sup>, a<sup>3</sup>]
+  
+  將每row的資料格式更改 \[a, b]
+  ```python
+  y = np.arange(4).reshape(2,2)
+  y
+  #輸出
+  array([[0, 1],
+         [2, 3]])
+  ```
+  ```python
+  poly = PolynomialFeatures(2)
+  poly.fit_transform(y)
+  #輸出
+  array([[1., 0., 1., 0., 0., 1.],
+         [1., 2., 3., 4., 6., 9.]])
+  ```
+  > 生成 \[1, a, b, a<sup>2</sup>, ab, b<sup>2</sup>]
+  
+  更改參數，僅有他者互動作用的參數
+  ```python
+  poly = PolynomialFeatures(2, interaction_only=True)
+  poly.fit_transform(y)
+  #輸出
+  array([[1., 0., 1., 0.],
+         [1., 2., 3., 6.]])
+  ```
+  > 生成 \[1, a, b, ab]
+  >> 不存在自己與自己互動的情形\
+  >> E.g. a<sup>2</sup>、b<sup>2</sup>
+  
   
 放入線性迴歸模型做訓練
 ```python
