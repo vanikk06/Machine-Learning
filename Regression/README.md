@@ -338,7 +338,7 @@ model主要利用training set訓練，以期待可以使用歷史數據，進行
 
 - Polynomial Regression：數據分佈為曲線，而非直線
 
-要進行多項式函數的線性迴歸前，要先對特徵變數做些處理
+要進行多項式函數的線性迴歸前，要先對特徵變數做些處理，讓其增加二次項
 
 使用`sklearn.preprocessing`套件的`PolynomialFeatures`函式
 ```python
