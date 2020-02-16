@@ -41,6 +41,7 @@
 
 # Linear Regression
   > 線性回歸
+  >> 目標變數必為**「連續值」**，不可是類別型、離散型
 
 線性迴歸，是尋找數據背後隱藏的函式，也就是符合數據規律的函式，
   > 為在資料點中找出規律、畫出一條直線的專業說法
@@ -333,7 +334,7 @@ model主要利用training set訓練，以期待可以使用歷史數據，進行
 [💊](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 #  Pratices Polynomial Regression
-   > 多項式迴歸
+   > 二項式線性回歸
    >> 通過增加 x 的高次項，對數據進行逼近
 
 - Polynomial Regression：數據分佈為曲線，而非直線
