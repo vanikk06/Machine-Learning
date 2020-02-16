@@ -11,6 +11,7 @@
   - [Pratices Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-linear-regression)
   - [Overfitting v.s. Underfitting](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#overfitting-vs-underfitting)
   - [Pratices Polynomial Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-polynomial-regression)
+  - [Multiple Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#multiple-regression)
 
 
 # Correlation coefficient
