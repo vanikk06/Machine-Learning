@@ -520,4 +520,63 @@ df = pd.concat([feature, target], axis = 1)
     - ignore_index：合併時，可忽略舊的index欄位，改用自動產生的新index
       > 預設True
 
+多變量圖，觀察變數之間彼此的分佈關係
+> 散佈圖 + 直方圖
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+cols = ['age', 'bmi','s1', 's5', 'target']
+sns.pairplot(df[cols])
+plt.tight_layout()
+
+plt.savefig('scatterplot.png', dpi=300)
+```
+- `seaborn`：多維繪圖的套件
+- `sns.pairplot(變數, hue, palette)`：多變量圖，繪製成對關係
+   > 對角線：直方圖
+    - hue：分群，進一步區分不同變數
+    - palette：顏色主題
+- `plt.tight_layout()`：避免圖重疊，將其分開
+- `plt.savefig(圖片名稱, 解析度)`：儲存圖檔
+
+熱度圖（Heat map），畫出相關係數矩陣（correlation matrix）
+```python
+import numpy as np
+
+cm = np.corrcoef(df[cols].values.T) 
+sns.set(font_scale=1.5)
+hm = sns.heatmap(cm, cbar=True, annot=True, square=True, fmt='.2f', annot_kws={'size':15}, yticklabels=cols, xticklabels=cols)
+
+plt.tight_layout()
+plt.savefig('correlation.png', dpi=300)
+```
+> 相關性愈低，顏色愈深
+
+- `dataframe.values`：將dataframe轉為array
+- `array.T`：轉置，column變為row，row變為column
+  > \[row, column]
+  >> E.g. 將原始資料由 441x5 轉為 5x441
+- `np.corrcoef()`：相關係數，返回變數之間相關關係密切程度的指標
+  > input：2-D array
+  >> 以 row 為變量/欄位，column 為每個觀測值/每筆資料（所以需要**轉置**）
+- `sns.set(font_scale)`：設置美學參數
+  - font_scale：獨立縮放字體元素大小
+- `sns.heatmap(data, cbar, annot, square, fmt, annot_kws, yticklabels, xticklabels)`：熱度圖，畫出相關係數矩陣
+  - data：可為 array 或 dataframe
+    > 若為dataframe，其 row（index）/ column 會分別對應到 heatmap 的 column / row
+  - cbar：是否在 heatmap 測邊繪製顏色刻度圖
+    > 預設為 True
+  - annot：是否在每個方格內寫入資料
+    > 預設為 False
+    >> 若data為array（矩陣），會填入對應位置的資料
+  - square：設定方格為方形
+    > 預設為 False，原為長方形
+  - fmt：字串格式
+    > .2f：浮點數，到小數點後兩位
+  - annot_kws：方格上數字的大小、顏色、字型
+    > input為{ }
+  - xticklabels：x軸標籤名輸出
+  - yticklabels：y軸標籤名輸出
+  
 [🔭](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)  
