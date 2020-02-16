@@ -468,7 +468,25 @@ R^2: 0.963
 
 # Normal equation
   > 正規方程式
+  >> cost function轉為矩陣，對矩陣微分，推倒最小值
   
+在機器學習中，如果想要求得線性迴歸的參數，可以使用梯度下降法（Gradient Descent）或正規方程式（Normal Equation），來尋找讓 Cost Function 達到最小值的最佳參數
+
+多元線性迴歸可用下列式子用兩變數之間的關係表示，可視為兩項量內積
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-17_03-08-32.png)  
+ 
+Normal equation是將 cost function 轉成矩陣的形式，透過對其做一階偏微分，找cost function矩陣最小值時的迴歸係數
+
+#### Gradient descent v.s. Normal equation
+  
+- 是否設定 learning rate（學習率）
+  - Gradient descent：需設定學習率，學習率選擇的過程通常需要跑數次資料來決定（需要多次的疊代）
+    > 學習率的大小會影響到下降的收斂速度，若選擇失當，有可能造成發散
+  - Normal equation：不須設定學習率，也不須疊代運算
+  
+- Normal equation 需要計算「反矩陣」，當自變數的數目非常多時，矩陣的維度會變大，導致時間複雜度增加，這時使用 Gradient descent 會相對快速
+  > 當自變數不多時，使用 Normal equation 是相對經濟的選擇
+ 
 #### Source
 [Normal Equation（正規方程式）](https://medium.com/@gatorsquare/ml-normal-equation-%E6%AD%A3%E8%A6%8F%E6%96%B9%E7%A8%8B%E5%BC%8F-9f1c09de4217)
 
