@@ -665,6 +665,10 @@ Predict i’s label as the majority of the labels of the k nearest neighbors.
    
 - Normalization：正則化，讓資料在原始的樣態下，**等比縮放**落在\[0, 1]區間中
   > 將資料原本的 min-Max 轉換為 new_min-new_Max，且不改變原本分佈
+  
+  在多變數求 cost function 時，有可能因為各變數值域不同，無法有效收斂（多維詛咒）
+  - Before：往倒數的反方向前進，顛頗
+  - After：圓形平面，求切線的反方向，慢慢走向球心
  
 - Standardization：標準化，將原始資料轉換成符合標準常態分佈的樣態
   > 優點：
