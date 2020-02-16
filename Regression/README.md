@@ -462,3 +462,9 @@ R^2: 0.963
 [Sklearn-preprocessing.PolynomialFeatures](https://www.itread01.com/content/1541737027.html)
 
 [🔬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+
+# Multiple Regression
+  > 多元迴歸、複迴歸
+  
+[🔭](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)  
