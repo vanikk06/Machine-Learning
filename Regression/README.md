@@ -465,7 +465,15 @@ R^2: 0.963
 [🔬](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 
-# Multiple Regression
+# Normal equation
+  > 正規方程式
+  
+#### Source
+[Normal Equation（正規方程式）](https://medium.com/@gatorsquare/ml-normal-equation-%E6%AD%A3%E8%A6%8F%E6%96%B9%E7%A8%8B%E5%BC%8F-9f1c09de4217)
+
+[⚖](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+# Pratices Multiple Regression
   > 多元迴歸、複迴歸
 
 特徵變數為一個以上
