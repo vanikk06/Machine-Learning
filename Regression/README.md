@@ -467,5 +467,57 @@ R^2: 0.963
 
 # Multiple Regression
   > 多元迴歸、複迴歸
-  
+
+特徵變數為一個以上
+
+載入糖尿病數據集
+```python
+from sklearn.datasets import load_diabetes
+
+data = load_diabetes()
+data.keys()
+#輸出
+dict_keys(['data', 'target', 'DESCR', 'feature_names', 'data_filename', 'target_filename'])
+```
+- `load_diabetes()`：實力化資料集
+   - 十個特徵變數（已標準化）
+     - Age
+     - Sex
+     - Body mass index（BMI）
+     - Average blood pressure：平均血壓
+     - S1 ~ S6：6種生理數據
+   - 目標變數：一年後病情發展狀況
+- `data.keys()`：顯示所有的key值
+
+將資料取出放入dataframe
+```python
+import pandas as pd
+
+feature = pd.DataFrame(data['data'], columns = data['feature_names'])
+target = pd.DataFrame(data['target'], columns = ['target'])
+df = pd.concat([feature, target], axis = 1)
+```
+- `pd.DataFrame(data, columns)`：建立dataframe
+    - data：放入dataframe的資料
+    - columns：欄位名稱（行）
+      > 可使用list多欄給予，也可自行指定
+        - 自行指定：list格式
+          ```python
+          columns = ['target']
+          ```
+
+- `pd.concat(objs, axis, join, join_axes, ignore_index)`：合併dataframe
+    - objs：合併對象
+      > list格式
+    - axis：合併方向
+      - axis=0：按row方向合併，直向合併（上下）
+      - axis=1：按column方向合併，橫向合併（左右）
+    - join：連接方式，有兩種模式
+      - outer：預設，直接將空的資料，用NaN填補
+      - inner：直接將空的資料刪除
+    - join_axes：橫向合併時，指定index
+      > E.g. join_axes = \[df1.index]
+    - ignore_index：合併時，可忽略舊的index欄位，改用自動產生的新index
+      > 預設True
+
 [🔭](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)  
