@@ -644,7 +644,7 @@ print('MSE_train: %.3f, MSE_test: %.3f' % (mean_squared_error(y_train, y_train_p
 print('R^2_train: %.3f, R^2_test: %.3f' % (r2_score(y_train, y_train_pred), r2_score(y_test, y_test_pred)))
 #輸出
 MSE_train: 2812.369, MSE_test: 3108.041
-R^2_train: 0.530, R^2_test: 0.459
+R ^2_train: 0.530, R ^2_test: 0.459
 ```
 > 由 MSE 與 R<sup>2</sup>可以看出，此模型發生了 overfitting\
 > 因 training data 的 MSE 低於 testing data\
