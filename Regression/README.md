@@ -628,6 +628,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=8)
     - random_state：隨機數的種子
 
 訓練迴歸模型，並計算 MSE 跟 R<sup>2</sup>
+> 線性迴歸，目標變數必為連續值
 ```python
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
