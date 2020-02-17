@@ -606,4 +606,45 @@ plt.savefig('correlation.png', dpi=300)
   - xticklabels：x軸標籤名輸出
   - yticklabels：y軸標籤名輸出
   
+將 data set 分割為 training set 與 testing set 
+```python
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split
+
+X, y = load_diabetes().data, load_diabetes().target
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=8)
+```
+- `load_diabetes().data`：糖尿病資料集的特徵資料集
+- `load_diabetes().target`：糖尿病資料集的目標資料集
+- `train_test_split(data, target, random_state)`：從樣本中隨機的按比例選取 train data 與 test data
+    - data：要分割的樣本特徵集（feature dataset）
+    - target：要分割的目標函數集（target dataset）
+    - random_state：隨機數的種子
+
+訓練迴歸模型，並計算 MSE 跟 R<sup>2</sup>
+```python
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
+
+slr = LinearRegression()
+
+slr.fit(X_train, y_train)
+y_train_pred = slr.predict(X_train)
+y_test_pred = slr.predict(X_test)
+
+print('MSE_train: %.3f, MSE_test: %.3f' % (mean_squared_error(y_train, y_train_pred), mean_squared_error(y_test, y_test_pred)))
+print('R^2_train: %.3f, R^2_test: %.3f' % (r2_score(y_train, y_train_pred), r2_score(y_test, y_test_pred)))
+#輸出
+MSE_train: 2812.369, MSE_test: 3108.041
+R^2_train: 0.530, R^2_test: 0.459
+```
+> 由 MSE 與 R<sup>2</sup>可以看出，此模型發生了 overfitting\
+> 因 training data 的 MSE 低於 testing data\
+>  因 training data 的 R<sup>2</sup> 高於 testing data
+
+- y_train_pred：模型預測training data的結果
+- y_test_pred：模型預測testing data的結果
+
+
 [🔭](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)  
