@@ -677,3 +677,47 @@ R2_train: 0.530, R2_test: 0.459
   - 主成分分析（principal component analysis）：PCA，留下主要成份（降維、維度縮減）
 
 [🔭](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)  
+
+# Regularization
+  > 正則化
+  
+regularization 是對抗 model 發生 overfitting 的方法，希望 model 可以有「泛化能力」與「解釋能力」，然而這兩者是相違背的
+
+- 泛化能力：model簡單，無發生overfitting
+- 解釋能力：model可以解釋的部分
+  > R<sup>2</sup>愈高，代表model的解釋能力愈高\
+  > 然而，當fit的愈好R<sup>2</sup>就愈高（即overfitting發生時，R<sup>2</sup>較高）
+
+
+對此，有幾種解決方式：
+- Ridge regression（脊迴歸）
+- Lasso regression（最小絕對壓縮挑選機制）
+- Elastic Net（彈性網）
+
+#### Source
+[[Day 07] Regularization](https://ithelp.ithome.com.tw/articles/10186405)
+
+[📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+## Ridge regression
+  > 脊迴歸
+
+
+[📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+## Lasso regression
+  > 最小絕對壓縮挑選機制
+  >> Least Absolute Shrinkage and Selection Operator
+
+
+[📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+## Ridge v.s. Lasso
+
+[📡📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
+
+## Elastic Net
+  > 彈性網
+  >> 試圖包含 Ridge 跟 Lasso
+
+[📡📡📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
