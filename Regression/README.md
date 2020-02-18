@@ -10,6 +10,8 @@
     - [作業三.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD%E4%B8%89.ipynb)
       - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD%E4%B8%89.ipynb)
     - [作業3_answer.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD3_answer.pdf)
+  - [Class_05.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/Class_05.ipynb)
+    - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Regression/Class_05.ipynb)
   - [作業4_answer.jpg](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD4_answer.jpg)
   - [Correlation coefficient](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#correlation-coefficient)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#linear-regression)
