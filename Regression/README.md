@@ -755,7 +755,7 @@ print('MSE_train: %.3f, MSE_test: %.3f' % (mean_squared_error(y_train, y_train_p
 print('R^2_train: %.3f, R^2_test: %.3f' % (r2_score(y_train, y_train_pred), r2_score(y_test, y_test_pred)))
 #輸出
 MSE_train: 3397.720, MSE_test: 3262.233
-R^2_train: 0.433, R^2_test: 0.433
+R2_train: 0.433, R2_test: 0.433
 ```
 
 - `Ridge(alpha=1)`：脊迴歸函式
@@ -783,10 +783,59 @@ R^2_train: 0.433, R^2_test: 0.433
   > model複雜度：看係數「絕對值」
   >> Least Absolute Shrinkage and Selection Operator
 
+在建立model需要考慮兩點：
+1. 接近目標函式
+   > cost愈小愈好
+2. model複雜度要小
+   > 「迴歸係數」某種程度上代表了複雜度
+   >> 當係數愈大，代表model愈複雜（幅度愈大）
+   
+   處理「迴歸係數」
+   > 不能直接看，有正負之分
+    - Ridge：取**平方值**和
+    - Lasso：取**絕對值**和
+
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-19_01-59-29.png)
+
+訓練 Lasso 模型，並計算 MSE 與 R<sup>2</sup>
+> 利用`sklearn.linear_model`套件的`Lasso`
+```python
+from sklearn.linear_model import Lasso
+
+lasso = Lasso(alpha=1).fit(X_train, y_train) #alpha=1
+y_train_pred = lasso.predict(X_train)
+y_test_pred = lasso.predict(X_test)
+print('MSE_train: %.3f, MSE_test: %.3f' % (mean_squared_error(y_train, y_train_pred), mean_squared_error(y_test, y_test_pred)))
+print('R^2_train: %.3f, R^2_test: %.3f' % (r2_score(y_train, y_train_pred), r2_score(y_test, y_test_pred)))
+#輸出
+MSE_train: 3818.201, MSE_test: 3646.836
+R2_train: 0.362, R2_test: 0.366
+```
+- `Lasso(alpha=1)`：最小絕對壓縮挑選機制
+  > alpha：Lasso唯一要設的參數，控制正則化強度，為符點數
+
+調整`alpha`看Lasso regression的變化情形
+- 在alpha=1的時候，model分數較低，且迴歸係數僅用3個特徵
+  > underfitting
+- 降低alpha：model分數大幅增加，且model較為複雜（使用7個特徵）
+- 當alpha非常小時，會非常接近Linear regression
+
+結論：
+
+在降低model複雜度的部分，Ridge做的比Lasso好，因其可將迴歸係數降至0，有就是可以達到減少特徵變數的效果，而Ridge僅能將迴歸係數降至很小
+
 
 [📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 ## Ridge vs. Lasso
+
+- 通常在實作時，Ridge是首選
+  1. 「Ridge：平方」較「Lasso：絕對值」應用層面廣
+  2. Lasso在移除變數的同時，會犧牲model的正確性
+
+- 應選擇 Lasso 時機
+  1. 若特徵變數太多，僅有一小部份真正重要
+  2. 若須解釋model，Lasso會更好理解，因使用較少特徵變數
 
 [📡📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
