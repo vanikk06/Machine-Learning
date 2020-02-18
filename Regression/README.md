@@ -705,6 +705,7 @@ regularization 是對抗 model 發生 overfitting 的方法，希望 model 可�
    - 懲罰項：將迴歸線的所有係數，去掉正負號，加到迴歸線的最後面\
    透過**係數加大懲罰項也會變大的特性**，讓model受到懲罰，知道何時該往其他方向線收斂
      > E.g. 將x<sup>3</sup>式的係數與x<sup>4</sup>式的係數取平方值，加到函式的最後面作為懲罰項，並以1000作為懲罰項的係數，當θ<sup>3</sup>變大一點點時，懲罰項會因為前面的1000而變得很大，以此讓函式受到懲罰，知道不該把θ<sup>3</sup>變大，因而往其他方向收斂
+     >> 複回歸：有多少變數，就要考慮多少變數的迴歸係數
 
 #### Source
 [[Day 07] Regularization](https://ithelp.ithome.com.tw/articles/10186405)
