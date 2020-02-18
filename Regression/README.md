@@ -685,6 +685,7 @@ R2_train: 0.530, R2_test: 0.459
 
 # Regularization
   > 正則化
+  >> 以「減少model的複雜度」和「防止overfitting」
   
 regularization 是對抗 model 發生 overfitting 的方法，希望 model 可以有「泛化能力」與「解釋能力」，然而這兩者是相違背的
 
@@ -716,6 +717,10 @@ regularization 是對抗 model 發生 overfitting 的方法，希望 model 可�
   > 脊迴歸
 
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-19_01-58-53.png)
+- α：控制正則項的強度（要放多少比重）
+  > 因「最小誤差值」與「最小複雜度」是相互違背的，所以要分比重
+- 後半部：調整model複雜度
+  > 不考慮截距項
 
 [📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
