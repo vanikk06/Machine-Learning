@@ -19,6 +19,11 @@
   - [Pratices Polynomial Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-polynomial-regression)
   - [Normal equation](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#normal-equation)
   - [Pratices Multiple Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#pratices-multiple-regression)
+  - [Regularization](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#regularization)
+    - [Ridge regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#ridge-regression)
+    - [Lasso regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#lasso-regression)
+    - [Ridge v.s. Lasso](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#ridge-vs-lasso)
+    - [Elastic Net](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#elastic-net)
 
 
 # Correlation coefficient
