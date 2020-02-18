@@ -842,5 +842,53 @@ R2_train: 0.362, R2_test: 0.366
 ## Elastic Net
   > 彈性網
   >> 試圖包含 Ridge 跟 Lasso
+  
+懲罰項有兩項，一項是Ridge平方和的方式，一項是Lasso絕對值和的方式
+
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-19_03-40-29.png)  
+
+
+
+訓練Elastic Net模型，並計算MSE及 R<sup>2</sup>
+> 利用`sklearn.linear_model`套件的`ElasticNet`
+```python
+from sklearn.linear_model import ElasticNet
+
+elanet = ElasticNet(alpha=1, l1_ratio=0.5).fit(X_train, y_train)
+y_train_pred = elanet.predict(X_train)
+y_test_pred = elanet.predict(X_test)
+
+print('MSE_train: %.3f, MSE_test: %.3f' % (mean_squared_error(y_train, y_train_pred), mean_squared_error(y_test, y_test_pred)))
+print('R^2_train: %.3f, R^2_test: %.3f' % (r2_score(y_train, y_train_pred), r2_score(y_test, y_test_pred)))
+#輸出
+MSE_train: 5937.607, MSE_test: 5704.626
+R2_train: 0.009, R2_test: 0.008
+```
+- `ElasticNet(alpha, l1_ratio)`：elastic net函式
+   > 要調整兩個參數
+    - alpha：乘以懲罰項的常數，正則化比重
+      > 預設為1
+      >> 若alpha=0，相當於Linear regression，不建議使用
+    - l1_ratio：混合參數
+      > 混合使用Ridge與Lasso，參照作業四
+      >> []()
+      - 在 alpha=1 的情況下：
+          - L1_ratio = 1：Lasso
+          -  L1_ratio = 0：Ridge
+
+使用迴歸model的優缺
+> 需先觀察資料，對資料進行預處理，讓其符合線性關係，在丟入model運算效果較好
+- 優點
+  - 簡單、直覺、易於運算
+  - 迴歸係數能得到有用的訊息
+    > 解決問題時，應改變哪些因子
+- 缺點
+  - 易受異常值影響
+    > 每點比重相同
+  - 相關預測因子的權重會被扭曲
+  - 曲線趨勢
+    > 因子之間線性相關不明確
+  - 預測因子和結果並不暗示因果關係
+    > 相關關係不代表因果關係
 
 [📡📡📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
