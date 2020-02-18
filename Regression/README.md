@@ -10,6 +10,7 @@
     - [作業三.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD%E4%B8%89.ipynb)
       - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD%E4%B8%89.ipynb)
     - [作業3_answer.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD3_answer.pdf)
+  - [作業4_answer.jpg](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD4_answer.jpg)
   - [Correlation coefficient](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#correlation-coefficient)
   - [Linear Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#linear-regression)
   - [Least square method ＆ Gradient descent](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#least-square-method--gradient-descent)
@@ -871,7 +872,7 @@ R2_train: 0.009, R2_test: 0.008
       >> 若alpha=0，相當於Linear regression，不建議使用
     - l1_ratio：混合參數
       > 混合使用Ridge與Lasso，參照作業四
-      >> []()
+      >> [作業4_answer.jpg](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/%E4%BD%9C%E6%A5%AD4_answer.jpg)
       - 在 alpha=1 的情況下：
           - L1_ratio = 1：Lasso
           -  L1_ratio = 0：Ridge
