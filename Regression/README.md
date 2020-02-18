@@ -689,8 +689,10 @@ R2_train: 0.530, R2_test: 0.459
   
 regularization 是對抗 model 發生 overfitting 的方法，希望 model 可以有「泛化能力」與「解釋能力」，然而這兩者是相違背的
 
-- 泛化能力：model簡單，無發生overfitting
-- 解釋能力：model可以解釋的部分
+- 泛化能力：一般化，普遍會有的情況，由 training data 中得知特徵/特性的表現，推測在其他 data 也會如此的表現
+  > 希望 training data 和 testing data不要相差太多\
+  > 無發生overfitting
+- 解釋能力：model可以解釋的部分，其解釋能力在model簡單的情況下較高，追求低複雜度
   > R<sup>2</sup>愈高，代表model的解釋能力愈高\
   > 然而，當fit的愈好R<sup>2</sup>就愈高（即overfitting發生時，R<sup>2</sup>較高）
 
@@ -711,27 +713,80 @@ regularization 是對抗 model 發生 overfitting 的方法，希望 model 可�
 #### Source
 [[Day 07] Regularization](https://ithelp.ithome.com.tw/articles/10186405)
 
+[機器學習中的正則化項（L1, L2）的理解](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/615856/)
+
+[深度學習基礎--正則化與norm--正則化(Regularization)](https://www.itread01.com/content/1542681136.html)
+
 [📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 ## Ridge regression
   > 脊迴歸
+  >> model複雜度：看係數「平方」
+  
+overfitting 有可能是因為 model 太過複雜，通常在發生 overfitting 時，會想到 Ridge regression將 α 調大來降低 overfitting 的程度
+> 發生 overfitting原因
+> 1. data有雜訊
+> 2. model太複雜
+
+- Ridge Regression vs. Linear Regression
+  
+  在 Linear regression 中，複雜度愈低的 model 在 training set 上的表現愈差，但泛化能力會更好\
+  若更在意model在泛化方面的能力，應該選擇Ridge regression而非Linear regression
+  > Ridge regression：model太複雜會有懲罰項，會反映在目標函式（cost function）上
 
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-19_01-58-53.png)
-- α：控制正則項的強度（要放多少比重）
-  > 因「最小誤差值」與「最小複雜度」是相互違背的，所以要分比重
-- 後半部：調整model複雜度
-  > 不考慮截距項
+  - α：控制正則項的強度（要放多少比重）
+    > 因「最小誤差值」與「最小複雜度」是相互違背的，所以要分比重
+  - 後半部：調整model複雜度
+    > 不考慮截距項
+  
+訓練 Ridge 模型，並計算 MSE 與 R<sup>2</sup>
+> 利用`sklearn.linear_model`套件的`Ridge`
+```python
+from sklearn.linear_model import Ridge
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
+
+ridge = Ridge(alpha=1).fit(X_train, y_train) #alpha=1.0
+y_train_pred = ridge.predict(X_train)
+y_test_pred = ridge.predict(X_test)
+
+print('MSE_train: %.3f, MSE_test: %.3f' % (mean_squared_error(y_train, y_train_pred), mean_squared_error(y_test, y_test_pred)))
+print('R^2_train: %.3f, R^2_test: %.3f' % (r2_score(y_train, y_train_pred), r2_score(y_test, y_test_pred)))
+#輸出
+MSE_train: 3397.720, MSE_test: 3262.233
+R^2_train: 0.433, R^2_test: 0.433
+```
+
+- `Ridge(alpha=1)`：脊迴歸函式
+    - alpha：Ridge唯一要設的參數，控制正則化強度，為符點數
+- `.coef_`：相關係數
+
+調整`alpha`看Ridge regression的變化情形
+- 當 α 增大時，R<sup>2</sup>（model分數）大幅降低，但解決了overfitting
+  > overfitting：R<sup>2</sup>的分數，train大於test
+  
+  因在考慮目標變數時，「model複雜度」佔很大的因素，當 α 變大時，model複雜度會降低，導致R<sup>2</sup>變差，但泛化能力會提升
+
+- 當 α 非常小時，Ridge regression 會非常接近 Linear regression
+  > 當 α 非常小時，表示懲罰項的影響非常小，相當於僅有原本的cost function
+  
+結論：
+
+參數的取值須視使用的data set而定\
+增加 α 會降低迴歸線係數，使其趨近於0，降低 training set的分數，但有助於泛化能力
 
 [📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
 ## Lasso regression
-  > 最小絕對壓縮挑選機制
+  > 最小絕對壓縮挑選機制\
+  > model複雜度：看係數「絕對值」
   >> Least Absolute Shrinkage and Selection Operator
 
 
 [📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
-## Ridge v.s. Lasso
+## Ridge vs. Lasso
 
 [📡📡📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
