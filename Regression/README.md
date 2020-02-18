@@ -702,8 +702,9 @@ regularization 是對抗 model 發生 overfitting 的方法，希望 model 可�
   現在 model 除了要求取「cost 最小值」（誤差值最小化）以外，還要 model 的複雜度愈小愈好，但因這兩件事是相違背的，因此要判斷哪一個比較重要
   
   為此，可是在 cost function 後面增加一個**懲罰項**，以此懲罰項前的係數，來決定比重為何
-   - 懲罰項：將迴歸線的所有係數，去掉正負號，加到迴歸線的最後面，透過**係數加大懲罰項也會變大的特性**，讓model受到懲罰，知道何時該往其他方向線收斂
-    > E.g. 將x<sup>3</sup>式的係數與x<sup>4</sup>式的係數取平方值，加到函式的最後面作為懲罰項，並以1000作為懲罰項的係數，當θ<sup>3</sup>變大一點點時，懲罰項會因為前面的1000而變得很大，以此讓函式受到懲罰，知道不該把θ<sup>3</sup>變大，因而往其他方向收斂
+   - 懲罰項：將迴歸線的所有係數，去掉正負號，加到迴歸線的最後面\
+   透過**係數加大懲罰項也會變大的特性**，讓model受到懲罰，知道何時該往其他方向線收斂
+     > E.g. 將x<sup>3</sup>式的係數與x<sup>4</sup>式的係數取平方值，加到函式的最後面作為懲罰項，並以1000作為懲罰項的係數，當θ<sup>3</sup>變大一點點時，懲罰項會因為前面的1000而變得很大，以此讓函式受到懲罰，知道不該把θ<sup>3</sup>變大，因而往其他方向收斂
 
 #### Source
 [[Day 07] Regularization](https://ithelp.ithome.com.tw/articles/10186405)
@@ -713,6 +714,7 @@ regularization 是對抗 model 發生 overfitting 的方法，希望 model 可�
 ## Ridge regression
   > 脊迴歸
 
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Regression/image/Snipaste_2020-02-19_01-58-53.png)
 
 [📡📡](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#content)
 
