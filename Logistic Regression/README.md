@@ -4,3 +4,6 @@
 
 # Logistic Regression
   > 邏輯式迴歸
+
+
+[🥃](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
