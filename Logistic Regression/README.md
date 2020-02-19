@@ -26,3 +26,10 @@
     > E.g. Sigmoid function
 
 [🥃](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
+
+# Sigmoid function
+  > 轉換連續值的function
+  
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/image/Snipaste_2020-02-20_03-04-40.png) 
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/image/Snipaste_2020-02-20_03-05-10.png)
+> exp()：次方的部份
