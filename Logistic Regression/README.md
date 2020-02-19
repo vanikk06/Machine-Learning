@@ -1,6 +1,7 @@
 # Content
 - [Lecture 4 Logistic Regression 拷貝.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/Lecture%204%20Logistic%20Regression%20%E6%8B%B7%E8%B2%9D.pdf)
 - [Logistic Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#logistic-regression)
+- [Sigmoid function](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#sigmoid-function)
 
 
 # Logistic Regression
@@ -34,7 +35,7 @@
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/image/Snipaste_2020-02-20_03-05-10.png)
 > exp()：次方的部份
   - 當 z 很大時，e<sup>-z<\sup>會很小 → 極度靠近1
-    > 必為正數，且不可能超過1
+   > 必為正數，且不可能超過1
   - 當 z 很小時，e<sup>-z<\sup>會很大 → 趨近於0
   - 當 z = 0 時，e<sup>-z<\sup> = 1 → 1/2（即0.5）
 
