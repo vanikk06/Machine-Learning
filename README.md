@@ -15,6 +15,7 @@
 - [Intro](https://github.com/vanikk06/Machine-Learning#intro)
 - [Data](https://github.com/vanikk06/Machine-Learning#data)
 - [Regression](https://github.com/vanikk06/Machine-Learning#regression)
+- [Logistic Regression](https://github.com/vanikk06/Machine-Learning#logistic-regression)
 
 # Learning Python
   > [class](http://moocs.nccu.edu.tw/course/123/intro)\
