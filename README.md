@@ -2,6 +2,8 @@
   class notes
   
   teacher：李佳蓉 老師
+  
+記錄機器學習課堂上的筆記，但部份數學模型過於複雜的地方，並不完全清楚
 
 #### Source
 [史上最完整機器學習自學攻略！我不相信有人看完這份不會把它加進我的最愛](https://buzzorange.com/techorange/2017/08/21/the-best-ai-lesson/)
@@ -163,5 +165,11 @@
    - [Elastic Net](https://github.com/vanikk06/Machine-Learning/tree/master/Regression#elastic-net)
 
 
-
 [👩🏻‍🏭👨🏻‍🏭](https://github.com/vanikk06/Machine-Learning#content)
+
+# Logistic Regression
+[👉🏼HERE👈🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression)
+
+
+
+[👩🏻‍🎤👨🏻‍🎤](https://github.com/vanikk06/Machine-Learning#content)
