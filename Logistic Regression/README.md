@@ -1,5 +1,6 @@
 # Content
 - [Lecture 4 Logistic Regression 拷貝.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/Lecture%204%20Logistic%20Regression%20%E6%8B%B7%E8%B2%9D.pdf)
+- [Logistic Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#logistic-regression)
 
 
 # Logistic Regression
@@ -22,5 +23,6 @@
 在Logistic regression裡，可先透過Linear regression model將特徵變數與output之間的關係表現出來（算出值），再透過「function轉換」的方式，將Linear regression model所得出的連續型結果轉換為機率
   - Linear regression model：計算變數X與output之間關係
   - function轉換：將model結果轉為機率
+    > E.g. Sigmoid function
 
 [🥃](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
