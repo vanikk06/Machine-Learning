@@ -39,6 +39,27 @@
   - 當 z 很小時，e<sup>-z</sup>會很大 → 趨近於0
   - 當 z = 0 時，e<sup>-z</sup> = 1 → 1/2（即0.5）
 
+#### Pratices
+先匯入相關套件
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+```
+帶入函式畫圖
+```python
+y = [1 / (1+math.exp(-x)) for x in np.linspace(-6, 6, 100)]
 
+plt.plot(y)
+```
+- `math.exp()`：數學函式指數項
 
 [🥤](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
+
+
+# Decision Boundary
+  > 決策邊界
+  
+算出機率值後，要進行分類的判斷
+
+[🥂](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
