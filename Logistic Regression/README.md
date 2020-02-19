@@ -28,8 +28,16 @@
 [🥃](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
 
 # Sigmoid function
-  > 轉換連續值的function
+  > 轉換連續值為機率的function
   
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/image/Snipaste_2020-02-20_03-04-40.png) 
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/image/Snipaste_2020-02-20_03-05-10.png)
 > exp()：次方的部份
+  - 當 z 很大時，e<sup>-z<\sup>會很小 → 極度靠近1
+    > 必為正數，且不可能超過1
+  - 當 z 很小時，e<sup>-z<\sup>會很大 → 趨近於0
+  - 當 z = 0 時，e<sup>-z<\sup> = 1 → 1/2（即0.5）
+
+
+
+[🥤](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
