@@ -70,3 +70,24 @@ plt.plot(y)
 
 
 [🥂](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
+
+# Logistic regression's cost function
+  > Logistic regression的目標函式
+  
+若資料為 y=1 ，希望在x的情況下，預測結果為 y=1 的機率愈高愈好\
+若資料為 y=0 ，希望在x的情況下，預測結果為 y=0 的機率愈高愈好
+
+因預測結果為機率，希望各筆資料的結果同時成立時，須將所有相乘，希望最終的目標愈大愈好，但因機率介於\[0, 1]之間，全部相乘會愈乘愈小，慢慢趨近於0，導致過小無法造成影響，因此將最終目標取log，使值放大，
+最後在配合regression 一般cost function目標值為愈小愈好，加上負號
+
+因此，最終為希望目標函數「愈小愈好」
+
+除此之外，還希望model愈簡單愈好
+
+[🍻](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
+  
+# Praticing logistic regression  
+
+
+
+[🍺](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#content)
