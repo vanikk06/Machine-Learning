@@ -16,6 +16,7 @@
 - [Data](https://github.com/vanikk06/Machine-Learning#data)
 - [Regression](https://github.com/vanikk06/Machine-Learning#regression)
 - [Logistic Regression](https://github.com/vanikk06/Machine-Learning#logistic-regression)
+- [Decision Tree](https://github.com/vanikk06/Machine-Learning#decision-tree)
 
 # Learning Python
   > [class](http://moocs.nccu.edu.tw/course/123/intro)\
@@ -184,3 +185,6 @@
 
 # Decision Tree
 [👉🏿HERE👈🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree)
+
+
+[👩🏻‍🍳👨🏻‍🍳](https://github.com/vanikk06/Machine-Learning#content)
