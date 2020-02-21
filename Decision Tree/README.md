@@ -1,4 +1,5 @@
 # Content
+- [what is decision tree](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#what-is-decision-tree)
 
 
 # what is decision tree
