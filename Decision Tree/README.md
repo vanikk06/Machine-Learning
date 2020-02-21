@@ -12,3 +12,7 @@
 - 每個樹葉節點，代表不同分類的**類別標記**
 
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-22_03-57-55.png)
+
+
+
+[🏝](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
