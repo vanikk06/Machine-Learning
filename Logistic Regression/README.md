@@ -110,6 +110,8 @@ plt.plot(y)
 # Praticing logistic regression  
   > 使用 鳶尾花數據集
 
+[👉🏿HERE👈🏿](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/Class_05.ipynb)
+
 logistic regression 本為處理二元分類，然而從二元分類變形，仍可處理多元分類的的問題
 
 - 變形方法
