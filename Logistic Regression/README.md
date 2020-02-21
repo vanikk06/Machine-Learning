@@ -1,5 +1,7 @@
 # Content
 - [Lecture 4 Logistic Regression 拷貝.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/Lecture%204%20Logistic%20Regression%20%E6%8B%B7%E8%B2%9D.pdf)
+- [Class_05.ipynb](https://github.com/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/Class_05.ipynb)
+  - [webpage](https://nbviewer.jupyter.org/github/vanikk06/Machine-Learning/blob/master/Logistic%20Regression/Class_05.ipynb)
 - [Logistic Regression](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#logistic-regression)
 - [Sigmoid function](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#sigmoid-function)
 - [Decision Boundary](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#decision-boundary)
