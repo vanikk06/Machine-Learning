@@ -181,3 +181,6 @@
 - [Praticing logistic regression](https://github.com/vanikk06/Machine-Learning/tree/master/Logistic%20Regression#praticing-logistic-regression)
 
 [👩🏻‍🎤👨🏻‍🎤](https://github.com/vanikk06/Machine-Learning#content)
+
+# Decision Tree
+[👉🏿HERE👈🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree)
