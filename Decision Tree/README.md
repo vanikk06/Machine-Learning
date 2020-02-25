@@ -1,8 +1,13 @@
 # Content
-- [what is decision tree](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#what-is-decision-tree)
+- [What is decision tree](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#what-is-decision-tree)
+- [Building decision tree](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#building-decision-tree)
+  - [Information Gain](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#information-gain)
+  - [Gain ratio](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#gain-ratio)
+  - [Gini Index](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#gini-index)
+  
 
 
-# what is decision tree
+# What is decision tree
   > 分類：決策樹
   
 什麼是決策樹？
@@ -39,29 +44,31 @@
     > 根據測量方法不同，決策樹的演算法也會有所不同
     
     - 資訊獲利（Information Gain）：ID3
-      > []()
+      > [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#information-gain)
     - 獲利比例（Gain ratio）：C4.5
-      > []()
+      > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#gain-ratio)
     - 吉尼係數（Gini Index）：CART
-      > []()
+      > [✍🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#gini-index)
   
 [🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
 
 ## Information Gain
   > 資訊獲利
+  >> ID3
 
 
 [🏜🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
 
 ## Gain ratio
   > 獲利比例
+  >> C4.5
 
 
 [🏜🏜🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
 
 ## Gini Index
   > 吉尼係數
-  
+  >> CART
   
 
 [🏜🏜🏜🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
