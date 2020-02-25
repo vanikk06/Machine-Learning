@@ -242,6 +242,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
 - `ListedColormap`：創造或是操作顏色映射
 - classifier：迴歸模型
 - resolution：解析度(間隔)
+- cmap：將目標變數（y）的唯一值個數放入 colors 中，並對應到 ListedColormap 將目標變數作顏色的分群
 - `ListedColormap(colors[:len(np.unique(y))])`：找出y(目標變數)種類，用color內顏色區分(最多5類)
    - `np.unique(input, return_index=True, return_inverse=True)`：去除重複的元素，並按元素順序由小到大排列，返回一個新的無重tuple or list
      - return_index=True：返回new_list元素在old_list中的位置，並以list形式另外儲存
