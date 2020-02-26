@@ -72,7 +72,15 @@
      
      ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_02-45-15.png)
      
-     - Entropy(S) = -p<sub>+</sub>log<sub>2</sub>P<sub>+</sub>-p<sub>-</sub>log<sub>2</sub>p<sub>-</sub>
+     - Entropy(S) = -p<sub>+</sub>log<sub>2</sub>p<sub>+</sub> - p<sub>-</sub>log<sub>2</sub>p<sub>-</sub>
+       > Why log皆為負號?\
+       > 因p為機率，介於\[0,1]之間為分數，其取log後值為負號，因此在其前面加一個負號，希望最後的結果為正號
+       
+       假設丟了14次銅板，出現「9個正面」與「5個正面」，計為\[9<sub>+</sub>, 5<sub>-</sub>]\
+       放入計算Entropy([9<sub>+</sub>, 5<sub>-</sub>]]) = -(9/14)log<sub>2</sub>(9/14) - (5/14)log<sub>2</sub>(5/14) = 0.94
+       
+       - 若銅板丟出正面與反面的數量一樣，則熵為1（最凌亂）
+       - 若銅板僅丟出正面或反面，則熵為0（最不凌亂）
      
      
 
