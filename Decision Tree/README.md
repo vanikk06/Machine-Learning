@@ -72,7 +72,7 @@
      
      ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_02-45-15.png)
      
-     - Entropy(S) = -p<sup>+<\sup>log<sup>2<\sup>P<sup>+<\sup>-p<sup>-<\sup>log<sup>2<\sup>p<sup>-<\sup>
+     - Entropy(S) = -p<sub>+</sub>log<sub>2</sub>P<sub>+</sub>-p<sub>-</sub>log<sub>2</sub>p<sub>-</sub>
      
      
 
