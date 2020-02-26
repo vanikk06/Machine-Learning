@@ -70,7 +70,9 @@
      
      收集一組丟銅板之後的資料集合 S，該資料組的計算公式為
      
-     ![]()
+     ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_02-45-15.png)
+     
+     - Entropy(S) = -p<sup>+<\sup>log<sup>2<\sup>P<sup>+<\sup>-p<sup>-<\sup>log<sup>2<\sup>p<sup>-<\sup>
      
      
 
