@@ -213,5 +213,44 @@ CART（Classification and Regression Tree）於1980年代提出，是一種產�
 ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_22-21-23.png)
 > p<sub>j</sub>為在S中的值組，屬於類別 j 的機率
 
+利用屬性 A 分割資料集合 S 為 S<sub>1</sub> 與 S<sub>2</sub>（二元分割）
+> 目標：子節點的純度要愈高愈好
+
+在CART演算法中，必為**二元樹**，若遇到屬性涵蓋兩個以上的評估值，須將評估值進行綑綁變為兩個評估值
+> 先考慮名目屬性or順序屬性
+> - 名目屬性：可隨機綑綁
+> - 順序屬性：須按照原本順序綑綁
+
+
+- 吉尼係數Gini<sub>A</sub>(S)
+  > 擇**吉尼係數Gini<sub>A</sub>(S)最小**
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-28_00-58-06.png)
+  
+  其中 S<sub>1</sub> 與 S<sub>2</sub> 是針對欄位 A 內的不同數值所構成的兩組資料子集合
+  
+- 不純度的降低值
+  > 擇**最大不純度的降低值**
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-28_00-58-41.png)
+
+#### 【範例】天氣評估
+  > 使用CART建構分類樹
+  
+目前資料集合「Play Tennis = Yes」有9筆，「Play Tennis = No」有5筆
+- 母群體 S 的吉尼係數 Gini(S)
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-28_01-18-55.png)
+  > 0.459為目標變數的不純度
+
+以 Humidity 屬性分割為例
+- S<sub>1</sub> = {High}：有 7 筆，\[3<sub>+</sub>, 4<sub>-</sub>]
+- S<sub>2</sub> = {Normal}：有 7 筆，\[6<sub>+</sub>, 1<sub>-</sub>]
+  
+  以加權平均的方式，透過S<sub>1</sub>與S<sub>2</sub>計算 Humidity 的吉尼係數
+  
+  ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-28_01-36-27.png)
+  
+  挑選擁有**最大不純度的降低值**或**吉尼係數Gini<sub>A</sub>(S)最小**的屬性作為分割屬性
 
 [🏜🏜🏜🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
