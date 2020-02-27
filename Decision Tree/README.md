@@ -49,7 +49,13 @@
       > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#gain-ratio)
     - 吉尼係數（Gini Index）：CART
       > [✍🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#gini-index)
-  
+
+建立決策樹\
+Step 1. 找出最能將資料點均勻區分的問題，作為樹的內部節點，並將節點分割以產生對應的分支
+> 均勻區分：使子節點純度愈高\
+Step 2. 在每一個葉節點重複Step 1，直到達到停止條件
+
+
 [🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
 
 ## Information Gain
