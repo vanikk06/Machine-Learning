@@ -132,6 +132,16 @@ ID3 演算法是利用資訊獲利來衡量**分類資料的能力**，看母群
 
 透過上例資訊，可得知 Wind 這個屬性的資訊獲利為多少
 
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_21-01-40.png)
+> 目標：分割，希望分割之後，Entropy能夠減少
+
+- 紅色：母群體的Entropy，\[9<sub>+</sub>,5<sub>-</sub>]為0.94
+- 藍色：以 Wind 屬性為分割點後，在 weak 的 Entropy\[6<sub>+</sub>,2<sub>-</sub>]為0.811
+- 綠色：以 Wind 屬性為分割點後，在 strong 的Entropy\[3<sub>+</sub>,3<sub>-</sub>]為1.0
+- 黑色：以 Wind 為分割點後的 Gain值
+  > 因 weak 與 strong 的個數不同，不能直接平均，要以**加權平均**的方式計算（權重：個數、大小）
+
+透過計算各屬性作為分割點的Gain值後，取Gain值最大者作為分割點（即選具**最大資訊獲利**之屬性為分割點）
 
 #### Source     
 [資訊的度量- Information Entropy](https://blog.xuite.net/metafun/life/69851478-%E8%B3%87%E8%A8%8A%E7%9A%84%E5%BA%A6%E9%87%8F-+Information+Entropy)
