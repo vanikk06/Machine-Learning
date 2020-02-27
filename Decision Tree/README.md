@@ -102,6 +102,37 @@ ID3 演算法是利用資訊獲利來衡量**分類資料的能力**，看母群
 - ID3演算法：使用「資訊獲利」會傾向選擇**擁有許多不同數值**的屬性
   > 類別多的屬性，會佔分類優勢
 
+#### 【範例】天氣評估
+
+假設有一套天氣評估系統，有一些評估屬性（E.g. 風力、濕度...），用來評估該天氣是否適合打網球
+
+| Day | Outlook | Temp. | Humidity | Wind | Play Tennis |
+| --- | --- | --- | --- | --- | --- |
+| D1 | Sunny | Hot | High | Weak | No |
+| D2 | Sunny | Hot | High | Strong | No |
+| D3 | Overcast | Hot | High | Weak | Yes |
+| D4 | Rain | Mild | High | Weak | Yes |
+| D5 | Rain | Cool | Normal | Weak | Yes |
+| D6 | Rain | Cool | Normal | Strong | No |
+| D7 | Overcast | Cool | Normal | Weak | Yes |
+| D8 | Sunny | Mild | High | Weak | No |
+| D9 | Sunny | Cool | Normal | Weak | Yes |
+| D10 | Rain | Mild | Normal | Strong | Yes |
+| D11 | Sunny | Mild | Normal | Strong | Yes |
+| D12 | Overcast | Mild | High | Strong | Yes |
+| D13 | Overcast | Hot | Normal | Weak | Yes |
+| D14 | Rain | Mild | High | Strong | No |
+
+以 Wind （風力）屬性為例，在所有訓練資料中所會出現的值有 weak、strong
+
+在目前資料集合S中有14筆資料，其中目標屬性（Play Tennis）有9個正例5個反例，記為\[9<sub>+</sub>,5<sub>-</sub>]\
+在這14筆資料中，關於 Wind的資料為
+- Wind = weak：8筆資料（S<sub>weak</sub>），其中有6個正例和2個反例，記為\[6<sub>+</sub>,2<sub>-</sub>]
+- Wind = strong：6筆資料（S<sub>strong</sub>），其中有個3正例和3個反例，記為\[3<sub>+</sub>,3<sub>-</sub>]
+
+透過上例資訊，可得知 Wind 這個屬性的資訊獲利為多少
+
+
 #### Source     
 [資訊的度量- Information Entropy](https://blog.xuite.net/metafun/life/69851478-%E8%B3%87%E8%A8%8A%E7%9A%84%E5%BA%A6%E9%87%8F-+Information+Entropy)
 
@@ -114,11 +145,15 @@ ID3 演算法是利用資訊獲利來衡量**分類資料的能力**，看母群
 利用獲利比率的方式，克服ID3的問題（將資訊獲利正規化）\
 在計算屬性A的獲利比例時，需要計算「資訊獲利」與「分割資訊值」（Split Information）
 
-- 補償方法：獲利比率 = 資訊獲利 / 分割資訊值（GainRatio(A) = Gain(S, A) / SplitInfo<sub>A</sub>(S)）
+- 補償方法
   > 算子節點之加權平均值的權重的Entropy
   >> 擁有最大獲利比例的屬性，被設為分割屬性
   
+  GainRatio(A) = Gain(S, A) / SplitInfo<sub>A</sub>(S)
+  > 獲利比率 = 資訊獲利 / 分割資訊值
+  
   - 分割資訊值
+  
     ![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_03-46-26.png)
 
 [🏜🏜🏜](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#content)
