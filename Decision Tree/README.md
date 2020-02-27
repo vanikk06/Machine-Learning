@@ -143,6 +143,22 @@ ID3 演算法是利用資訊獲利來衡量**分類資料的能力**，看母群
 
 透過計算各屬性作為分割點的Gain值後，取Gain值最大者作為分割點（即選具**最大資訊獲利**之屬性為分割點）
 
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_21-36-55.png)
+> 以 Outlook 作為分割點
+>> 在 Outlook 三個評估值中，Overcast的評估值的Entropy為0，因此 Outlook = Overcast 可得到一個葉子節點"Yes"
+
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_21-44-35.png)
+
+再將未成為葉子節點的節點計算往下計算
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_21-45-20.png)\
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_21-45-46.png)
+
+在 Outlook = Sunny 的情況下，計算其他屬性的 Gain 值，其中 Humidity 的 Gain 值最大，取其作為 Sunny 分支下的分割點
+
+最終得到下面這棵決策樹
+
+![](https://github.com/vanikk06/Machine-Learning/blob/master/Decision%20Tree/image/Snipaste_2020-02-27_21-50-17.png)
+
 #### Source     
 [資訊的度量- Information Entropy](https://blog.xuite.net/metafun/life/69851478-%E8%B3%87%E8%A8%8A%E7%9A%84%E5%BA%A6%E9%87%8F-+Information+Entropy)
 
