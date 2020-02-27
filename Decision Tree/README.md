@@ -58,18 +58,45 @@
 
 - 使用決策樹常見的問題
   - 避免過度適配資料
-    > []()
+    > [✍🏼](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#overfitting)
   - 合併連續值屬性
-    > []()
+    > [✍🏽](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#%E9%80%A3%E7%BA%8C%E5%B1%AC%E6%80%A7)
   - 屬性選擇指標的其它度量標準
-    > []()
+    > [✍🏿](https://github.com/vanikk06/Machine-Learning/tree/master/Decision%20Tree#%E5%B1%AC%E6%80%A7%E9%81%B8%E6%93%87%E6%8C%87%E6%A8%99)
 
-#### Overfitting
+### Overfitting
   > 過度配適
+  
+- 過度配適：指model對於範例的過度訓練，導致model記住的不是訓練資料的一般特性，反而是訓練資料的局部特性
 
-#### 連續屬性
+  發生原因
+  - 雜訊、離異值：在資料預處理時解決
+  - 樣本數量過少：增加數量
 
-#### 屬性選擇指標
+在決策樹方面，處理此問題可以使用「修剪」的方式
+- 事先修剪（pre-pruning）：事先設定「停止決策樹生長的門檻值」，當分割的評估值未達此門檻值時，就會停止擴長
+  - 優點：較具有執行效率
+  - 缺點
+    - 可能過度修剪（over-pruning）
+      > 停止判斷不是純度，而是設定的門檻值
+      >> E.g. 資料不足5個值，即停止
+      
+    - 門檻值設定不易
+    
+- 事後修剪（post-pruning）：在樹完全生長後再進行修剪，「引入測試組樣本」來評估決策樹對於新輸入資料的分類與預測結果
+  > E.g. minimal cost-complexity pruning（最小成本複雜修剪）
+  - 優點
+    - 可解決過度配適，避免產生稀少樣本樹的葉節點
+    - 加強對雜訊的忍受程度
+  - 缺點：效率較低
+
+#### minimal cost-complexity pruning
+  > 最小成本複雜修剪
+  
+  
+### 連續屬性
+
+### 屬性選擇指標
 
 
 
