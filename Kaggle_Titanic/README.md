@@ -47,3 +47,18 @@
 [pandas中关于set_index和reset_index的用法](https://blog.csdn.net/jingyi130705008/article/details/78162758)
 
 [🚈](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#content)
+
+# Seaborn
+  > 資料視覺化
+- `sns.countplot()`：長條圖，計算單一變數的次數
+
+#### Source
+[[第 19 天] 資料視覺化（2）Seaborn](https://ithelp.ithome.com.tw/articles/10186624)
+
+[Python 資料視覺化筆記(二) — 使用Seaborn繪圖](https://medium.com/@yanweiliu/python-%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96%E7%AD%86%E8%A8%98-%E4%BA%8C-%E4%BD%BF%E7%94%A8seaborn%E7%B9%AA%E5%9C%96-3adb03407a9)
+
+[Python學習筆記#6：Seaborn資料視覺化篇](http://psop-blog.logdown.com/posts/3056283-python-seaborn)
+
+[10分钟python图表绘制 | seaborn入门（二）：barplot与countplot](https://zhuanlan.zhihu.com/p/24553277)
+
+[🚅](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#content)
