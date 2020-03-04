@@ -2,6 +2,7 @@
 - [Lecture 6 Kaggle.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Kaggle_Titanic/Lecture%206%20Kaggle.pdf)
 - [df.append()](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#dfappend)
 - [df.set_index() ＆ df.reset_index()](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#dfset_index--dfreset_index)
+- [Seaborn](https://github.com/vanikk06/Machine-Learning/blob/master/Kaggle_Titanic/README.md#seaborn)
 
 # df.append()
   > 合併
