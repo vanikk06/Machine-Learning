@@ -1,4 +1,5 @@
 # Content
+- [Lecture 6 Kaggle.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Kaggle_Titanic/Lecture%206%20Kaggle.pdf)
 - [df.append()](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#dfappend)
 
 # df.append()
