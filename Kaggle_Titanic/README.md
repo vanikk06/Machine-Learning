@@ -1,6 +1,7 @@
 # Content
 - [Lecture 6 Kaggle.pdf](https://github.com/vanikk06/Machine-Learning/blob/master/Kaggle_Titanic/Lecture%206%20Kaggle.pdf)
 - [df.append()](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#dfappend)
+- [df.set_index() ＆ df.reset_index()](https://github.com/vanikk06/Machine-Learning/tree/master/Kaggle_Titanic#dfset_index--dfreset_index)
 
 # df.append()
   > 合併
@@ -51,6 +52,7 @@
 # Seaborn
   > 資料視覺化
 - `sns.countplot()`：長條圖，計算單一變數的次數
+   > 類別型
 
 #### Source
 [[第 19 天] 資料視覺化（2）Seaborn](https://ithelp.ithome.com.tw/articles/10186624)
