@@ -1038,9 +1038,10 @@ Pandas中「映射」與「應用」兩中方法的整理應用
     - `map()`：可對Series物件中的每個元素，執行給定的function、dictionary、Series映射處理（只要元素可以一一對應即可）
     - `apply(function, agrs)`：能對物件執行給定的function，還能設定指定參數（args）
       > 適用於Series與dataframe
-          - function：要執行的函式
-          - agrs：tuple，指定function內參數
-            > 前提，function須為兩個以上參數
+      >> 大多用於運算處理
+        - function：要執行的函式
+        - agrs：tuple，指定function內參數
+          > 前提，function須為兩個以上參數
       
 - DataFrame
   > 無map()
