@@ -24,7 +24,7 @@
 - [zip()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#zip)
 - [map()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#map)
 - [enumerate()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#enumerate)
-- [eval()]()
+- [eval()](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#eval)
 - [Overview](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#overview)
 
 # Introduction
