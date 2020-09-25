@@ -645,6 +645,71 @@ for index, line in enumerate(open(filepath,'r'))：
 
 [💭](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
 
+# eval()
+  > 將字符串 str 當成有效的表達式來求值並返回
+  >> 只吃字串
+  
+`eval(str)`
+
+
+- 計算字符串中有效的表達式，並返回結果
+
+    ```python
+    eval('pow(3,2)')  # 9
+    
+    eval('2+2')  # 4
+    
+    n = 81
+    eval("n + 4") #85
+    ```
+    - `pow(a, b)`：返回 a 的 b 次方
+
+- 將字符串轉成相應的對象
+  > e.g. list、tuple、dict 和 string 之間的轉換
+  
+   ```python
+   a = "[[1,2], [3,4], [5,6], [7,8], [9,0]]"
+   b = eval(a)
+   b
+   
+   #output
+   [[1,2], [3,4], [5,6], [7,8], [9,0]
+   ```
+   
+   ```python
+   a = "{1:'xx', 2:'yy'}"
+   c = eval(a)
+   c
+   
+   #output
+   {1:'xx', 2:'yy'}
+   ```
+   
+   ```python
+   a = "(1,2,3,4)"
+   d = eval(a)
+   d
+   
+   #output
+   (1,2,3,4)
+   ```
+- 字串後的變數名也可反轉回變數
+
+   ```python
+   list1 = [1,2,3,45]
+   eval('list1')
+   
+   #output
+   [1,2,3,45]
+   ```
+#### Source
+[Python eval()函數的用法](https://www.itread01.com/content/1515241329.html)
+
+[Python 週記功能篇 － 強制轉換的功能](https://www.taiwancodeschool.com/single-post/2018/12/12/Python-ife-func)
+
+[💭](https://github.com/vanikk06/Machine-Learning/tree/master/Intro#content)
+
+
 # Overview
   > 機器學習：電腦利用數據自主學習並優化性能
 
